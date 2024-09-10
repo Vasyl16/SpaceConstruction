@@ -1,0 +1,30 @@
+// text
+@mixin main-text {
+  font-size: clamp(15px, 20px, 1.8vw);
+  font-weight: 400;
+  line-height: 1.5;
+  color: $thirdColor;
+}
+
+@mixin second-text {
+  font-size: clamp(14px, 18px, 1.6vw);
+  font-weight: 400;
+  line-height: 1.5;
+  color: $thirdColor;
+  text-align: center;
+}
+
+@mixin third-text {
+  font-size: clamp(12px, 16px, 1.6vw);
+  font-weight: 400;
+  line-height: 1.6;
+  color: $thirdColor;
+  text-align: center;
+}
+
+@mixin forth-text {
+  font-size: clamp(11px, 14px, 1.5vw);
+  font-weight: 400;
+  line-height: 1.5;
+  color: $thirdColor;
+}

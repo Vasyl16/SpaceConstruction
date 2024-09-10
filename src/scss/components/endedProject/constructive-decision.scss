@@ -1,0 +1,80 @@
+.constructive-decision {
+  margin-top: 99px;
+  margin-bottom: 100px;
+
+  @include section-main-gap;
+
+  &__wrapper {
+    display: flex;
+    gap: $lgGap;
+    justify-content: space-between;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    flex: 0 1 600px;
+    &_i {
+      flex: 0 1 495px;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+    @media (max-width: $mobile) {
+      flex: none;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    height: clamp(350px, 550px, 80vh);
+    @media (max-width: $tablet) {
+      height: clamp(250px, 450px, 50vh);
+    }
+    @media (max-width: $mobile) {
+      height: clamp(200px, 300px, 50vw);
+      width: clamp(250px, 350px, 60vw);
+    }
+  }
+
+  &__body {
+    @include title-content-gap;
+    @media (max-width: $mobile) {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include second-title;
+    text-align: left;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20.5px;
+  }
+
+  &__item {
+    @include third-text;
+    color: $forthColor;
+    text-align: left;
+    padding-left: 36px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0%;
+      left: 0;
+      aspect-ratio: 1/1;
+      width: 20px;
+      background: url('/img/pages/endedProject/constructive-decision/constructive-decision-icon-1.svg')
+        0 0 no-repeat;
+      background-size: contain;
+    }
+  }
+}

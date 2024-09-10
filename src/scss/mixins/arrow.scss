@@ -1,0 +1,48 @@
+@mixin main-arrow {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 48px;
+  border-radius: 50%;
+  background: $secondBgColor;
+  transition: all ease 0.3s;
+
+  &::after {
+    content: none;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('/img/blocks/arrow/our-projects-swiper-arrow.svg') 0 0
+      no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    background: rgb(255, 110, 73);
+  }
+
+  @media (max-width: $tablet) {
+    width: 40px;
+    &::before {
+      width: 16px;
+      height: 11px;
+    }
+  }
+}
+
+@mixin main-arrow-disabled {
+  background: none;
+
+  &::before {
+    background: url('/img/blocks/arrow/our-projects-swiper-arrow-disable.svg') 0
+      0 no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}

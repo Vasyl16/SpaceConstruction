@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">{{> header headerData=this.headerData }}</header>
+
+      <main class="welcome-block welcome-block-about">
+        {{> welcomeBlock welcomeBlockData=this.welcomeBlockData }}
+      </main>
+
+      <section class="about-stat">
+        <div class="about-stat__container">
+          <div class="about-stat__items">
+            <div class="about-stat__item">
+              <img
+                class="about-stat__img"
+                src="/img/pages/about/about-stat/about-stat-img-1.svg"
+              />
+
+              <p class="about-stat__count">60%</p>
+
+              <p class="about-stat__name">
+                Clients on the recommendation of friends
+              </p>
+            </div>
+
+            <div class="about-stat__item">
+              <img
+                class="about-stat__img"
+                src="/img/pages/about/about-stat/about-stat-img-2.svg"
+              />
+
+              <p class="about-stat__count">2400+</p>
+
+              <p class="about-stat__name">Apartments renovated</p>
+            </div>
+
+            <div class="about-stat__item">
+              <img
+                class="about-stat__img"
+                src="/img/pages/about/about-stat/about-stat-img-3.svg"
+              />
+
+              <p class="about-stat__count">670</p>
+
+              <p class="about-stat__name">Qualified specialists</p>
+            </div>
+
+            <div class="about-stat__item about-stat__item_m">
+              <img
+                class="about-stat__img"
+                src="/img/pages/about/about-stat/about-stat-img-4.svg"
+              />
+
+              <p class="about-stat__count">150000+ m <span>2</span></p>
+
+              <p class="about-stat__name">Finishing work was carried out</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ceo-quote">
+        <div class="ceo-quote__container">
+          <div class="ceo-quote__wrapper">
+            <div class="ceo-quote__column ceo-quote__column_i">
+              <img
+                class="ceo-quote__img"
+                src="/img/pages/about/ceo-quote/ceo-quote-img-1.jpg"
+              />
+            </div>
+
+            <div class="ceo-quote__column ceo-quote__column_m">
+              <div class="ceo-quote__body">
+                <p class="ceo-quote__quote">
+                  <span>
+                    Dapibus nec vitae ante mattis. Aliquam phasellus ac dui
+                    augue in. Sed aliquet in egestas hac at proin sed quam.
+                    Etiam aliquet sagittis non, massa cum pulvinar. Et in leo,
+                    tempus purus vestibulum ut blandit et mi. Odio massa purus
+                    vel praesent arcu enim elit felis viverra.
+                  </span>
+
+                  <span>
+                    Magna aliquam interdum mattis ipsum arcu. Elit odio elit
+                    viverra quis metus amet eleifend amet. Vet suspendisse
+                    faucibus tempor ipsum integer.
+                  </span>
+                </p>
+
+                <div class="ceo-quote__info info-ceo-quote">
+                  <div class="info-ceo-quote__item">
+                    <p class="info-ceo-quote__name">Courtney Alexander</p>
+
+                    <p class="info-ceo-quote__position">
+                      CEO - Createx Construction Bureau
+                    </p>
+                  </div>
+
+                  <div class="info-ceo-quote__item">
+                    <img
+                      class="info-ceo-quote__sign"
+                      src="/img/pages/about/ceo-quote/ceo-quote-sign.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="core-values">
+        {{> coreValues coreValuesData=this.coreValuesData}}
+      </section>
+
+      <section class="our-history">
+        <div class="our-history__container">
+          <div class="our-history__body">
+            <h1 class="our-history__title">Our history</h1>
+
+            <div class="our-history__content">
+              <div class="our-history__column our-history__column_p">
+                <div
+                  class="our-history__pagination custom-pagination-swiper-our-history"
+                ></div>
+              </div>
+
+              <div class="our-history__column our-history__column_s">
+                <div class="our-history__swiper swiper-our-history swiper">
+                  <div class="swiper-our-history__wrapper swiper-wrapper">
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="Present"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="March 2019"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="November 2018"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="July 2015"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="August 2010"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="February 2007"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="May 2004"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="October 2001"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+
+                    <div
+                      class="swiper-our-history__slide swiper-slide"
+                      data-title="June 2000"
+                    >
+                      <img
+                        class="swiper-our-history__img"
+                        src="/img/pages/about/our-history/our-histor-swiper-img.jpg"
+                        alt="image"
+                      />
+
+                      <p class="swiper-our-history__text">
+                        Bcelerisque dapibus pharetra nibh semper iaculis duis
+                        viverra porttitor in. Eu nec vitae, malesuada vitae
+                        egestas integer et morbi. Maecenas sed quis diam posuere
+                        malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="swiper-our-history__prev-button swiper-button-prev swiper-our-history-button-prev"
+                  ></div>
+
+                  <div
+                    class="swiper-our-history__next-button swiper-button-next swiper-our-history-button-next"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="supported-partners supported-partners-about">
+        {{> supportedPartners supportedPartnersData=this.supportedPartnersData
+        }}
+      </section>
+
+      <!-- <section class="discuss-details discuss-details-service"></section>
+
+      <section class="footer"></section> -->
+    </div>
+
+    <script type="module" src="../../../../src/js/main.js"></script>
+  </body>
+</html>

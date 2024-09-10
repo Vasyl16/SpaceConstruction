@@ -1,0 +1,113 @@
+.facts-figures {
+  margin-top: 60px;
+  margin-bottom: 100px;
+
+  @include section-main-gap;
+
+  &__container {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -470px;
+      left: -1000px;
+      background: url('/img/pages/home/fact-figures/fact-figures-bg.svg') 0 0
+        no-repeat;
+      background-size: cover;
+      width: 1200px;
+      height: 1000px;
+      z-index: -1;
+    }
+    @media (max-width: $fullPc) {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__body {
+    @include title-content-gap;
+  }
+
+  &__title {
+    @include second-title;
+  }
+}
+
+.items-fact-figures {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  @media (max-width: $tablet) {
+    row-gap: 60px;
+  }
+  @media (max-width: $mobile) {
+    row-gap: $lgGap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 148px;
+    gap: 21px;
+    @media (max-width: $tablet) {
+      flex: 0 0 110px;
+    }
+    @media (max-width: $mobile) {
+      flex: 0 0 90px;
+      gap: $smGap;
+    }
+  }
+
+  &__stat {
+    background-size: contain;
+    aspect-ratio: 1/1;
+    width: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(22px, 32px, 2.6vw);
+    font-weight: 700;
+    line-height: 1.5;
+
+    @media (max-width: $tablet) {
+      width: 110px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 90px;
+    }
+
+    &_1 {
+      background: url('/img/pages/home/fact-figures/fact-figures-img-1.jpg') 0 0
+        no-repeat;
+      background-size: contain;
+    }
+
+    &_2 {
+      background: url('/img/pages/home/fact-figures/fact-figures-img-2.jpg') 0 0
+        no-repeat;
+      background-size: contain;
+    }
+
+    &_3 {
+      background: url('/img/pages/home/fact-figures/fact-figures-img-3.jpg') 0 0
+        no-repeat;
+      background-size: contain;
+    }
+
+    &_4 {
+      background: url('/img/pages/home/fact-figures/fact-figures-img-4.jpg') 0 0
+        no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__stat-name {
+    @include forth-text;
+    color: rgba(30, 33, 44, 1);
+    text-align: center;
+  }
+}

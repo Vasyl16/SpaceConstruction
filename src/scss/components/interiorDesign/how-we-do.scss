@@ -1,0 +1,208 @@
+.how-we-do {
+  margin-top: 82px;
+  margin-bottom: 90px;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+
+    & {
+      gap: 60px;
+    }
+  }
+
+  &__title {
+    @include second-title;
+    text-align: left;
+
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+  }
+}
+
+.items-how-we-do {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $lgGap;
+  row-gap: 40px;
+  @media (max-width: $fullPc) {
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+  }
+  @media (max-width: $mobile) {
+    row-gap: $lgGap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    flex: 0 1 285px;
+    flex-wrap: wrap;
+
+    @media (max-width: $tablet) {
+      flex: 1 1 47%;
+    }
+    @media (max-width: $mobile) {
+      align-items: center;
+      flex: 1 1 auto;
+    }
+  }
+
+  &__step {
+    // font-size: clamp(24px, 46px, 3.5vw);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: $secondColor;
+    text-align: left;
+    position: relative;
+    transition: all ease 0.3s;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      font-size: 33px;
+    }
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    & span {
+      &::after {
+        content: '';
+        position: absolute;
+        width: calc(80%);
+        height: 1px;
+        top: 50%;
+        background: url('/img/pages/interiorDesign/how-we-do/how-we-do-line-img.svg')
+          0 0 repeat;
+        background-size: contain;
+        left: 24%;
+        line-height: 0;
+      }
+
+      @media (max-width: $tablet) {
+        &::after {
+          left: 14%;
+        }
+      }
+
+      @media (max-width: $mobile) {
+        &::after {
+          content: none;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      aspect-ratio: 1/1;
+      width: 0px;
+      background: $secondBgColor;
+      opacity: 0.12;
+      top: 30px;
+      left: 26px;
+      border-radius: 50%;
+      transition: all ease 0.3s;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      aspect-ratio: 1/1;
+      width: 0px;
+      background: $secondBgColor;
+      opacity: 0.06;
+      top: 30px;
+      left: 26px;
+      border-radius: 50%;
+      transition: all ease 0.3s;
+    }
+
+    &:hover {
+      color: $secondBgColor;
+
+      &::after {
+        top: -12px;
+        left: -16px;
+        width: 84px;
+      }
+
+      &::before {
+        top: -28px;
+        left: -32px;
+        width: 116px;
+      }
+    }
+    @media (max-width: $tablet) {
+      &::after {
+        left: 20px;
+      }
+      &::before {
+        left: 20px;
+      }
+      &:hover {
+        &::after {
+          width: 64px;
+          top: -10px;
+          left: -13px;
+        }
+        &::before {
+          top: -18px;
+          left: -21px;
+          width: 80px;
+        }
+      }
+    }
+
+    @media (max-width: $mobile) {
+      &::after {
+        left: 50%;
+      }
+      &::before {
+        left: 50%;
+      }
+      &:hover {
+        &::after {
+          width: 64px;
+          top: -15px;
+          left: calc(50% - 33px);
+        }
+        &::before {
+          top: -23px;
+          left: calc(50% - 42px);
+          width: 80px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    @include forth-title;
+    text-align: left;
+    margin-top: 6px;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    @include third-text;
+    text-align: left;
+    color: $thirdColor;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+}

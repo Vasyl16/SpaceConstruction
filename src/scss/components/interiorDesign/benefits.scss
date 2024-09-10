@@ -1,0 +1,159 @@
+.benefits {
+  margin-top: 31px;
+  margin-bottom: 100px;
+  background: $secondColor;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+
+    & {
+      padding: 81px 0 126px;
+      position: relative;
+
+      @media (max-width: $fullPc) {
+        padding: 70px 0 100px;
+      }
+      @media (max-width: $tablet) {
+        padding: 50px 0 80px;
+      }
+      @media (max-width: $mobile) {
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+  &__info {
+    @include main-title-text-wrapper;
+  }
+
+  &__title {
+    @include second-title;
+    color: $mainColor;
+  }
+
+  &__text {
+    @include second-text;
+    color: $mainColor;
+    opacity: 0.6;
+  }
+
+  &__button-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &__button {
+    @include main-button;
+    & {
+      display: inline-block;
+      height: 52px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      padding: 10px 20px;
+      min-width: 390px;
+      font-size: clamp(12px, 16px, 1.5vw);
+      @media (max-width: $tablet) {
+        height: 48px;
+        min-width: 150px;
+      }
+      @media (max-width: $mobile) {
+        min-width: 140px;
+        height: 38px;
+      }
+    }
+  }
+}
+
+.items-benefits {
+  display: flex;
+  column-gap: $lgGap;
+  row-gap: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: $fullPc) {
+    justify-content: center;
+  }
+  @media (max-width: $mobile) {
+    gap: 45px;
+  }
+  @media (max-width: $mobileSmall) {
+    row-gap: $lgGap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $smGap;
+    flex: 0 1 285px;
+    padding-right: 94px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      opacity: 0.4;
+
+      background: linear-gradient(
+        270.01deg,
+        rgba(218, 219, 221, 0) 0%,
+        rgba(218, 219, 221, 0.5) 12.33%,
+        #dadbdd 51.91%,
+        rgba(218, 219, 221, 0.5) 87.85%,
+        rgba(218, 219, 221, 0) 100%
+      );
+    }
+
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width: $fullPc) {
+      padding-right: $lgGap;
+      flex: 1 1 270px;
+    }
+
+    @media (max-width: $tablet) {
+      flex: 1 1 45%;
+      padding-right: 0;
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__img {
+    aspect-ratio: 1/1;
+    width: 48px;
+    object-fit: contain;
+    @media (max-width: $mobile) {
+      width: 40px;
+    }
+  }
+
+  &__title {
+    @include forth-title;
+    color: $mainColor;
+    margin-top: 13px;
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    @include third-text;
+    color: $mainColor;
+    opacity: 0.6;
+  }
+}

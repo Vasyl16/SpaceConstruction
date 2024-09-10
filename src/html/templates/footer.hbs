@@ -1,0 +1,126 @@
+<div class="footer__container">
+    <div class="footer__items">
+      <div class="footer__row footer__row_m">
+        <div class="footer__main main-footer">
+          <div class="main-footer__row main-footer__row_m">
+            <a class="main-footer__logo-link" href="/">
+              <img
+                alt="img"
+                class="main-footer__logo"
+                src="/img/templates/footer/footer-logo.svg"
+              />
+            </a>
+
+            <div class="main-footer__social social-main-footer">
+              <img
+                alt="img"
+                class="social-main-footer__social-img"
+                src="/img/templates/footer/footer-social-img-1.svg"
+              />
+
+              <img
+                alt="img"
+                class="social-main-footer__social-img"
+                src="/img/templates/footer/footer-social-img-2.svg"
+              />
+
+              <img
+                alt="img"
+                class="social-main-footer__social-img"
+                src="/img/templates/footer/footer-social-img-3.svg"
+              />
+
+              <img
+                alt="img"
+                class="social-main-footer__social-img"
+                src="/img/templates/footer/footer-social-img-4.svg"
+              />
+
+              <img
+                alt="img"
+                class="social-main-footer__social-img"
+                src="/img/templates/footer/footer-social-img-5.svg"
+              />
+            </div>
+          </div>
+
+          <div class="main-footer__row">
+            <p class="main-footer__text">
+              Createx Construction Bureau has been successfully operating in the
+              USA construction market since 2000. We are proud to offer you
+              quality construction and exemplary service. Our mission is to set
+              the highest standards for the construction sphere.
+            </p>
+          </div>
+        </div>
+
+        <form class="footer__form form-footer">
+          <p class="form-footer__title">Let’s stay in touch</p>
+
+          <div class="form-footer__input-wrapper">
+            <input
+              class="form-footer__input"
+              placeholder="Your email address"
+            />
+
+            <button class="form-footer__button" type="submit">subscribe</button>
+          </div>
+
+          <label class="form-footer__label">
+            *Subscribe to our newsletter to receive communications and early
+            updates from Createx Construction Bureau.
+          </label>
+        </form>
+      </div>
+
+      <div class="footer__row footer__row_i">
+        <div class="footer__info info-footer">
+          <div class="info-footer__items">
+            {{#each footerData}}
+
+            <article
+              class="info-footer__item {{#if modifier}}info-footer__item_{{modifier}}{{/if}} spoiler-footer"
+            >
+              <h1 class="info-footer__title spoiler-footer-title">
+                {{this.title}}
+              </h1>
+
+              <div class="info-footer__body spoiler-footer-content">
+                {{#each this.links}}
+
+                <p class="info-footer__data">
+                  <a href="{{this.href}}"> {{this.name}} </a>
+                </p>
+
+                {{/each}}
+              </div>
+            </article>
+
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__row footer__row_r">
+        <div class="footer__rights rights-footer">
+          <div class="rights-footer__items">
+            <div class="rights-footer__item">
+              <p class="rights-footer__text">
+                © All rights reserved. Made with
+
+                <span></span>
+
+                by Createx Studio
+              </p>
+            </div>
+
+            <div class="rights-footer__item rights-footer__item_m">
+              <div class="rights-footer__top-text">GO TO TOP</div>
+
+              <button class="rights-footer__top-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

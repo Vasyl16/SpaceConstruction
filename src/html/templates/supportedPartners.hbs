@@ -1,0 +1,21 @@
+<div class='supported-partners__container'>
+  <div class='supported-partners__body'>
+    <div class='supported-partners__info'>
+      <h1 class='supported-partners__title'>{{supportedPartnersData.title}}</h1>
+
+      {{#if supportedPartnersData.text}}
+        <p class='supported-partners__text'>{{supportedPartnersData.text}}</p>
+      {{/if}}
+    </div>
+
+    <div class='supported-partners__items items-supported-partners'>
+      {{#each supportedPartnersData.images}}
+        <img
+          alt='img'
+          class='items-supported-partners__item-img'
+          src='{{this}}'
+        />
+      {{/each}}
+    </div>
+  </div>
+</div>

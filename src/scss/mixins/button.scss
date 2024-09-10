@@ -1,0 +1,70 @@
+// buttons
+@mixin main-button {
+  font-size: clamp(14px, 16px, 1.8vw);
+  font-weight: 700;
+  line-height: 1.3;
+  background: $secondBgColor;
+  color: $mainBgColor;
+  border-radius: 3px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background: rgb(255, 117, 83);
+  }
+}
+
+@mixin second-button {
+  font-size: clamp(14px, 16px, 1.8vw);
+  font-weight: 700;
+  line-height: 1.3;
+  color: $mainBgColor;
+  background: none;
+  border-radius: 3px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+  border: solid 1px $mainColor;
+}
+
+@mixin third-button {
+  font-size: clamp(12px, 14px, 1.8vw);
+  font-weight: 700;
+  line-height: 1.3;
+  color: $secondBgColor;
+  background: none;
+  border-radius: 3px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+  border: solid 1px $secondBgColor;
+  transition: all ease 0.3s;
+  position: relative;
+  z-index: 10;
+  letter-spacing: 0.5px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    border-radius: 1 px;
+    width: 0;
+    height: 0;
+    transition: all ease 0.4s;
+    background: $secondBgColor;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $mainColor;
+
+    &:after {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

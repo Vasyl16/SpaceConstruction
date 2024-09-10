@@ -1,0 +1,243 @@
+.recent-news {
+  margin-top: 77px;
+  margin-bottom: 45px;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+  }
+
+  &__title {
+    @include second-title;
+  }
+}
+
+.items-recent-news {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: $fullPc) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__column {
+    flex: 0 1 50%;
+
+    &_m {
+      flex: 0 0 57.318%;
+    }
+
+    &_b {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 28px;
+      @media (max-width: $fullPc) {
+        gap: $lgGap;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: $midGap;
+      }
+      @media (max-width: $mobile) {
+        padding-bottom: $smGap;
+      }
+    }
+
+    @media (max-width: $fullPc) {
+      flex: 0 1 80%;
+      max-width: 80%;
+    }
+    @media (max-width: $mobile) {
+      flex: 0 1 90%;
+      max-width: 90%;
+    }
+    @media (max-width: $mobileSmall) {
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 4px 18px -8px rgba(30, 33, 44, 0.3);
+    padding-bottom: 24px;
+
+    &:hover {
+      box-shadow: 0px 4px 18px -2px rgba(30, 33, 44, 0.3);
+    }
+
+    &_m {
+      justify-content: space-between;
+      gap: 23px;
+    }
+    @media (max-width: $fullPc) {
+      gap: 15px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    height: 156px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &_m {
+      height: 360px;
+    }
+
+    @media (max-width: $fullPc) {
+      height: 360px;
+    }
+    @media (max-width: $tablet) {
+      border-radius: 3px;
+      height: 300px;
+    }
+    @media (max-width: $mobile) {
+      height: 250px;
+    }
+    @media (max-width: $mobileSmall) {
+      height: 170px;
+    }
+  }
+
+  &__content {
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: $smGap;
+    max-width: 657px;
+    @media (max-width: $fullPc) {
+      max-width: 90%;
+    }
+    @media (max-width: $tablet) {
+      margin-left: 0;
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    @include forth-title;
+    text-align: left;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: $secondBgColor;
+    }
+  }
+
+  &__text {
+    @include third-text;
+
+    color: rgba(66, 69, 81, 1);
+    text-align: left;
+    margin-top: 9px;
+    @media (max-width: $mobile) {
+      margin-top: 0;
+    }
+  }
+}
+
+.info-items-recent-news {
+  display: flex;
+  gap: 11px;
+
+  @include forth-text;
+
+  &__news-type {
+    padding-right: 13px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background: rgba(120, 122, 128, 1);
+      width: 1px;
+      height: 50%;
+      top: 20%;
+      right: 0;
+    }
+  }
+
+  &__date {
+    padding-right: 14px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background: rgba(120, 122, 128, 1);
+      width: 1px;
+      height: 50%;
+      top: 20%;
+      right: 0;
+    }
+  }
+
+  &__comment {
+    padding-left: 24px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0%, -50%);
+      aspect-ratio: 1/1;
+      width: 16px;
+      object-fit: contain;
+      background: url('/img/pages/home/recent-news/recent-news-comment-icon.svg')
+        0 0 no-repeat;
+    }
+  }
+}
+
+.view-recent-news {
+  @include view-block;
+
+  & {
+    margin-top: 18px;
+  }
+
+  &__text {
+    @include third-title;
+  }
+
+  &__button {
+    @include main-button;
+
+    & {
+      height: 52px;
+      min-width: 224px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: $tablet) {
+        height: 45px;
+        min-width: 160px;
+      }
+      @media (max-width: $mobile) {
+        min-width: 140px;
+        height: 35px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    font-size: clamp(12px, 16px, 1.5vw);
+    line-height: 2.1;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,162 @@
+.discuss-details {
+  margin-top: 75px;
+  background: url('/img/templates/discuss-details/discuss-details-bg.jpg') 0 0
+    no-repeat;
+  background-size: cover;
+  padding: 80px 20px;
+  margin-bottom: 0 !important;
+
+  &-service {
+    margin-top: 90px;
+  }
+
+  @include section-main-gap;
+
+  @media (max-width: $fullPc) {
+    padding: 40px 20px;
+  }
+  @media (max-width: $mobile) {
+    padding: $midGap $smGap;
+  }
+
+  @include section-main-gap;
+}
+
+.form-discuss-details {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $fullPc) {
+    justify-content: center;
+  }
+
+  &__body {
+    background-color: $mainBgColor;
+    flex: 0 1 495px;
+    padding: 48px 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 41px -18px rgba(30, 33, 44, 0.5);
+
+    @media (max-width: $tablet) {
+      padding: $lgGap;
+    }
+    @media (max-width: $mobile) {
+      padding: $midGap;
+    }
+  }
+
+  &__title {
+    @include third-title;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 20.3px;
+    align-items: center;
+    @media (max-width: $tablet) {
+      margin-top: $midGap;
+    }
+    @media (max-width: $mobile) {
+      margin-top: $smGap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+
+    &_m {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+
+  &__label {
+    font-size: clamp(12px, 14px, 1.5vw);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(66, 69, 81, 1);
+
+    &_m {
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    font-size: clamp(13px, 14px, 1.5vw);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(154, 156, 165, 1);
+    border: 1px solid rgba(215, 218, 221, 1);
+    border-radius: 5px;
+    padding: 10px 15px 9px;
+    background: rgba(244, 245, 246, 1);
+  }
+
+  &__textarea {
+    font-size: clamp(13px, 14px, 1.5vw);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(154, 156, 165, 1);
+    border: 1px solid rgba(215, 218, 221, 1);
+    border-radius: 5px;
+    padding: 10px 15px 9px;
+    background: rgba(244, 245, 246, 1);
+    box-sizing: border-box;
+    height: 66px;
+  }
+
+  &__checkbox {
+    margin-top: 3px;
+    appearance: none;
+    -webkit-appearance: none;
+    aspect-ratio: 1/1;
+    height: 16px;
+    border: 1px solid $secondBgColor;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      aspect-ratio: 1/1;
+      background: url('/img/templates/discuss-details/discuss-details-check-icon.svg')
+        0 0 no-repeat;
+      width: 10px;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      display: none;
+    }
+
+    &:checked {
+      background: $secondBgColor;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    @include main-button;
+    & {
+      min-width: 174px;
+      display: inline-block;
+      height: 44px;
+      font-size: clamp(11px, 14px, 1.5vw);
+
+      @media (max-width: $mobile) {
+        min-width: 120px;
+        height: 30px;
+      }
+    }
+  }
+}

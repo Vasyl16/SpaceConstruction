@@ -1,0 +1,72 @@
+.createx {
+  margin-top: 61px;
+  margin-bottom: 90px;
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+  }
+
+  &__info {
+    @include main-title-text-wrapper;
+  }
+
+  &__title {
+    @include second-title;
+  }
+
+  &__text {
+    @include second-text;
+  }
+
+  &__video-wrapper {
+    border-radius: 2px;
+    width: 100%;
+    margin: 0 auto;
+    height: clamp(200px, 500px, 55vh);
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $secondColor;
+      opacity: 0.6;
+      z-index: 1;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    &.playing {
+      &::before {
+        content: none;
+      }
+    }
+
+    @media (max-width: 1500px) {
+      width: clamp(400px, 800px, 80vw);
+    }
+
+    @media (max-width: $tablet) {
+      width: clamp(250px, 700px, 80vw);
+      height: clamp(150px, 400px, 45vw);
+    }
+
+    @media (max-width: $mobileSmall) {
+      width: clamp(250px, 600px, 100%);
+      height: clamp(150px, 300px, 65vw);
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    position: relative;
+  }
+}

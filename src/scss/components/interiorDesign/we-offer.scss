@@ -1,0 +1,138 @@
+.we-offer {
+  margin-top: 60px;
+  margin-bottom: 90px;
+
+  @include section-main-gap;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    min-height: 450px;
+    flex: 0 1 33.99%;
+    @media (max-width: $fullPc) {
+      min-height: auto;
+    }
+    @media (max-width: $tablet) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: $tablet) {
+      width: clamp(200px, 600px, 80vw);
+    }
+    &_i {
+      border-radius: 3px;
+      flex: 0 1 57.318%;
+      @media (max-width: $tablet) {
+        flex: 0 0 49%;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    max-height: 440px;
+    @media (max-width: $fullPc) {
+      height: clamp(200px, 350px, 40vw);
+    }
+    @media (max-width: $mobile) {
+      height: clamp(200px, 300px, 40vw);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    height: 100%;
+
+    @media (max-width: $tablet) {
+      gap: $lgGap;
+    }
+    @media (max-width: $mobile) {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include second-title;
+    text-align: left;
+    margin-top: 3px;
+
+    @media (max-width: $fullPc) {
+      margin-top: 0px;
+    }
+  }
+}
+
+.items-we-offer {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+
+  &__title {
+    padding-left: 42px;
+    @include third-title;
+    text-align: left;
+    position: relative;
+    transition: all ease 0.5s;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -1px;
+      width: 22px;
+      height: 2px;
+      border-radius: 2px;
+      background: $secondBgColor;
+      transition: all ease 0.3s;
+      @media (max-width: $tablet) {
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    &_a {
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__text {
+    padding-left: 42px;
+    margin-top: 14px;
+    @include third-text;
+
+    text-align: left;
+    max-height: 0;
+    opacity: 0;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
+  }
+}
+
+.spoiler-we-offer-title_a {
+  margin-bottom: 11px;
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.spoiler-we-offer-content_a {
+  margin-bottom: 10px;
+}

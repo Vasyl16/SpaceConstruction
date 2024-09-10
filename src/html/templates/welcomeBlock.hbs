@@ -1,0 +1,24 @@
+<div class='welcome-block__container'>
+  <div class='welcome-block__items'>
+    <div class='welcome-block__item'>
+      <section class='welcome-block__path path-welcome-block'>
+        {{#each welcomeBlockData.pathItems}}
+
+          <a
+            class='path-welcome-block__item'
+            href='{{this.href}}'
+          >{{this.path}}</a>
+
+        {{/each}}
+      </section>
+    </div>
+
+    <div class='welcome-block__item'>
+      <div class='welcome-block__content'>
+        <h1 class='welcome-block__title'>{{welcomeBlockData.title}}</h1>
+
+        <p class='welcome-block__text'>{{welcomeBlockData.text}}</p>
+      </div>
+    </div>
+  </div>
+</div>

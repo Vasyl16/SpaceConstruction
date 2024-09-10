@@ -1,0 +1,229 @@
+.main {
+  margin-top: 92px;
+
+  margin-bottom: 60px;
+
+  @media (max-width: $fullPc) {
+    margin-bottom: $lgGap;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 70px;
+  }
+  @media (max-width: $mobile) {
+    margin-top: 60px;
+  }
+
+  &__prev-button {
+    aspect-ratio: 1/1;
+    width: 48px;
+    left: 33px;
+    background: $mainBgColor;
+    border-radius: 50%;
+    &::after {
+      content: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      aspect-ratio: 1/1;
+      width: 24px;
+      background: url('/img/pages/home/main/main-left-arrow.svg') 0 0 no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: $mobile) {
+      aspect-ratio: 1/1;
+      width: 40px;
+      height: 40px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__next-button {
+    aspect-ratio: 1/1;
+    width: 48px;
+    background: $mainBgColor;
+    border-radius: 50%;
+    right: 33px;
+    &::after {
+      content: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      aspect-ratio: 1/1;
+      width: 24px;
+      background: url('/img/pages/home/main/main-left-arrow.svg') 0 0 no-repeat;
+      background-size: contain;
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: $mobile) {
+      aspect-ratio: 1/1;
+      width: 40px;
+      height: 40px;
+      &::before {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__prev-button,
+  &__next-button {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__pagination {
+    top: 0;
+    left: 0;
+    color: $mainColor;
+    position: absolute;
+    bottom: 119px !important;
+    text-align: left;
+    margin-left: 15px;
+    @media (max-width: 1500px) {
+      text-align: center;
+      margin-left: 0;
+      bottom: 50px !important;
+    }
+    @media (max-width: $tablet) {
+    }
+
+    & .swiper-pagination-bullet {
+      position: relative;
+      background: $mainColor;
+      width: 178px;
+      border-radius: 2px;
+      height: 2px;
+      bottom: 0;
+      margin: 0 4px 0 0 !important;
+      @media (max-width: $tablet) {
+        width: 100px;
+      }
+      @media (max-width: $mobile) {
+        width: 80px;
+        margin-top: 40px !important;
+      }
+    }
+
+    & .swiper-pagination-bullet-number {
+      position: absolute;
+      top: -41px;
+      left: -6px;
+      font-size: clamp(18px, 28px, 2.4vw);
+      font-weight: 700;
+      line-height: 1.5px;
+      padding: 10px 5px;
+      @media (max-width: $mobile) {
+        top: -30px;
+      }
+    }
+  }
+}
+
+.items-main {
+  &__item {
+    background: url('/img/pages/home/main/main-bg-image.jpg') 0 0 no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding-top: 88px;
+    padding-bottom: 221px;
+    min-height: calc(100svh - 92px);
+    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $midGap;
+    @media (max-width: 1500px) {
+      margin: 0 auto;
+      padding-top: 40px;
+      padding-bottom: 100px;
+    }
+    @media (max-width: $tablet) {
+      min-height: calc(100svh - 70px);
+    }
+    @media (max-width: $mobile) {
+      min-height: calc(100svh - 60px);
+    }
+  }
+
+  &__title {
+    @include main-title;
+
+    &_m span {
+      color: $secondBgColor;
+    }
+
+    &_m {
+      color: $mainColor;
+    }
+  }
+
+  &__text {
+    @include main-text;
+    margin-top: 4px;
+    @media (max-width: $fullPc) {
+      margin-top: 0;
+    }
+
+    &_m {
+      color: $mainColor;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 21px;
+    margin-top: 42px;
+    flex-wrap: wrap;
+    @media (max-width: $fullPc) {
+      margin-top: $lgGap;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    @include main-button;
+
+    & {
+      color: $mainColor;
+      min-width: 224px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_m {
+      @include second-button;
+
+      min-width: 278px;
+    }
+  }
+
+  &__link {
+    padding: 10px 40px;
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 2;
+    width: 100%;
+  }
+}

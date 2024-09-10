@@ -1,0 +1,118 @@
+.project-goals {
+  margin-top: 1px;
+  margin-bottom: 100px;
+
+  @include section-main-gap;
+
+  &__body {
+    display: flex;
+    gap: $lgGap;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: $midGap;
+    }
+  }
+
+  &__column {
+    flex: 0 1 495px;
+    &_a {
+      display: flex;
+      flex-direction: column;
+      gap: 39px;
+      flex: 0 1 48.781%;
+      padding: 40px 0;
+      @media (max-width: $fullPc) {
+        padding: $lgGap;
+      }
+      @media (max-width: $tablet) {
+        padding: $midGap;
+      }
+      @media (max-width: $mobile) {
+        padding: 0;
+        gap: $midGap;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__title {
+    @include second-title;
+    text-align: left;
+  }
+
+  &__text {
+    @include second-text;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    @media (max-width: $mobile) {
+      gap: $smGap;
+    }
+  }
+}
+
+.info-projects-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 16.5px;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  max-width: 495px;
+  box-shadow: 0px 4px 49px -16px rgba(30, 33, 44, 0.3);
+  background: $mainBgColor;
+  border-radius: 3px;
+
+  @media (max-width: $fullPc) {
+    padding: $lgGap;
+  }
+  @media (max-width: $tablet) {
+    padding: $midGap;
+  }
+  @media (max-width: $mobile) {
+    max-width: none;
+  }
+
+  &__item {
+    display: flex;
+    gap: 32px;
+    @media (max-width: $mobileSmall) {
+      flex-direction: column;
+      gap: $smGap;
+    }
+  }
+
+  &__title {
+    min-width: 98px;
+    font-size: clamp(13px, 16px, 1.6vw);
+    font-weight: 700;
+    line-height: 1.6;
+    color: $thirdColor;
+    color: rgba(30, 33, 44, 1);
+    box-sizing: border-box;
+    text-transform: uppercase;
+  }
+
+  &__title-info {
+    @include third-text;
+    text-align: left;
+    max-width: 300px;
+    @media (max-width: $mobile) {
+      max-width: 200px;
+    }
+    @media (max-width: $mobileSmall) {
+      max-width: 300px;
+    }
+  }
+
+  &__text-info {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

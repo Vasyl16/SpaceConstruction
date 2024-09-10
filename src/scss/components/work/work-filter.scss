@@ -1,0 +1,212 @@
+.work-filter {
+  position: relative;
+  top: -59px;
+  @media (max-width: $fullPc) {
+    top: 0;
+  }
+  @include section-main-gap;
+}
+
+.items-work-filter {
+  display: flex;
+  column-gap: $midGap;
+  row-gap: 40px;
+  flex-wrap: wrap;
+  @media (max-width: $fullPc) {
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    flex: 1 0 210px;
+    align-items: center;
+    padding: 32px $smGap;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0px 4px 34px -11px rgba(30, 33, 44, 0.3);
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+    @media (max-width: $fullPc) {
+      flex: 0 0 200px;
+    }
+    @media (max-width: $mobile) {
+      padding: $midGap $smGap;
+      flex: 0 1 25%;
+      max-width: 200px;
+    }
+    @media (max-width: $mobileSmall) {
+      flex: 1 1 40%;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $mainBgColor;
+      z-index: -1;
+      border-radius: 3px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: $secondBgColor;
+      transition: all ease 0.3s;
+      z-index: -1;
+      border-radius: 3px;
+      transition: all ease 0.3s;
+    }
+
+    &:hover {
+      box-shadow: 0px 19px 101px -30px $secondBgColor;
+
+      &::after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .items-work-filter__text {
+        color: $mainColor;
+      }
+    }
+
+    &_1 {
+      .items-work-filter__img {
+        &::after {
+          background: url('/img/pages/work/work-filter/work-filter-icon-1.svg')
+            no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:hover {
+        .items-work-filter__img {
+          &::after {
+            background: url('/img/pages/work/work-filter/work-filter-icon-1-active.svg');
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+    &_2 {
+      .items-work-filter__img {
+        &::after {
+          background: url('/img/pages/work/work-filter/work-filter-icon-2.svg')
+            no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:hover {
+        .items-work-filter__img {
+          &::after {
+            background: url('/img/pages/work/work-filter/work-filter-icon-2-active.svg')
+              no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+    &_3 {
+      .items-work-filter__img {
+        &::after {
+          background: url('/img/pages/work/work-filter/work-filter-icon-3.svg')
+            no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:hover {
+        .items-work-filter__img {
+          &::after {
+            background: url('/img/pages/work/work-filter/work-filter-icon-3-active.svg')
+              no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+    &_4 {
+      .items-work-filter__img {
+        &::after {
+          background: url('/img/pages/work/work-filter/work-filter-icon-4.svg')
+            no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:hover {
+        .items-work-filter__img {
+          &::after {
+            background: url('/img/pages/work/work-filter/work-filter-icon-4-active.svg')
+              no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+    &_5 {
+      .items-work-filter__img {
+        &::after {
+          background: url('/img/pages/work/work-filter/work-filter-icon-5.svg')
+            no-repeat;
+          background-size: contain;
+        }
+      }
+
+      &:hover {
+        .items-work-filter__img {
+          &::after {
+            background: url('/img/pages/work/work-filter/work-filter-icon-5-active.svg')
+              no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+
+  &__img {
+    aspect-ratio: 1/1;
+    width: 48px;
+    position: relative;
+
+    &::after {
+      top: 0;
+      left: 0;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all ease 0.3s;
+    }
+
+    @media (max-width: $mobile) {
+      width: 35px;
+    }
+  }
+
+  &__text {
+    font-size: clamp(13px, 16px, 1.6vw);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(154, 156, 165, 1);
+    transition: all ease 0.3s;
+  }
+}

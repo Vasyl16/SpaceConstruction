@@ -1,0 +1,17 @@
+import '../scss/style.scss';
+
+import {
+  initBurgerMenu,
+  handleHeaderScroll,
+  initAllSpoilers,
+  initAllSwipers,
+  videoHandler,
+} from './modules';
+
+document.addEventListener('DOMContentLoaded', () => {
+  initBurgerMenu();
+  handleHeaderScroll();
+  initAllSpoilers();
+  initAllSwipers();
+  videoHandler();
+});

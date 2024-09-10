@@ -1,0 +1,41 @@
+<div class='client-fitback__container'>
+  <div class='client-fitback__items'>
+    <div
+      class='client-fitback__item client-fitback__item_s swiper swiper-client-fitback'
+    >
+      <div class='client-fitback__wrapper swiper-wrapper'>
+        {{#each clientFitbackData.items}}
+          <article class='client-fitback__body swiper-slide'>
+            <h1 class='client-fitback__title'>{{title}}</h1>
+
+            <div class='client-fitback__content'>
+              <img
+                alt='Client logo'
+                class='client-fitback__client-logo'
+                src='{{clientLogo}}'
+              />
+              <p class='client-fitback__message'>{{message}}</p>
+              <p class='client-fitback__name'>{{name}}</p>
+              <p class='client-fitback__position'>{{position}}</p>
+            </div>
+          </article>
+        {{/each}}
+      </div>
+
+      <div
+        class='client-fitback__prev-button swiper-button-prev swiper-client-fitback-button-prev'
+      ></div>
+      <div
+        class='client-fitback__next-button swiper-button-next swiper-client-fitback-button-next'
+      ></div>
+    </div>
+
+    <div class='client-fitback__item client-fitback__item_m'>
+      <img
+        alt='Client feedback image'
+        class='client-fitback__img'
+        src='{{clientFitbackData.imgSrc}}'
+      />
+    </div>
+  </div>
+</div>

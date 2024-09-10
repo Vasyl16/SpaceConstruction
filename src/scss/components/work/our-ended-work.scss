@@ -1,0 +1,110 @@
+.our-ended-work {
+  margin-top: 62px;
+  margin-bottom: 100px;
+
+  position: relative;
+  @include section-main-gap;
+
+  &__next-button,
+  &__prev-button {
+    @include main-arrow;
+
+    display: none;
+    top: 25px;
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__next-button {
+    right: 0;
+  }
+
+  &__prev-button {
+    right: 61px;
+    left: auto;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+
+  & .swiper-button-disabled {
+    @include main-arrow-disabled;
+  }
+}
+
+.items-our-ended-work {
+  @media (max-width: $mobile) {
+    padding-top: 80px;
+  }
+  @media (max-width: $mobileSmall) {
+    padding-top: 60px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    column-gap: $lgGap;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    @media (max-width: $mobile) {
+      justify-content: flex-start;
+      width: auto;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+  }
+
+  &__item {
+    width: auto;
+    flex: 0 1 31.708%;
+    @media (max-width: $fullPc) {
+      flex: 0 1 31%;
+    }
+    @media (max-width: $tablet) {
+      flex: 0 1 47.5%;
+    }
+    @media (max-width: $mobile) {
+      flex: none;
+    }
+  }
+
+  &__load-button-wrapper {
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $fullPc) {
+      margin-top: 40px;
+    }
+    @media (max-width: $tablet) {
+      margin-top: $lgGap;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__load-button {
+    padding-left: 40px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: $forthColor;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translate(0%, -50%);
+      left: 0;
+      aspect-ratio: 1/1;
+      width: 24px;
+      background: url('/img/pages/work/our-ended-works/our-ended-works-button-icon.svg')
+        0 0 no-repeat;
+    }
+  }
+}

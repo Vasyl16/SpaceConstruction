@@ -1,0 +1,149 @@
+.ceo-quote {
+  margin-top: 19px;
+  margin-bottom: 111px;
+
+  @include section-main-gap;
+
+  &__wrapper {
+    display: flex;
+    row-gap: $lgGap;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    flex: 1 1 auto;
+    &_i {
+      margin-top: 120px;
+      flex: 0 0 42.684%;
+      border-radius: 3px;
+      overflow: hidden;
+      @media (max-width: $mobile) {
+        margin-top: 0;
+        flex: none;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &_m {
+      position: relative;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(100% + 30px);
+    background-color: $mainBgColor;
+    gap: 51px;
+    left: -30px;
+    padding: 80px 105px 71px 135px;
+    box-shadow: 0px 4px 47px -15px rgba(30, 33, 44, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    @media (max-width: $fullPc) {
+      padding: 70px 70px 60px 100px;
+      max-width: none;
+      gap: 40px;
+      width: auto;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 50px 50px 50px 80px;
+      gap: $lgGap;
+    }
+
+    @media (max-width: $mobile) {
+      left: 0;
+      padding: $lgGap $lgGap $lgGap 70px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: clamp(350px, 580px, 70vh);
+    max-height: (50vw);
+    @media (max-width: $mobile) {
+      max-height: none;
+      height: clamp(250px, 350px, 50vw);
+      width: clamp(200px, 300px, 47vw);
+    }
+  }
+
+  &__quote {
+    font-size: clamp(13px, 20px, 1.8vw);
+    font-weight: 700;
+    line-height: 1.5;
+    color: $secondColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $lgGap;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0px;
+      left: -58px;
+      width: 28px;
+      height: 20px;
+      background: url('/img/pages/about/ceo-quote/ceo-quote-quot-icon.svg')
+        no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: $fullPc) {
+      gap: $midGap;
+    }
+
+    @media (max-width: $tablet) {
+      gap: $smGap;
+
+      &::after {
+        left: -40px;
+        width: 23px;
+        height: 17px;
+        top: 4px;
+      }
+    }
+  }
+}
+
+.info-ceo-quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $midGap;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__name {
+    font-size: clamp(13px, 16px, 1.6vw);
+    font-weight: 700;
+    line-height: 1.6;
+    color: $secondColor;
+  }
+
+  &__position {
+    @include forth-text;
+  }
+
+  &__sign {
+    width: 100px;
+    height: 68px;
+    object-fit: contain;
+    @media (max-width: $tablet) {
+      width: 80px;
+      height: 54px;
+    }
+  }
+}

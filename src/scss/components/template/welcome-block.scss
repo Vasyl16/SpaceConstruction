@@ -1,0 +1,148 @@
+.welcome-block {
+  position: relative;
+  padding-top: 92px;
+  margin-bottom: 60px;
+  min-height: 600px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @media (max-width: $fullPc) {
+    margin-bottom: $lgGap;
+    padding-top: 70px;
+    min-height: 450px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 60px;
+    min-height: 400px;
+  }
+  @media (max-width: $mobile) {
+    padding-top: 40px;
+    min-height: 280px;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 100%;
+    width: 50.7%;
+  }
+
+  &-service {
+    &::after {
+      content: '';
+      background: url('/img/templates/welcome-block/welcome-block-service-bg.png')
+        0 0 no-repeat;
+    }
+  }
+
+  &-interior-design {
+    &::after {
+      content: '';
+      background: url('/img/templates/welcome-block/welcome-block-interior-design-bg.png')
+        0 0 no-repeat;
+    }
+  }
+
+  &-work {
+    @media (min-width: $fullPc) {
+      margin-bottom: 0;
+    }
+    &::after {
+      content: '';
+      background: url('/img/templates/welcome-block/welcome-block-work-bg.png')
+        0 0 no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &-about {
+    &::after {
+      content: '';
+      background: url('/img/templates/welcome-block/welcome-block-interior-design-bg.png')
+        0 0 no-repeat;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: -15.5%;
+      height: 100%;
+      width: 50.7%;
+      background: url('/img/templates/welcome-block/welcome-block-about-bg.png')
+        0 0 no-repeat;
+      z-index: 1;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: flex-start;
+    padding: 61px 0;
+    gap: 40px;
+    @media (max-width: $fullPc) {
+      gap: $lgGap;
+      padding: 50px 0;
+    }
+    @media (max-width: $tablet) {
+      gap: $midGap;
+      padding: 40px 0;
+    }
+    @media (max-width: $mobile) {
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    @media (max-width: $tablet) {
+      gap: $midGap;
+    }
+  }
+
+  &__title {
+    @include main-title;
+  }
+
+  &__text {
+    @include main-text;
+  }
+}
+
+.path-welcome-block {
+  display: flex;
+  gap: 8px;
+  &__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $thirdColor;
+
+    position: relative;
+    padding-right: 15px;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 2px;
+      height: 15px;
+      width: 7px;
+      background: url('/img/templates/welcome-block/welcome-block-slash.svg') 0
+        0 no-repeat;
+      background-size: contain;
+    }
+
+    &:last-child {
+      color: rgba(154, 156, 165, 1);
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

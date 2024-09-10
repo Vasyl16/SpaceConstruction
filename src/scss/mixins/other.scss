@@ -1,0 +1,73 @@
+// other stuff
+
+// nav title
+@mixin nav-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  color: $forthColor;
+  white-space: nowrap;
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $mainHoverColor;
+  }
+}
+
+@mixin main-title-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 810px;
+  gap: 23px;
+
+  @media (max-width: $mobile) {
+    gap: $smGap;
+  }
+}
+
+@mixin section-main-gap {
+  @media (max-width: $fullPc) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: $lgGap;
+  }
+  @media (max-width: $mobile) {
+    margin-top: $midGap;
+  }
+}
+
+@mixin view-block {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  row-gap: $midGap;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet) {
+    margin-top: $smGap;
+    gap: $midGap;
+  }
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+
+@mixin title-content-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+  @media (max-width: $fullPc) {
+    gap: 40px;
+  }
+  @media (max-width: $tablet) {
+    gap: $lgGap;
+  }
+}

@@ -1,0 +1,21 @@
+<div class='core-values__container'>
+  <div class='core-values__body'>
+    <div class='core-values__info'>
+      <h1 class='core-values__title'>{{coreValuesData.title}}</h1>
+
+      <p class='core-values__text'>{{coreValuesData.missionText}}</p>
+    </div>
+
+    <div class='core-values__items items-core-values'>
+      {{#each coreValuesData.items}}
+        <article class='items-core-values__item'>
+          <img alt='img' class='items-core-values__img' src='{{imgSrc}}' />
+
+          <h1 class='items-core-values__title'>{{valueTitle}}</h1>
+
+          <p class='items-core-values__text'>{{valueText}}</p>
+        </article>
+      {{/each}}
+    </div>
+  </div>
+</div>
