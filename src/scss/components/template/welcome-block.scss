@@ -12,6 +12,10 @@
     min-height: 450px;
   }
 
+  @media (max-width: 1500px) {
+    padding-top: 75px;
+  }
+
   @media (max-width: $tablet) {
     padding-top: 60px;
     min-height: 400px;

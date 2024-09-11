@@ -2,6 +2,10 @@
   margin-top: 92px;
   padding-bottom: $lgGap;
   padding-top: 61px;
+
+  @media (max-width: 1500px) {
+    margin-top: 75px;
+  }
   @media (max-width: $fullPc) {
     margin-top: 70px;
   }
