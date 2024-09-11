@@ -1,0 +1,80 @@
+.work-worldwild {
+  margin-top: 111px;
+  margin-bottom: 90px;
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+
+    align-items: center;
+  }
+
+  &__info {
+    @include main-title-text-wrapper;
+  }
+
+  &__title {
+    @include second-title;
+  }
+
+  &__content {
+    aspect-ratio: 2.13/1;
+    width: 100%;
+    max-width: 1195px;
+    max-height: 72vh;
+    background: url('/public/img/pages/about/work-worldwide/work-worldwide-bg.png')
+      50% 0 no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+
+  &__icon {
+    aspect-ratio: 1/1;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+
+    @media (max-width: $tablet) {
+      width: 30px;
+    }
+    @media (max-width: $mobile) {
+      width: 20px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      width: 15px;
+    }
+
+    &_1 {
+      top: 19.7%;
+      left: 12.35%;
+    }
+
+    &_2 {
+      top: 36.6%;
+      left: 17.4%;
+    }
+
+    &_3 {
+      top: 27.5%;
+      left: 48.9%;
+    }
+
+    &_4 {
+      top: 29%;
+      left: 54.4%;
+    }
+
+    &_5 {
+      top: 40.3%;
+      left: 74.7%;
+    }
+
+    &_6 {
+      top: 74.1%;
+      left: 83%;
+    }
+    // top: 100px;
+    // left: 100px;
+  }
+}
