@@ -4,6 +4,7 @@ import { endedProjectContext } from './endedProjectContext';
 import { serviceContext } from './serviceContext';
 import { interiorDesignContext } from './interiorDesignContext';
 import { aboutContext } from './aboutContext';
+import { positionsContext } from './positionsContext';
 
 export {
   homeContext,
@@ -12,4 +13,5 @@ export {
   serviceContext,
   interiorDesignContext,
   aboutContext,
+  positionsContext,
 };

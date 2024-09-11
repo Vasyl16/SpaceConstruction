@@ -8,6 +8,7 @@ import {
   serviceContext,
   interiorDesignContext,
   aboutContext,
+  positionsContext,
 } from './src/js/hbs/context';
 
 import { getContext, ifContains } from './src/js/hbs/utils';
@@ -19,6 +20,7 @@ const contexts = {
   service: serviceContext,
   interiorDesign: interiorDesignContext,
   about: aboutContext,
+  positions: positionsContext,
 };
 
 export default defineConfig({
@@ -31,6 +33,7 @@ export default defineConfig({
         about: './src/html/pages/about/about.html',
         work: './src/html/pages/work/work.html',
         endedProject: './src/html/pages/work/endedProject.html',
+        positions: './src/html/pages/about/positions.html',
       },
     },
   },
