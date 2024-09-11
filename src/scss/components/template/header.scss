@@ -10,6 +10,9 @@
     height: 92px;
     top: 0;
     left: 0;
+    @media (max-width: 1500px) {
+      height: 75px;
+    }
     @media (max-width: $tablet) {
       height: 70px;
     }
@@ -21,13 +24,19 @@
   &_s {
     &::after {
       background: $mainBgColor;
+      box-shadow: 0px 4px 43px -6px rgba(30, 33, 44, 0.3);
     }
   }
 
   &_bg {
     &::after {
       background: $mainBgColor;
+      box-shadow: 0px 4px 43px -6px rgba(30, 33, 44, 0.3);
     }
+  }
+
+  @media (max-width: 1500px) {
+    height: 75px;
   }
 
   @media (max-width: $tablet) {
@@ -43,6 +52,9 @@
     height: 92px;
     align-items: center;
     transition: all ease 0.3s;
+    @media (max-width: 1500px) {
+      height: 75px;
+    }
     @media (max-width: 1200px) {
       gap: 85px;
     }
