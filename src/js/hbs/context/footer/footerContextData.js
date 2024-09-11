@@ -20,7 +20,7 @@ export const footerData = [
       },
       {
         name: 'Available Positions',
-        href: '/SpaceConstruction/src/html/pages/positions/positions.html',
+        href: '/SpaceConstruction/src/html/pages/about/positions.html',
       },
       {
         name: 'Contacts',
