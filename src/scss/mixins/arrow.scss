@@ -27,11 +27,13 @@
     background: rgb(255, 110, 73);
   }
 
-  @media (max-width: $tablet) {
-    width: 40px;
-    &::before {
-      width: 16px;
-      height: 11px;
+  & {
+    @media (max-width: $tablet) {
+      width: 40px;
+      &::before {
+        width: 16px;
+        height: 11px;
+      }
     }
   }
 }

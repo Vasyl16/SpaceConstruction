@@ -26,7 +26,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        service: './src/html/pages/service.html',
+        service: './src/html/pages/service/service.html',
+        interiorDesign: './src/html/pages/service/interiorDesign.html',
+        about: './src/html/pages/about/about.html',
+        work: './src/html/pages/work/work.html',
+        endedProject: './src/html/pages/work/endedProject.html',
       },
     },
   },
@@ -42,4 +46,6 @@ export default defineConfig({
       },
     }),
   ],
+
+  base: '/SpaceConstruction/',
 });

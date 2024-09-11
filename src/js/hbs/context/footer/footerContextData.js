@@ -14,21 +14,36 @@ export const footerData = [
   {
     title: 'WHO WE ARE',
     links: [
-      { name: 'About Us', href: '/src/html/pages/about/about.html' },
+      {
+        name: 'About Us',
+        href: '/SpaceConstruction/src/html/pages/about/about.html',
+      },
       {
         name: 'Available Positions',
-        href: '/src/html/pages/positions/positions.html',
+        href: '/SpaceConstruction/src/html/pages/positions/positions.html',
       },
-      { name: 'Contacts', href: '/src/html/pages/contact/contact.html' },
+      {
+        name: 'Contacts',
+        href: '/SpaceConstruction/src/html/pages/contact/contact.html',
+      },
     ],
   },
   {
     modifier: '_b',
     title: 'OUR EXPERIENCE',
     links: [
-      { name: 'Services', href: '/src/html/pages/service/service.html' },
-      { name: 'Work', href: '/src/html/pages/work/work.html' },
-      { name: 'News', href: '/src/html/pages/news/news.html' },
+      {
+        name: 'Services',
+        href: '/SpaceConstruction/src/html/pages/service/service.html',
+      },
+      {
+        name: 'Work',
+        href: '/SpaceConstruction/src/html/pages/work/work.html',
+      },
+      {
+        name: 'News',
+        href: '/SpaceConstruction/src/html/pages/news/news.html',
+      },
     ],
   },
 ];

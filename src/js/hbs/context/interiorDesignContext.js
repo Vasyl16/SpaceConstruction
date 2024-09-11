@@ -12,10 +12,13 @@ export const interiorDesignContext = {
     text: `Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.`,
     pathItems: [
       { path: 'Homepage', href: '/' },
-      { path: 'Services', href: '/src/html/pages/service/service.html' },
+      {
+        path: 'Services',
+        href: '/SpaceConstruction/src/html/pages/service/service.html',
+      },
       {
         path: 'InteriorDesign',
-        href: '/src/html/pages/service/interiorDesign.html',
+        href: '/SpaceConstruction/src/html/pages/service/interiorDesign.html',
       },
     ],
   },
