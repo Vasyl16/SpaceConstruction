@@ -6,7 +6,9 @@
   &__body {
     @include title-content-gap;
 
-    align-items: center;
+    & {
+      align-items: center;
+    }
   }
 
   &__info {
@@ -74,7 +76,5 @@
       top: 74.1%;
       left: 83%;
     }
-    // top: 100px;
-    // left: 100px;
   }
 }

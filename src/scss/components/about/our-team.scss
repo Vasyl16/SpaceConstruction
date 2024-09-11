@@ -62,14 +62,14 @@
 }
 
 .items-our-team {
+  width: 100%;
+
   @media (max-width: 700px) {
     padding-top: 80px;
   }
   @media (max-width: $mobileSmall) {
     padding-top: 60px;
   }
-
-  width: 100%;
 
   @media (max-width: 600px) {
     padding-top: 80px;
