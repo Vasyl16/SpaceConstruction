@@ -10,6 +10,10 @@
     margin-top: 90px;
   }
 
+  &-about {
+    margin-top: 30px;
+  }
+
   @include section-main-gap;
 
   @media (max-width: $fullPc) {
