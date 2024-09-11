@@ -178,6 +178,11 @@
   &__text {
     @include main-text;
     margin-top: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     @media (max-width: $fullPc) {
       margin-top: 0;
     }
@@ -210,20 +215,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 10px 40px;
+      box-sizing: border-box;
     }
 
     &_m {
       @include second-button;
 
+      &:hover {
+        background: none;
+        color: rgb(191, 191, 191);
+      }
+
       min-width: 278px;
     }
-  }
-
-  &__link {
-    padding: 10px 40px;
-    height: 100%;
-    box-sizing: border-box;
-    line-height: 2;
-    width: 100%;
   }
 }
