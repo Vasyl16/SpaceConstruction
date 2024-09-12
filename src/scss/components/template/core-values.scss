@@ -1,6 +1,11 @@
 .core-values {
   margin-top: 90px;
   margin-bottom: 90px;
+
+  &-positions {
+    margin-top: 81px;
+  }
+
   @include section-main-gap;
 
   &__body {

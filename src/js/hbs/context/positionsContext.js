@@ -29,7 +29,7 @@ export const positionsContext = {
 
     items: [
       {
-        imgSrc: '/img/templates/core-values/employee-benefits-img-2.svg',
+        imgSrc: '/img/templates/core-values/employee-benefits-img-1.svg',
         valueTitle: 'Training',
         valueText:
           'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.',
@@ -37,7 +37,7 @@ export const positionsContext = {
 
       {
         imgSrc: '/img/templates/core-values/employee-benefits-img-2.svg',
-        valueTitle: 'SafetyProfessional Growth',
+        valueTitle: 'Professional Growth',
         valueText:
           'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.',
       },
