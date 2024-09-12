@@ -5,8 +5,6 @@ const headerItems = document.querySelector('.header__items');
 const headerItemsActiveClass = 'header__items_a';
 const headerItemModified = document.querySelector('.header__item_m');
 const headerItemActiveClass = 'header__item_a';
-const wrapper = document.querySelector('.wrapper');
-const wrapperBlockClass = 'wrapper_b';
 
 const burgerItems = [
   {
@@ -25,15 +23,12 @@ const burgerItems = [
     item: headerItemModified,
     itemClassActive: headerItemActiveClass,
   },
-  {
-    item: wrapper,
-    itemClassActive: wrapperBlockClass,
-  },
 ];
 
 const removeClasses = (items) => {
   items.forEach((itemObj) => {
     itemObj.item.classList.remove(itemObj.itemClassActive);
+    document.body.style.overflow = document.body.style.overflow ? '' : 'hidden';
   });
 };
 
@@ -44,7 +39,7 @@ const toggleBurgerMenu = (items) => {
 };
 
 const burgerMenuFun = () => {
-  if (burger && burgerIcon && headerItems && headerItemModified && wrapper) {
+  if (burger && burgerIcon && headerItems && headerItemModified) {
     burger.removeEventListener('click', () => {
       toggleBurgerMenu(burgerItems);
     });
