@@ -28,11 +28,11 @@ const burgerItems = [
 const removeClasses = (items) => {
   items.forEach((itemObj) => {
     itemObj.item.classList.remove(itemObj.itemClassActive);
-    document.body.style.overflow = document.body.style.overflow ? '' : 'hidden';
   });
 };
 
 const toggleBurgerMenu = (items) => {
+  document.body.style.overflow = document.body.style.overflow ? '' : 'hidden';
   items.forEach((itemObj) => {
     itemObj.item.classList.toggle(itemObj.itemClassActive);
   });
