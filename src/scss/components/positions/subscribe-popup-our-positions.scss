@@ -49,14 +49,14 @@
     }
   }
 
-  &__cros-icon {
+  &__cross-button {
     position: absolute;
     content: '';
     top: 23px;
     right: 24px;
     aspect-ratio: 1/1;
     width: 24px;
-    object-fit: contain;
+    cursor: pointer;
 
     @media (max-width: $tablet) {
       top: 15px;
@@ -67,6 +67,12 @@
       top: 8px;
       right: 8px;
     }
+  }
+
+  &__cross-icon {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 
   &__title {
