@@ -14,6 +14,10 @@
     margin-top: 30px;
   }
 
+  &-positions {
+    margin-top: 89px;
+  }
+
   @include section-main-gap;
 
   @media (max-width: $fullPc) {
