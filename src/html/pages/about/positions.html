@@ -141,10 +141,13 @@
                 </p>
 
                 <div class="our-positions__buttons">
-                  <a class="our-positions__button-link">subscribe</a>
+                  <a
+                    class="our-positions__button-link our-positions__button-link_subscribe"
+                    >subscribe</a
+                  >
 
                   <a
-                    class="our-positions__button-link our-positions__button-link_m"
+                    class="our-positions__button-link our-positions__button-link_m our-positions__button-link_send"
                     >send cv</a
                   >
                 </div>
@@ -192,6 +195,101 @@
               </div>
 
               <button class="form-subscribe-popup-our-positions__button">
+                send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="send-popup-our-positions">
+        <div class="send-popup-our-positions__content">
+          <button class="send-popup-our-positions__cross-button">
+            <img
+              class="send-popup-our-positions__cros-icon"
+              src="/img/pages/positions/our-positions/popup-our-positions-cross-icon.svg"
+            />
+          </button>
+
+          <h1 class="send-popup-our-positions__title">Send your CV</h1>
+
+          <form
+            class="send-popup-our-positions__form form-send-popup-our-positions"
+          >
+            <div class="form-send-popup-our-positions__items">
+              <div class="form-send-popup-our-positions__item">
+                <label class="form-send-popup-our-positions__label"
+                  >Name*</label
+                >
+
+                <input
+                  placeholder="Your name"
+                  class="form-send-popup-our-positions__input"
+                />
+              </div>
+
+              <div class="form-send-popup-our-positions__item">
+                <label class="form-send-popup-our-positions__label"
+                  >Location*</label
+                >
+
+                <input
+                  placeholder="Choose your location"
+                  class="form-send-popup-our-positions__input"
+                />
+              </div>
+
+              <div class="form-send-popup-our-positions__item">
+                <label class="form-send-popup-our-positions__label"
+                  >Phone*
+                </label>
+
+                <input
+                  placeholder="Your phone number"
+                  class="form-send-popup-our-positions__input"
+                />
+              </div>
+
+              <div class="form-send-popup-our-positions__item">
+                <label class="form-send-popup-our-positions__label"
+                  >Email*</label
+                >
+
+                <input
+                  placeholder="Your working email"
+                  class="form-send-popup-our-positions__input"
+                />
+              </div>
+
+              <div class="form-send-popup-our-positions__item">
+                <label class="form-send-popup-our-positions__label"
+                  >Сovering letter</label
+                >
+
+                <textarea
+                  placeholder="Your covering letters"
+                  class="form-send-popup-our-positions__textarea"
+                ></textarea>
+              </div>
+
+              <div
+                class="form-send-popup-our-positions__item form-send-popup-our-positions__item_m"
+              >
+                <label
+                  for="file"
+                  class="form-send-popup-our-positions__label form-send-popup-our-positions__label_m"
+                  >Attach your CV*</label
+                >
+
+                <input
+                  type="file"
+                  id="file"
+                  placeholder="Your covering letters"
+                  class="form-send-popup-our-positions__attach-file"
+                />
+              </div>
+
+              <button class="form-send-popup-our-positions__button">
                 send
               </button>
             </div>

@@ -1,8 +1,13 @@
 const popupItems = [
   {
-    buttonClass: 'our-positions__button-link',
+    buttonClass: 'our-positions__button-link_subscribe',
     popupClass: 'subscribe-popup-our-positions',
     closeIconClass: 'subscribe-popup-our-positions__cros-icon',
+  },
+  {
+    buttonClass: 'our-positions__button-link_send',
+    popupClass: 'send-popup-our-positions',
+    closeIconClass: 'send-popup-our-positions__cros-icon',
   },
 ];
 
@@ -14,11 +19,21 @@ export const handlePopupItems = () => {
 
     if (button && popup && closeIcon) {
       button.addEventListener('click', () => {
-        popup.classList.add('subscribe-popup-our-positions_a');
+        const viewportHeight = window.innerHeight;
+        const popupHeight = popup.offsetHeight;
+
+        popup.classList.add(item.popupClass + '_a');
         document.body.style.overflow = 'hidden';
+
+        if (popupHeight > viewportHeight) {
+          popup.style.alignItems = 'flex-start';
+          popup.style.minHeight = 'auto';
+          popup.style.height = '100%';
+        } else {
+        }
       });
       closeIcon.addEventListener('click', () => {
-        popup.classList.remove('subscribe-popup-our-positions_a');
+        popup.classList.remove(item.popupClass + '_a');
         document.body.style.overflow = '';
       });
     }

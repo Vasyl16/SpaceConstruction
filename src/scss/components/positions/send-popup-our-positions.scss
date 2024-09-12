@@ -1,0 +1,164 @@
+.send-popup-our-positions {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+  background: rgba(30, 33, 44, 0.7);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+
+  &_a {
+    left: 0;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 486px;
+    background: $mainBgColor;
+    border-radius: 5px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      padding: 30px;
+
+      &::after {
+        top: 15px;
+        right: 15px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      padding: 20px;
+
+      &::after {
+        top: 8px;
+        right: 8px;
+      }
+    }
+  }
+
+  &__cross-button {
+    position: absolute;
+    content: '';
+    top: 23px;
+    right: 24px;
+    aspect-ratio: 1/1;
+    width: 24px;
+    cursor: pointer;
+
+    @media (max-width: $tablet) {
+      top: 15px;
+      right: 15px;
+    }
+
+    @media (max-width: $mobile) {
+      top: 8px;
+      right: 8px;
+    }
+  }
+
+  &__cross-icon {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    @include third-title;
+
+    @media (max-width: $tablet) {
+      max-width: 88%;
+    }
+  }
+}
+
+.form-send-popup-our-positions {
+  width: 100%;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: $midGap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    &_m {
+      align-items: flex-start;
+      margin-top: 6px;
+    }
+  }
+
+  &__label {
+    @include form-main-label;
+
+    &_m {
+      padding-left: 36px;
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        aspect-ratio: 1/1;
+        width: 24px;
+        background: url('/public/img/pages/positions/our-positions/popup-our-positions-attach-icon.svg')
+          0 0 no-repeat;
+        background-size: contain;
+      }
+
+      @media (max-width: $tablet) {
+        padding-left: 25px;
+        &::after {
+          width: 17px;
+        }
+      }
+    }
+  }
+
+  &__input {
+    @include from-main-input;
+  }
+
+  &__textarea {
+    @include from-main-textarea;
+    height: 86px;
+  }
+
+  &__attach-file {
+    display: none;
+  }
+
+  &__button {
+    @include main-button;
+
+    & {
+      margin-top: $midGap;
+      font-size: 14px;
+      height: 44px;
+
+      @media (max-width: $mobile) {
+        margin-top: $smGap;
+      }
+    }
+  }
+}
