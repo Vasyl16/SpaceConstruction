@@ -6,6 +6,7 @@ import {
   initAllSpoilers,
   initAllSwipers,
   videoHandler,
+  handlePopupItems,
 } from './modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initAllSpoilers();
   initAllSwipers();
   videoHandler();
+  handlePopupItems();
 });

@@ -1,6 +1,7 @@
 .our-positions {
   margin-top: 61px;
   margin-bottom: 100px;
+  position: relative;
 
   @include section-main-gap;
 
@@ -246,6 +247,123 @@
       @media (max-width: $mobile) {
         min-width: 120px;
         height: 35px;
+      }
+    }
+  }
+}
+
+.subscribe-popup-our-positions {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(30, 33, 44, 0.7);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+
+  &_a {
+    left: 0;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 486px;
+    background: $mainBgColor;
+    border-radius: 5px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      padding: 30px;
+
+      &::after {
+        top: 15px;
+        right: 15px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      padding: 20px;
+
+      &::after {
+        top: 8px;
+        right: 8px;
+      }
+    }
+  }
+
+  &__cros-icon {
+    position: absolute;
+    content: '';
+    top: 23px;
+    right: 24px;
+    aspect-ratio: 1/1;
+    width: 24px;
+    object-fit: contain;
+
+    @media (max-width: $tablet) {
+      top: 15px;
+      right: 15px;
+    }
+
+    @media (max-width: $mobile) {
+      top: 8px;
+      right: 8px;
+    }
+  }
+
+  &__title {
+    @include third-title;
+
+    @media (max-width: $tablet) {
+      max-width: 88%;
+    }
+  }
+}
+
+.form-subscribe-popup-our-positions {
+  width: 100%;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: $midGap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__label {
+    @include form-main-label;
+  }
+
+  &__input {
+    @include from-main-input;
+  }
+
+  &__button {
+    @include main-button;
+
+    & {
+      margin-top: $midGap;
+      font-size: 14px;
+      height: 44px;
+
+      @media (max-width: $mobile) {
+        margin-top: $smGap;
       }
     }
   }
