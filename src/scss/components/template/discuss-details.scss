@@ -85,10 +85,7 @@
   }
 
   &__label {
-    font-size: clamp(12px, 14px, 1.5vw);
-    font-weight: 400;
-    line-height: 1.6;
-    color: rgba(66, 69, 81, 1);
+    @include form-main-label;
 
     &_m {
       cursor: pointer;
@@ -96,26 +93,12 @@
   }
 
   &__input {
-    font-size: clamp(13px, 14px, 1.5vw);
-    font-weight: 400;
-    line-height: 1.6;
-    color: rgba(154, 156, 165, 1);
-    border: 1px solid rgba(215, 218, 221, 1);
-    border-radius: 5px;
-    padding: 10px 15px 9px;
-    background: rgba(244, 245, 246, 1);
+    @include from-main-input;
   }
 
   &__textarea {
-    font-size: clamp(13px, 14px, 1.5vw);
-    font-weight: 400;
-    line-height: 1.6;
-    color: rgba(154, 156, 165, 1);
-    border: 1px solid rgba(215, 218, 221, 1);
-    border-radius: 5px;
-    padding: 10px 15px 9px;
-    background: rgba(244, 245, 246, 1);
-    box-sizing: border-box;
+    @include from-main-textarea;
+
     height: 66px;
   }
 
