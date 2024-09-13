@@ -18,6 +18,10 @@
     margin-top: 89px;
   }
 
+  &-news {
+    margin-top: 87px;
+  }
+
   @include section-main-gap;
 
   @media (max-width: $fullPc) {
