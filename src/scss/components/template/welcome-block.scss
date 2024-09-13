@@ -124,6 +124,22 @@
     }
   }
 
+  &-contact {
+    @media (max-width: $fullPc) {
+      min-height: auto;
+    }
+    &::after {
+      content: '';
+      background: url('/img/templates/welcome-block/welcome-block-contact-bg.png')
+        0 0 no-repeat;
+      background-size: cover;
+      width: 46.875%;
+      @media (max-width: $mobile) {
+        content: none;
+      }
+    }
+  }
+
   &__items {
     display: flex;
     flex-direction: column;
