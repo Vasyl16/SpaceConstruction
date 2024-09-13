@@ -147,6 +147,7 @@
       display: inline-block;
       height: 44px;
       font-size: clamp(11px, 14px, 1.5vw);
+      padding: 0 10px;
 
       @media (max-width: $mobile) {
         min-width: 120px;

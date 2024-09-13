@@ -122,6 +122,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0 10px;
 
       @media (max-width: $fullPc) {
         margin-top: $smGap;
