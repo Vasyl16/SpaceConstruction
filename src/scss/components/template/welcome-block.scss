@@ -109,6 +109,9 @@
   }
 
   &-news {
+    @media (max-width: $fullPc) {
+      min-height: auto;
+    }
     &::after {
       content: '';
       background: url('/img/templates/welcome-block/welcome-block-news-bg.png')
