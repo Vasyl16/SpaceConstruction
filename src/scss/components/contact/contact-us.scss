@@ -1,0 +1,234 @@
+.contact-us {
+  margin-top: 62px;
+  margin-bottom: 100px;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+  }
+
+  &__info {
+    @include main-title-text-wrapper;
+  }
+
+  &__title {
+    @include second-title;
+  }
+
+  &__text {
+    @include second-text;
+  }
+}
+
+.content-contact-us {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  &__column {
+    flex: 0 1 600px;
+
+    &_i {
+      flex: 0 0 40.244%;
+
+      @media (max-width: $tablet) {
+        width: 90%;
+        max-width: 270px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 495/586;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  &__form {
+  }
+}
+
+.form-content-contact-us {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24.4px;
+    @media (max-width: $mobile) {
+      gap: $smGap;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+    @media (max-width: 550px) {
+      gap: $smGap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    gap: 8px;
+
+    &_t {
+      flex: 1 1 100%;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: 1 1 auto;
+    }
+  }
+
+  &__label {
+    @include form-main-label;
+    font-size: clamp(12px, 16px, 1.5vw);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    gap: 25px;
+    margin-top: 13px;
+    flex-wrap: wrap;
+  }
+
+  &__radio {
+    display: none;
+    &:checked + .form-content-contact-us__custom-radio-circle {
+      display: none;
+    }
+  }
+
+  &__custom-radio-circle {
+    position: absolute;
+    content: '';
+    top: 46%;
+    left: 0;
+    transform: translate(0, -50%);
+    aspect-ratio: 1/1;
+    width: 14px;
+    border-radius: 50%;
+    border: solid 1px $secondBgColor;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: $secondBgColor;
+      border-radius: 50%;
+    }
+  }
+
+  &__label-radio {
+    position: relative;
+    padding-left: 28px;
+    @include form-main-label;
+    font-size: clamp(12px, 16px, 1.5vw);
+    cursor: pointer;
+  }
+
+  &__input {
+    @include from-main-input;
+    font-size: clamp(13px, 16px, 1.5vw);
+    height: 52px;
+    padding: 10px 15px;
+  }
+
+  &__textarea {
+    @include from-main-textarea;
+    font-size: clamp(13px, 16px, 1.5vw);
+    height: 128px;
+    padding-top: 13px;
+  }
+
+  &__radio:checked + &__label-radio {
+    .form-content-contact-us__custom-radio-circle {
+      &::after {
+        width: 8px;
+        height: 8px;
+        left: 3px;
+        top: 3px;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 17px;
+    display: flex;
+    gap: $midGap;
+    justify-content: space-between;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+
+  &__checkbox-wrapeper {
+    flex: 0 1 54%;
+    display: flex;
+    gap: 12px;
+    @media (max-width: $tablet) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__checkbox {
+    margin-top: 3px;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    height: 16px;
+    border: 1px solid $secondBgColor;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      aspect-ratio: 1/1;
+      background: url('/public/img/pages/contact/contact-us/form-contact-us-check-icon.svg')
+        0 0 no-repeat;
+      width: 10px;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      display: none;
+    }
+
+    &:checked {
+      background: $secondBgColor;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    @include main-button;
+    padding: 10px;
+    height: 52px;
+    white-space: nowrap;
+    min-width: 210px;
+    @media (max-width: $mobile) {
+      height: 40px;
+    }
+  }
+}
