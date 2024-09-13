@@ -6,6 +6,7 @@ import { interiorDesignContext } from './interiorDesignContext';
 import { aboutContext } from './aboutContext';
 import { positionsContext } from './positionsContext';
 import { newsContext } from './newsContext';
+import { contactContext } from './contactContext';
 
 export {
   homeContext,
@@ -16,4 +17,5 @@ export {
   aboutContext,
   positionsContext,
   newsContext,
+  contactContext,
 };
