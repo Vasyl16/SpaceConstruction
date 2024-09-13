@@ -160,6 +160,8 @@
   &__img {
     aspect-ratio: 600/306;
     width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
