@@ -220,12 +220,6 @@
     font-weight: 700;
     line-height: 1.2;
     white-space: nowrap;
-    transition: all ease 0.3s;
-    cursor: pointer;
-
-    &:hover {
-      color: $mainHoverColor;
-    }
   }
 
   &__comm-way {
