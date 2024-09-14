@@ -1,0 +1,176 @@
+.our-offices {
+  margin-top: 100px;
+  margin-bottom: 100px !important;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+  }
+
+  &__info {
+    @include main-title-text-wrapper;
+  }
+
+  &__title {
+    @include second-title;
+  }
+
+  &__text {
+    @include second-text;
+  }
+}
+
+.items-our-offices {
+  display: flex;
+  column-gap: 120px;
+
+  @media (max-width: $fullPc) {
+    column-gap: 60px;
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet) {
+    row-gap: 40px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: $mobile) {
+    gap: $lgGap;
+  }
+
+  &__item {
+    padding-right: 120px;
+    flex: 0 1 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background: linear-gradient(
+        270.01deg,
+        rgba(218, 219, 221, 0) 0%,
+        rgba(218, 219, 221, 0.5) 12.33%,
+        #dadbdd 51.91%,
+        rgba(218, 219, 221, 0.5) 87.85%,
+        rgba(218, 219, 221, 0) 100%
+      );
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width: $fullPc) {
+      padding-right: 60px;
+    }
+
+    @media (max-width: $tablet) {
+      padding-right: 0;
+      gap: $smGap;
+      flex: 0 1 43%;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width: 500px) {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__title {
+    @include third-title;
+    text-align: left;
+  }
+
+  &__location-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $smGap;
+    align-items: flex-start;
+  }
+
+  &__location-text {
+    @include third-text;
+
+    text-align: left;
+    color: $secondColor;
+  }
+
+  &__location-link {
+    @include third-text;
+
+    text-align: left;
+    color: $secondBgColor;
+    line-height: 1;
+    white-space: nowrap;
+    position: relative;
+    transition: all ease 0.3s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $secondBgColor;
+    }
+
+    &:hover {
+      color: rgb(255, 141, 113);
+
+      &::after {
+        background: rgb(255, 141, 113);
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 3px;
+  }
+}
+
+.info-items-our-offices {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  &__link {
+    @include third-text;
+
+    text-align: left;
+    line-height: 1;
+    white-space: nowrap;
+    color: $secondColor;
+
+    & span {
+      color: $thirdColor;
+    }
+  }
+
+  &__schedule {
+    @include third-text;
+
+    text-align: left;
+    line-height: 1;
+    white-space: nowrap;
+    color: $secondColor;
+
+    & span {
+      color: $thirdColor;
+    }
+  }
+}

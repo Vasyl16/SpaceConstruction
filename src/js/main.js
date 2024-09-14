@@ -7,6 +7,8 @@ import {
   initAllSwipers,
   videoHandler,
   handlePopupItems,
+  scrollToBlockFun,
+  handleScrollOnRedirect,
 } from './modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,4 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAllSwipers();
   videoHandler();
   handlePopupItems();
+  scrollToBlockFun();
+  handleScrollOnRedirect();
 });

@@ -4,6 +4,7 @@ import { initAllSpoilers } from './spoiler';
 import { initAllSwipers } from './swiper';
 import { videoHandler } from './videoHandler';
 import { handlePopupItems } from './popup';
+import { scrollToBlockFun, handleScrollOnRedirect } from './scrollToBlock';
 
 export {
   initBurgerMenu,
@@ -12,4 +13,6 @@ export {
   initAllSwipers,
   videoHandler,
   handlePopupItems,
+  scrollToBlockFun,
+  handleScrollOnRedirect,
 };
