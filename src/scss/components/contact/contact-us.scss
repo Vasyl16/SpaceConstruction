@@ -41,6 +41,10 @@
         margin: 0 auto;
       }
     }
+
+    @media (max-width: $tablet) {
+      flex: none;
+    }
   }
 
   &__image {
