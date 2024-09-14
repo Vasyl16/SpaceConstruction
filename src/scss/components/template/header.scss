@@ -129,7 +129,7 @@
     display: block;
     @media (max-width: 1200px) {
       position: fixed;
-      top: 36px;
+      top: 28px;
       z-index: 10;
       left: 20px;
     }
@@ -245,12 +245,13 @@
 .burger-header {
   position: fixed;
   right: 13px;
-  top: 36px;
+  top: 28px;
   width: 30px;
   height: 18px;
   display: flex;
   align-items: center;
   z-index: 10;
+
   @media (max-width: $tablet) {
     top: 26px;
   }
