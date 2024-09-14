@@ -11,411 +11,416 @@
       {{> header headerData=this.headerData }}
     </header>
 
-    <main class="welcome-block welcome-block-interior-design">
-      {{> welcomeBlock welcomeBlockData=this.welcomeBlockData }}
+    <main>
+      <section class="welcome-block welcome-block-interior-design">
+        {{> welcomeBlock welcomeBlockData=this.welcomeBlockData }}
+      </section>
+
+      <section class="we-offer">
+        <div class="we-offer__container">
+          <div class="we-offer__items">
+            <div class="we-offer__item we-offer__item_i">
+              <img class="we-offer__img" src="/img/pages/interiorDesign/we-offer/we-offer-img.jpg" />
+            </div>
+
+            <div class="we-offer__item">
+              <div class="we-offer__body">
+                <h1 class="we-offer__title">We offer</h1>
+                <div class="we-offer__items items-we-offer">
+                  <section class="items-we-offer__item spoiler-we-offer spoiler-we-offer_a">
+                    <h1 class="items-we-offer__title spoiler-we-offer-title spoiler-we-offer-title_a">
+                      Interior design of apartments
+                    </h1>
+
+                    <p
+                      class="items-we-offer__text spoiler-we-offer-content_active spoiler-we-offer-content spoiler-we-offer-content_a">
+                      Adipiscing nunc arcu enim elit mattis eu placerat proin.
+                      Imperdiet elementum faucibus dignissim purus. Fusce
+                      parturient diam magna ullamcorper morbi semper massa ac
+                      facilisis.
+                    </p>
+                  </section>
+
+                  <section class="items-we-offer__item spoiler-we-offer">
+                    <h1 class="items-we-offer__title spoiler-we-offer-title">
+                      Interior design of private houses
+                    </h1>
+
+                    <p class="items-we-offer__text spoiler-we-offer-content">
+                      Adipiscing nunc arcu enim elit mattis eu placerat proin.
+                      Imperdiet elementum faucibus dignissim purus. Fusce
+                      parturient diam magna ullamcorper morbi semper massa ac
+                      facilisis.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-we-do">
+        <div class="how-we-do__container">
+          <div class="how-we-do__body">
+            <h1 class="how-we-do__title">That’s how we do it</h1>
+            <div class="how-we-do__items items-how-we-do">
+              <section class="items-how-we-do__item">
+                <p class="items-how-we-do__step"><span></span> 01</p>
+
+                <h1 class="items-how-we-do__title">Work Estimate</h1>
+
+                <p class="items-how-we-do__text">
+                  Culpa nostrud commodo ea consequat aliquip reprehenderit.
+                </p>
+              </section>
+
+              <section class="items-how-we-do__item">
+                <p class="items-how-we-do__step"><span></span>02</p>
+
+                <h1 class="items-how-we-do__title">Contract</h1>
+
+                <p class="items-how-we-do__text">
+                  Laoreet ultrices curabitur luctus quisque consequat. Leo lorem
+                  velit imperdiet auctor et tempor.
+                </p>
+              </section>
+
+              <section class="items-how-we-do__item">
+                <p class="items-how-we-do__step"><span></span>03</p>
+
+                <h1 class="items-how-we-do__title">Mobilization</h1>
+
+                <p class="items-how-we-do__text">
+                  Odio massa scelerisque purus arcu sed velit eleifend cursus
+                  leo.
+                </p>
+              </section>
+
+              <section class="items-how-we-do__item">
+                <p class="items-how-we-do__step">04</p>
+
+                <h1 class="items-how-we-do__title">Construction Work</h1>
+
+                <p class="items-how-we-do__text">
+                  Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore
+                  dolore et ad et veniam ad deserunt.
+                </p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__container">
+          <div class="benefits__body">
+            <div class="benefits__info">
+              <h1 class="benefits__title">Our benefits</h1>
+
+              <p class="benefits__text">
+                Our mission is to set the highest standards for construction
+                sphere.
+              </p>
+            </div>
+
+            <div class="benefits__items items-benefits">
+              <article class="items-benefits__item">
+                <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-1.svg"
+                  alt="img" />
+
+                <h1 class="items-benefits__title">Fixed Terms & Cost</h1>
+
+                <p class="items-benefits__text">
+                  Culpa nostrud commodo ea consequat aliquip reprehenderit.
+                  Veniam velit nostrud aliquip sunt.
+                </p>
+              </article>
+
+              <article class="items-benefits__item">
+                <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-2.svg"
+                  alt="img" />
+
+                <h1 class="items-benefits__title">Qualified Workers</h1>
+
+                <p class="items-benefits__text">
+                  Anim reprehenderit sint voluptate exercitation adipisicing
+                  laborum adipisicing. Minim empor est ea.
+                </p>
+              </article>
+
+              <article class="items-benefits__item">
+                <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-3.svg"
+                  alt="img" />
+
+                <h1 class="items-benefits__title">Supervision & Control</h1>
+
+                <p class="items-benefits__text">
+                  Sit veniam aute dolore adipisicing nulla sit culpa. Minim
+                  mollit voluptate ullamco proident ea ad.
+                </p>
+              </article>
+            </div>
+
+            <div class="benefits__button-wrapper">
+              <button class="benefits__button">Discuss a project</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-projects our-projects-interior-design">
+        {{> ourProjects ourProjectsData=this.ourProjectsData}}
+      </section>
+
+      <section class="pricing">
+        <div class="pricing__container">
+          <div class="pricing__body">
+            <div class="pricing__info">
+              <h1 class="pricing__title">Pricing</h1>
+
+              <p class="pricing__text">
+                We offer you three categories of construction.
+              </p>
+            </div>
+
+            <div class="pricing__content">
+              <div class="pricing__table table-pricing swiper-table-pricing">
+                <div class="table-pricing__row table-pricing__row_m">
+                  <div class="table-pricing__item-start">
+                    <p class="table-pricing__item-text">Items</p>
+                  </div>
+
+                  <div class="table-pricing__config-wrapper">
+                    <p class="table-pricing__config-name">BASIC</p>
+
+                    <p class="table-pricing__config-measure">$20 per m2</p>
+                  </div>
+
+                  <div class="table-pricing__config-wrapper">
+                    <p class="table-pricing__config-name">STANDARD</p>
+
+                    <p class="table-pricing__config-measure">$30 per m2</p>
+                  </div>
+
+                  <div class="table-pricing__config-wrapper">
+                    <p class="table-pricing__config-name">BUSINESS</p>
+
+                    <p class="table-pricing__config-measure">$40 per m2</p>
+                  </div>
+                </div>
+
+                <div class="table-pricing__row table-pricing__row_bg">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">
+                      Installation plan
+                    </p>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">
+                      Planning solutions (2-3 options)
+                    </p>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row table-pricing__row_bg">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">Lighting plan</p>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">Flooring plan</p>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row table-pricing__row_bg">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">
+                      Heating floor laying scheme
+                    </p>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">
+                      Air conditioner zones layout
+                    </p>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row table-pricing__row_bg">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">
+                      3D visualization of all rooms
+                    </p>
+                  </div>
+
+                  <p class="table-pricing__item">simplified</p>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">
+                      Visualization of each room (3-4 angles)
+                    </p>
+                  </div>
+
+                  <div class="table-pricing__item"></div>
+
+                  <div class="table-pricing__item"></div>
+
+                  <div class="table-pricing__item">
+                    <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
+                      alt="check" />
+                  </div>
+                </div>
+
+                <div class="table-pricing__row table-pricing__row_bg">
+                  <div class="table-pricing__item-name">
+                    <p class="table-pricing__item-name-text">Terms</p>
+                  </div>
+
+                  <p class="table-pricing__item">10 days</p>
+
+                  <p class="table-pricing__item">20 days</p>
+
+                  <p class="table-pricing__item">30 days</p>
+                </div>
+
+                <div class="table-pricing__row table-pricing__row_b">
+                  <div class="table-pricing__item-name"></div>
+
+                  <div class="table-pricing__item">
+                    <button class="table-pricing__button">send request</button>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <button class="table-pricing__button">send request</button>
+                  </div>
+
+                  <div class="table-pricing__item">
+                    <button class="table-pricing__button">send request</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="supported-partners supported-partners-interior-design">
+        {{> supportedPartners supportedPartnersData=this.supportedPartnersData
+        }}
+      </section>
+
+      <section class="discuss-details">{{> discussDetails }}</section>
     </main>
-
-    <section class="we-offer">
-      <div class="we-offer__container">
-        <div class="we-offer__items">
-          <div class="we-offer__item we-offer__item_i">
-            <img class="we-offer__img" src="/img/pages/interiorDesign/we-offer/we-offer-img.jpg" />
-          </div>
-
-          <div class="we-offer__item">
-            <div class="we-offer__body">
-              <h1 class="we-offer__title">We offer</h1>
-              <div class="we-offer__items items-we-offer">
-                <section class="items-we-offer__item spoiler-we-offer spoiler-we-offer_a">
-                  <h1 class="items-we-offer__title spoiler-we-offer-title spoiler-we-offer-title_a">
-                    Interior design of apartments
-                  </h1>
-
-                  <p
-                    class="items-we-offer__text spoiler-we-offer-content_active spoiler-we-offer-content spoiler-we-offer-content_a">
-                    Adipiscing nunc arcu enim elit mattis eu placerat proin.
-                    Imperdiet elementum faucibus dignissim purus. Fusce
-                    parturient diam magna ullamcorper morbi semper massa ac
-                    facilisis.
-                  </p>
-                </section>
-
-                <section class="items-we-offer__item spoiler-we-offer">
-                  <h1 class="items-we-offer__title spoiler-we-offer-title">
-                    Interior design of private houses
-                  </h1>
-
-                  <p class="items-we-offer__text spoiler-we-offer-content">
-                    Adipiscing nunc arcu enim elit mattis eu placerat proin.
-                    Imperdiet elementum faucibus dignissim purus. Fusce
-                    parturient diam magna ullamcorper morbi semper massa ac
-                    facilisis.
-                  </p>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-we-do">
-      <div class="how-we-do__container">
-        <div class="how-we-do__body">
-          <h1 class="how-we-do__title">That’s how we do it</h1>
-          <div class="how-we-do__items items-how-we-do">
-            <section class="items-how-we-do__item">
-              <p class="items-how-we-do__step"><span></span> 01</p>
-
-              <h1 class="items-how-we-do__title">Work Estimate</h1>
-
-              <p class="items-how-we-do__text">
-                Culpa nostrud commodo ea consequat aliquip reprehenderit.
-              </p>
-            </section>
-
-            <section class="items-how-we-do__item">
-              <p class="items-how-we-do__step"><span></span>02</p>
-
-              <h1 class="items-how-we-do__title">Contract</h1>
-
-              <p class="items-how-we-do__text">
-                Laoreet ultrices curabitur luctus quisque consequat. Leo lorem
-                velit imperdiet auctor et tempor.
-              </p>
-            </section>
-
-            <section class="items-how-we-do__item">
-              <p class="items-how-we-do__step"><span></span>03</p>
-
-              <h1 class="items-how-we-do__title">Mobilization</h1>
-
-              <p class="items-how-we-do__text">
-                Odio massa scelerisque purus arcu sed velit eleifend cursus
-                leo.
-              </p>
-            </section>
-
-            <section class="items-how-we-do__item">
-              <p class="items-how-we-do__step">04</p>
-
-              <h1 class="items-how-we-do__title">Construction Work</h1>
-
-              <p class="items-how-we-do__text">
-                Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore
-                dolore et ad et veniam ad deserunt.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="benefits">
-      <div class="benefits__container">
-        <div class="benefits__body">
-          <div class="benefits__info">
-            <h1 class="benefits__title">Our benefits</h1>
-
-            <p class="benefits__text">
-              Our mission is to set the highest standards for construction
-              sphere.
-            </p>
-          </div>
-
-          <div class="benefits__items items-benefits">
-            <article class="items-benefits__item">
-              <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-1.svg" alt="img" />
-
-              <h1 class="items-benefits__title">Fixed Terms & Cost</h1>
-
-              <p class="items-benefits__text">
-                Culpa nostrud commodo ea consequat aliquip reprehenderit.
-                Veniam velit nostrud aliquip sunt.
-              </p>
-            </article>
-
-            <article class="items-benefits__item">
-              <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-2.svg" alt="img" />
-
-              <h1 class="items-benefits__title">Qualified Workers</h1>
-
-              <p class="items-benefits__text">
-                Anim reprehenderit sint voluptate exercitation adipisicing
-                laborum adipisicing. Minim empor est ea.
-              </p>
-            </article>
-
-            <article class="items-benefits__item">
-              <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-3.svg" alt="img" />
-
-              <h1 class="items-benefits__title">Supervision & Control</h1>
-
-              <p class="items-benefits__text">
-                Sit veniam aute dolore adipisicing nulla sit culpa. Minim
-                mollit voluptate ullamco proident ea ad.
-              </p>
-            </article>
-          </div>
-
-          <div class="benefits__button-wrapper">
-            <button class="benefits__button">Discuss a project</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="our-projects our-projects-interior-design">
-      {{> ourProjects ourProjectsData=this.ourProjectsData}}
-    </section>
-
-    <section class="pricing">
-      <div class="pricing__container">
-        <div class="pricing__body">
-          <div class="pricing__info">
-            <h1 class="pricing__title">Pricing</h1>
-
-            <p class="pricing__text">
-              We offer you three categories of construction.
-            </p>
-          </div>
-
-          <div class="pricing__content">
-            <div class="pricing__table table-pricing swiper-table-pricing">
-              <div class="table-pricing__row table-pricing__row_m">
-                <div class="table-pricing__item-start">
-                  <p class="table-pricing__item-text">Items</p>
-                </div>
-
-                <div class="table-pricing__config-wrapper">
-                  <p class="table-pricing__config-name">BASIC</p>
-
-                  <p class="table-pricing__config-measure">$20 per m2</p>
-                </div>
-
-                <div class="table-pricing__config-wrapper">
-                  <p class="table-pricing__config-name">STANDARD</p>
-
-                  <p class="table-pricing__config-measure">$30 per m2</p>
-                </div>
-
-                <div class="table-pricing__config-wrapper">
-                  <p class="table-pricing__config-name">BUSINESS</p>
-
-                  <p class="table-pricing__config-measure">$40 per m2</p>
-                </div>
-              </div>
-
-              <div class="table-pricing__row table-pricing__row_bg">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">
-                    Installation plan
-                  </p>
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">
-                    Planning solutions (2-3 options)
-                  </p>
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row table-pricing__row_bg">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">Lighting plan</p>
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">Flooring plan</p>
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row table-pricing__row_bg">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">
-                    Heating floor laying scheme
-                  </p>
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">
-                    Air conditioner zones layout
-                  </p>
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row table-pricing__row_bg">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">
-                    3D visualization of all rooms
-                  </p>
-                </div>
-
-                <p class="table-pricing__item">simplified</p>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">
-                    Visualization of each room (3-4 angles)
-                  </p>
-                </div>
-
-                <div class="table-pricing__item"></div>
-
-                <div class="table-pricing__item"></div>
-
-                <div class="table-pricing__item">
-                  <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                    alt="check" />
-                </div>
-              </div>
-
-              <div class="table-pricing__row table-pricing__row_bg">
-                <div class="table-pricing__item-name">
-                  <p class="table-pricing__item-name-text">Terms</p>
-                </div>
-
-                <p class="table-pricing__item">10 days</p>
-
-                <p class="table-pricing__item">20 days</p>
-
-                <p class="table-pricing__item">30 days</p>
-              </div>
-
-              <div class="table-pricing__row table-pricing__row_b">
-                <div class="table-pricing__item-name"></div>
-
-                <div class="table-pricing__item">
-                  <button class="table-pricing__button">send request</button>
-                </div>
-
-                <div class="table-pricing__item">
-                  <button class="table-pricing__button">send request</button>
-                </div>
-
-                <div class="table-pricing__item">
-                  <button class="table-pricing__button">send request</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="supported-partners supported-partners-interior-design">
-      {{> supportedPartners supportedPartnersData=this.supportedPartnersData
-      }}
-    </section>
-
-    <section class="discuss-details">{{> discussDetails }}</section>
 
     <footer class="footer">{{> footer footerData=this.footerData }}</footer>
   </div>
