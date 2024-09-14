@@ -245,6 +245,7 @@
   display: flex;
   align-items: center;
   z-index: 10;
+  cursor: pointer;
 
   @media (max-width: $tablet) {
     top: 26px;
