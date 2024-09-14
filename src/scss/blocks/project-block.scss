@@ -8,7 +8,7 @@
   transition: all ease 0.3s;
   border-radius: 3px;
   overflow: hidden;
-  height: auto;
+  height: 100%;
   @media (max-width: $tablet) {
     width: 47.5% !important;
     padding-bottom: $smGap;
