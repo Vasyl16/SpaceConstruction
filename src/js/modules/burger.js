@@ -53,19 +53,14 @@ const toogleClasses = (items) => {
 };
 
 const toggleBurgerMenu = () => {
-  try {
-    const body = document.body;
+  const body = document.body;
 
-    body.classList.contains('block-scroll')
-      ? blockScroll(false)
-      : blockScroll(true);
+  body.classList.contains('block-scroll')
+    ? blockScroll(false)
+    : blockScroll(true);
 
-    toogleClasses(burgerItems);
-  } catch (error) {
-    console.error('some element is not valid', error.message);
-  }
+  toogleClasses(burgerItems);
 };
-
 const burgerMenuFun = () => {
   burger.removeEventListener('click', toggleBurgerMenu);
 
