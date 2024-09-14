@@ -5,7 +5,7 @@
   left: -100%;
   width: 100%;
   min-height: 100%;
-  z-index: 1000;
+  z-index: 100;
   background: rgba(30, 33, 44, 0.7);
   justify-content: center;
   align-items: center;
@@ -16,6 +16,12 @@
 
   &_a {
     left: 0;
+  }
+
+  &_small-height {
+    min-height: auto;
+    height: 100%;
+    align-items: flex-start;
   }
 
   &__content {
