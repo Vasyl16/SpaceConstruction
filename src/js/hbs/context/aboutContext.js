@@ -13,7 +13,7 @@ export const aboutContext = {
       { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'About us',
-        href: '/SpaceConstruction/src/html/pages/about/about.html',
+        href: '/SpaceConstruction/pages/about/about.html',
       },
     ],
   },

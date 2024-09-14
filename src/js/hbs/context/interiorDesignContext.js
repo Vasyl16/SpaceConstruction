@@ -14,11 +14,11 @@ export const interiorDesignContext = {
       { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'Services',
-        href: '/SpaceConstruction/src/html/pages/service/service.html',
+        href: '/SpaceConstruction/pages/service/service.html',
       },
       {
         path: 'InteriorDesign',
-        href: '/SpaceConstruction/src/html/pages/service/interiorDesign.html',
+        href: '/SpaceConstruction/pages/service/interiorDesign.html',
       },
     ],
   },

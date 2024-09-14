@@ -13,11 +13,11 @@ export const positionsContext = {
       { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'About us',
-        href: '/SpaceConstruction/src/html/pages/about/about.html',
+        href: '/SpaceConstruction/pages/about/about.html',
       },
       {
         path: 'Available Positions',
-        href: '/SpaceConstruction/src/html/pages/about/positions.html',
+        href: '/SpaceConstruction/pages/about/positions.html',
       },
     ],
   },

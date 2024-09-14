@@ -15,7 +15,7 @@ export const workContext = {
       { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'Work',
-        href: '/SpaceConstruction/src/html/pages/work/work.html',
+        href: '/SpaceConstruction/pages/work/work.html',
       },
     ],
   },

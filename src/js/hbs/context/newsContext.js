@@ -14,7 +14,7 @@ export const newsContext = {
       { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'News',
-        href: '/SpaceConstruction/src/html/pages/news/news.html',
+        href: '/SpaceConstruction/pages/news/news.html',
       },
     ],
   },

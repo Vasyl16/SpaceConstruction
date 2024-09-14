@@ -14,7 +14,7 @@ export const contactContext = {
       { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'Contacts',
-        href: '/SpaceConstruction/src/html/pages/contact/contact.html',
+        href: '/SpaceConstruction/pages/contact/contact.html',
       },
     ],
   },

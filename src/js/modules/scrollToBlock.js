@@ -2,7 +2,7 @@ import { scrollFun } from './scrollButton';
 
 const scrollToBlockItems = [
   {
-    redirectPath: '/SpaceConstruction/src/html/pages/about/about.html',
+    redirectPath: '/SpaceConstruction/pages/about/about.html',
     scrollButton: '.items-our-offices__location-link',
     scrollToBlock: '.work-worldwild',
   },
