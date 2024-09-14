@@ -227,12 +227,15 @@
 
   &__button {
     @include main-button;
-    padding: 10px;
-    height: 52px;
-    white-space: nowrap;
-    min-width: 210px;
-    @media (max-width: $mobile) {
-      height: 40px;
+
+    & {
+      padding: 10px;
+      height: 52px;
+      white-space: nowrap;
+      min-width: 210px;
+      @media (max-width: $mobile) {
+        height: 40px;
+      }
     }
   }
 }
