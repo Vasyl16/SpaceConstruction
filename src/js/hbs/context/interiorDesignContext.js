@@ -17,7 +17,7 @@ export const interiorDesignContext = {
         href: '/SpaceConstruction/pages/service/service.html',
       },
       {
-        path: 'InteriorDesign',
+        path: 'Interior Design',
         href: '/SpaceConstruction/pages/service/interior-design.html',
       },
     ],
