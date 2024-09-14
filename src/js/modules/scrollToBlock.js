@@ -2,10 +2,15 @@ import { scrollFun } from './scrollButton';
 
 const scrollToBlockItems = [
   {
-    // ./SpaceConstruction/src/html/pages/about/about.html
     redirectPath: '/SpaceConstruction/src/html/pages/about/about.html',
     scrollButton: '.items-our-offices__location-link',
     scrollToBlock: '.work-worldwild',
+  },
+
+  {
+    redirectPath: false,
+    scrollButton: '.benefits__button',
+    scrollToBlock: '.discuss-details',
   },
 ];
 
@@ -18,6 +23,7 @@ export const scrollToBlockFun = () => {
     const scrollToBlockElement = document.querySelector(
       scrollToBlockItem.scrollToBlock
     );
+    console.log(1);
 
     const { redirectPath, scrollButton, scrollToBlock } = scrollToBlockItem;
 
@@ -27,7 +33,8 @@ export const scrollToBlockFun = () => {
       const scrollValue = calculateScroll(scrollToBlockElement);
 
       scrollFun(scrollButton, scrollValue);
-      return true;
+
+      continue;
     }
 
     if (redirectPath && scrollButtonItems.length) {
@@ -36,10 +43,8 @@ export const scrollToBlockFun = () => {
           window.location.href = `${redirectPath}#scrollToBlock=${scrollToBlock}`;
         });
       });
-      return true;
+      continue;
     }
-
-    return false;
   }
 };
 
