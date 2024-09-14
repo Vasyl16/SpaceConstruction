@@ -21,6 +21,7 @@
     &_s {
       flex: 0 1 48.8%;
       margin: 0;
+      height: 100%;
       @media (max-width: $tablet) {
         max-width: 80%;
         margin: 0 auto;
@@ -53,8 +54,6 @@
     position: absolute;
     aspect-ratio: 1/1;
     width: 48px;
-    bottom: -9px;
-    top: auto;
     right: -12px;
 
     &::before {
@@ -75,8 +74,6 @@
     position: absolute;
     aspect-ratio: 1/1;
     width: 48px;
-    bottom: -9px;
-    top: auto;
     right: 36px;
     left: auto;
     border-radius: 50%;
@@ -98,6 +95,9 @@
   &__next-button,
   &__prev-button {
     border-radius: 50%;
+    top: auto;
+    bottom: 10px;
+
     &::after {
       content: none;
     }
