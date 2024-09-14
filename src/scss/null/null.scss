@@ -12,7 +12,12 @@ textarea {
   line-height: inherit;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a {
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
 
