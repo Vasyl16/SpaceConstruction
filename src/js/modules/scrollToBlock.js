@@ -6,12 +6,6 @@ const scrollToBlockItems = [
     scrollButton: '.items-our-offices__location-link',
     scrollToBlock: '.work-worldwild',
   },
-
-  {
-    redirectPath: false,
-    scrollButton: '.benefits__button',
-    scrollToBlock: '.discuss-details',
-  },
 ];
 
 const calculateScroll = (targetElement) => {
@@ -19,11 +13,10 @@ const calculateScroll = (targetElement) => {
 };
 
 export const scrollToBlockFun = () => {
-  for (const scrollToBlockItem of scrollToBlockItems) {
+  scrollToBlockItems.forEach((scrollToBlockItem) => {
     const scrollToBlockElement = document.querySelector(
       scrollToBlockItem.scrollToBlock
     );
-    console.log(1);
 
     const { redirectPath, scrollButton, scrollToBlock } = scrollToBlockItem;
 
@@ -34,7 +27,7 @@ export const scrollToBlockFun = () => {
 
       scrollFun(scrollButton, scrollValue);
 
-      continue;
+      return;
     }
 
     if (redirectPath && scrollButtonItems.length) {
@@ -43,31 +36,30 @@ export const scrollToBlockFun = () => {
           window.location.href = `${redirectPath}#scrollToBlock=${scrollToBlock}`;
         });
       });
-      continue;
     }
-  }
+  });
 };
 
 export const handleScrollOnRedirect = () => {
   const params = new URLSearchParams(window.location.hash.substring(1));
 
-  if (params.get('scrollToBlock')) {
-    const scrollToBlock = params.get('scrollToBlock');
-
-    const scrollToBlockElement = document.querySelector(scrollToBlock);
-
-    if (scrollToBlockElement) {
-      const scrollValue = calculateScroll(scrollToBlockElement);
-
-      window.scrollTo({
-        top: scrollValue,
-        behavior: 'smooth',
-      });
-
-      return true;
-    }
-
-    console.log('scrollToBlockElement not found');
-    return false;
+  if (!params.get('scrollToBlock')) {
+    return;
   }
+
+  const scrollToBlock = params.get('scrollToBlock');
+
+  const scrollToBlockElement = document.querySelector(scrollToBlock);
+
+  if (!scrollToBlockElement) {
+    console.log('scrollToBlockElement not found');
+    return true;
+  }
+
+  const scrollValue = calculateScroll(scrollToBlockElement);
+
+  window.scrollTo({
+    top: scrollValue,
+    behavior: 'smooth',
+  });
 };
