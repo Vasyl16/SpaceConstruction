@@ -10,7 +10,7 @@ export const positionsContext = {
     title: 'AVAILABLE POSITIONS',
     text: `Build your career with Createx Construction Bureau.`,
     pathItems: [
-      { path: 'Homepage', href: '/' },
+      { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'About us',
         href: '/SpaceConstruction/src/html/pages/about/about.html',

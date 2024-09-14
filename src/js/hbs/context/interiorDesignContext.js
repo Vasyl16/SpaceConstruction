@@ -11,7 +11,7 @@ export const interiorDesignContext = {
     title: 'INTERIOR DESIGN',
     text: `Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.`,
     pathItems: [
-      { path: 'Homepage', href: '/' },
+      { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'Services',
         href: '/SpaceConstruction/src/html/pages/service/service.html',

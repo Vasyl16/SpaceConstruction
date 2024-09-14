@@ -11,7 +11,7 @@ export const newsContext = {
     title: 'NEWS',
     text: `Stay tuned with our news, expert tips and articles.`,
     pathItems: [
-      { path: 'Homepage', href: '/' },
+      { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'News',
         href: '/SpaceConstruction/src/html/pages/news/news.html',

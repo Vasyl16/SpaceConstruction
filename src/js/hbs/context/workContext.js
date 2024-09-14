@@ -12,7 +12,7 @@ export const workContext = {
     title: 'OUR WORK',
     text: `Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry.`,
     pathItems: [
-      { path: 'Homepage', href: '/' },
+      { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'Work',
         href: '/SpaceConstruction/src/html/pages/work/work.html',

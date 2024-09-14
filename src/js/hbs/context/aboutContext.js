@@ -10,7 +10,7 @@ export const aboutContext = {
     title: 'ABOUT US',
     text: `Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service.`,
     pathItems: [
-      { path: 'Homepage', href: '/' },
+      { path: 'Homepage', href: '/SpaceConstruction/' },
       {
         path: 'About us',
         href: '/SpaceConstruction/src/html/pages/about/about.html',
