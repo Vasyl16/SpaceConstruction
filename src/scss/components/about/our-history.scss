@@ -98,6 +98,7 @@
     // width: 100%;
     height: clamp(300px, 450px, 60vh);
     max-height: 45vw;
+    user-select: none;
   }
 
   &__text {
