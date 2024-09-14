@@ -4,7 +4,7 @@ import { navItems } from './header/header';
 export const interiorDesignContext = {
   headerData: {
     navItems,
-    currentPath: 'service/interiorDesign',
+    currentPath: 'service/interior-design',
   },
 
   welcomeBlockData: {
@@ -18,7 +18,7 @@ export const interiorDesignContext = {
       },
       {
         path: 'InteriorDesign',
-        href: '/SpaceConstruction/pages/service/interiorDesign.html',
+        href: '/SpaceConstruction/pages/service/interior-design.html',
       },
     ],
   },

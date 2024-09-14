@@ -20,7 +20,7 @@ const contexts = {
   work: workContext,
   endedProject: endedProjectContext,
   service: serviceContext,
-  interiorDesign: interiorDesignContext,
+  'interior-design': interiorDesignContext,
   about: aboutContext,
   positions: positionsContext,
   news: newsContext,
@@ -33,7 +33,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         service: './pages/service/service.html',
-        interiorDesign: './pages/service/interiorDesign.html',
+        interiorDesign: './pages/service/interior-design.html',
         about: './pages/about/about.html',
         work: './pages/work/work.html',
         endedProject: './pages/work/endedProject.html',
