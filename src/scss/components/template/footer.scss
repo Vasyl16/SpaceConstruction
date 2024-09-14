@@ -180,9 +180,10 @@
     letter-spacing: 1px;
     color: $mainColor;
     position: relative;
-    padding-right: 50px;
     box-sizing: border-box;
     @media (max-width: $mobile) {
+      padding-right: 50px;
+      cursor: pointer;
       display: inline-block;
       padding-bottom: $smGap;
       width: 100%;
