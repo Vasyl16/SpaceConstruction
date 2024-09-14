@@ -162,6 +162,7 @@
     @media (max-width: $mobile) {
       border-bottom: 1px solid $thirdColor;
       flex: none;
+      width: 100%;
     }
     &_a {
       flex: 0 0 28.374%;
@@ -178,9 +179,27 @@
     line-height: 1.5;
     letter-spacing: 1px;
     color: $mainColor;
+    position: relative;
+    padding-right: 50px;
+    box-sizing: border-box;
     @media (max-width: $mobile) {
       display: inline-block;
       padding-bottom: $smGap;
+      width: 100%;
+
+      &::after {
+        position: absolute;
+        content: '';
+        right: 20px;
+        top: 25%;
+        transform: translate(0, -50%) rotate(-180deg);
+        aspect-ratio: 1/1;
+        width: 18px;
+        transition: all ease 0.3s;
+        background: url('/public/img/templates/footer/footer-rights-button-arrow.svg')
+          0 no-repeat;
+        background-size: contain;
+      }
     }
   }
 
@@ -296,5 +315,12 @@
 
   &_a {
     padding-bottom: $smGap;
+  }
+}
+.spoiler-footer-title {
+  &_a {
+    &::after {
+      transform: translate(0, -50%) rotate(0deg);
+    }
   }
 }
