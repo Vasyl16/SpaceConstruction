@@ -84,6 +84,7 @@
     display: flex;
     flex-direction: column;
     gap: $lgGap;
+    margin: 0;
 
     &::after {
       position: absolute;
@@ -131,6 +132,7 @@
     font-weight: 700;
     line-height: 1.6;
     color: $secondColor;
+    font-style: normal;
   }
 
   &__position {
