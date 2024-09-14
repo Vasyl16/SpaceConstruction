@@ -29,6 +29,7 @@ const removeClasses = (items) => {
   items.forEach((itemObj) => {
     itemObj.item.classList.remove(itemObj.itemClassActive);
   });
+  document.body.style.overflow = '';
 };
 
 const toggleBurgerMenu = (items) => {
