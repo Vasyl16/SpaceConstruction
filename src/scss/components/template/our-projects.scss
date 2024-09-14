@@ -70,21 +70,6 @@
   }
 }
 
-.items-our-ended-work {
-  @media (max-width: $tablet) {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  @media (max-width: $mobile) {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  &__content {
-    display: flex;
-  }
-}
-
 .view-our-projects {
   @include view-block;
 
