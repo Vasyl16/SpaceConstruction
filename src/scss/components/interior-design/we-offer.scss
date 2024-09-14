@@ -83,6 +83,7 @@
   &__title {
     padding-left: 42px;
     @include third-title;
+    user-select: none;
     text-align: left;
     position: relative;
     transition: all ease 0.5s;
