@@ -1,0 +1,68 @@
+.find-us {
+  margin-top: 26px;
+  margin-bottom: 100px;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+    gap: 40px;
+  }
+
+  &__title {
+    @include second-title;
+  }
+
+  &__items {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item-link {
+    aspect-ratio: 1/1;
+    width: 32px;
+  }
+
+  &__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    &_1 {
+      &:hover {
+        filter: invert(67%) sepia(20%) saturate(4086%) hue-rotate(86deg)
+          brightness(94%) contrast(100%);
+      }
+    }
+
+    &_2 {
+      &:hover {
+        filter: invert(47%) sepia(100%) saturate(4230%) hue-rotate(198deg)
+          brightness(101%) contrast(104%);
+      }
+    }
+
+    &_3 {
+      &:hover {
+        filter: invert(41%) sepia(74%) saturate(2156%) hue-rotate(203deg)
+          brightness(97%) contrast(105%);
+      }
+    }
+
+    &_4 {
+      &:hover {
+        filter: invert(53%) sepia(30%) saturate(6881%) hue-rotate(183deg)
+          brightness(104%) contrast(103%);
+      }
+    }
+
+    &_5 {
+      &:hover {
+        filter: invert(62%) sepia(74%) saturate(5480%) hue-rotate(339deg)
+          brightness(104%) contrast(102%);
+      }
+    }
+  }
+}
