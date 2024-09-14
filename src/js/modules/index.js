@@ -4,6 +4,7 @@ import { initAllSpoilers } from './spoiler';
 import { initAllSwipers } from './swiper';
 import { videoHandler } from './videoHandler';
 import { handlePopupItems } from './popup';
+import { scrollButtonToTop } from './scrollButton';
 import { scrollToBlockFun, handleScrollOnRedirect } from './scrollToBlock';
 
 export {
@@ -15,4 +16,5 @@ export {
   handlePopupItems,
   scrollToBlockFun,
   handleScrollOnRedirect,
+  scrollButtonToTop,
 };

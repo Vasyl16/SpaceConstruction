@@ -9,6 +9,7 @@ import {
   handlePopupItems,
   scrollToBlockFun,
   handleScrollOnRedirect,
+  scrollButtonToTop,
 } from './modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,4 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   handlePopupItems();
   scrollToBlockFun();
   handleScrollOnRedirect();
+  scrollButtonToTop();
 });

@@ -1,3 +1,5 @@
+const scrollButton = '.rights-footer__top-button';
+
 export const scrollFun = (scrollButton, topScroll) => {
   const scrollButtonItems = document.querySelectorAll(scrollButton);
 
@@ -11,4 +13,8 @@ export const scrollFun = (scrollButton, topScroll) => {
       });
     });
   }
+};
+
+export const scrollButtonToTop = () => {
+  scrollFun(scrollButton, 0);
 };
