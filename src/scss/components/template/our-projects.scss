@@ -16,6 +16,7 @@
   &__title {
     @include second-title;
 
+    user-select: none;
     text-align: left;
     max-width: 720px;
     @media (max-width: $tablet) {
