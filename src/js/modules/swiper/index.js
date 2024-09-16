@@ -5,6 +5,7 @@ import { swiperOurHistoryLabel } from './swiperOurHistory';
 import { swiperOurProjectLabel } from './swiperOurProject';
 import { setupSwiperOurTeam } from './swiperOurTeam';
 import { swiperOurEndedProjectLabel } from './swiperOurEndedProject';
+import { swiperPricingLabel } from './swiperPricing';
 
 export const initAllSwipers = () => {
   swiperClientFeetbackLabel();
@@ -14,4 +15,5 @@ export const initAllSwipers = () => {
   swiperOurProjectLabel();
   setupSwiperOurTeam();
   swiperOurEndedProjectLabel();
+  swiperPricingLabel();
 };

@@ -2,6 +2,12 @@
   margin-top: 82px;
   margin-bottom: 100px;
 
+  & &__container {
+    @media (max-width: $mobile) {
+      padding-right: 0;
+    }
+  }
+
   @include section-main-gap;
 
   &__body {
@@ -19,6 +25,12 @@
   &__text {
     @include second-text;
   }
+
+  &__wrapper {
+    display: flex;
+    justify-content: stretch;
+    width: auto;
+  }
 }
 
 .table-pricing {
@@ -26,13 +38,17 @@
   flex-direction: column;
   border: 1px solid rgba(229, 232, 237, 1);
   border-radius: 4px;
-  padding: 31px 9px 19px 23px;
+  padding: 31px 0 19px 0;
   box-shadow: 0px 4px 34px -2px rgba(30, 33, 44, 0.3);
   box-sizing: border-box;
+
+  @media (max-width: $tablet) {
+    width: auto;
+  }
+
   @media (max-width: $mobile) {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    overflow-x: auto;
+    padding: $midGap 0 $smGap 0;
+    margin-right: 15px;
   }
 
   &__row {
@@ -43,8 +59,10 @@
     align-items: center;
     flex-grow: 1;
     gap: 20px;
-    width: auto; /* Allow row to grow based on content */
-    flex-wrap: nowrap; /* Prevent wrapping */
+    width: auto;
+    flex-wrap: nowrap;
+    padding-left: 23px;
+    padding-right: 9px;
 
     &_m {
       min-height: auto;
@@ -60,9 +78,13 @@
       padding-top: $midGap;
     }
 
+    @media (max-width: $tablet) {
+      gap: 15px;
+    }
     @media (max-width: $mobile) {
-      margin-right: 9px;
-      min-width: 620px;
+      min-width: 595px;
+      padding-left: $smGap;
+      min-height: 40px;
     }
   }
 
@@ -75,12 +97,11 @@
     align-items: flex-end;
 
     @media (max-width: $tablet) {
-      flex: 0 0 244px;
-      width: 244px;
+      flex: 1 0 200px;
     }
     @media (max-width: $mobile) {
-      flex: 0 0 200px;
-      width: 200px;
+      flex: 1 0 190px;
+      max-width: 190px;
     }
   }
 
@@ -97,11 +118,9 @@
     align-items: center;
     @media (max-width: $tablet) {
       flex: 0 0 150px;
-      width: 150px;
     }
     @media (max-width: $mobile) {
       flex: 0 0 120px;
-      width: 120px;
     }
   }
 
@@ -110,9 +129,11 @@
     font-weight: 700;
     color: $thirdColor;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    max-width: 100%;
+    text-overflow: ellipsis;
   }
 
   &__config-name {
@@ -121,29 +142,34 @@
     line-height: 1.5;
     text-align: center;
     color: $secondColor;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    max-width: 100%;
+    text-overflow: ellipsis;
   }
 
   &__item-name {
     flex: 1 1 auto;
     @media (max-width: $tablet) {
-      flex: 0 0 244px;
-      width: 244px;
+      flex: 1 0 200px;
     }
     @media (max-width: $mobile) {
-      flex: 0 0 200px;
-      width: 200px;
+      flex: 1 0 190px;
+      max-width: 190px;
     }
   }
 
   &__item-name-text {
     text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
     max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
   }
 
   &__item {
@@ -151,7 +177,7 @@
     display: flex;
     justify-content: center;
     @media (max-width: $tablet) {
-      flex: 0 0 150px;
+      flex: 0 0 145px;
     }
     @media (max-width: $mobile) {
       flex: 0 0 120px;
@@ -162,6 +188,10 @@
     aspect-ratio: 1/1;
     width: 20px;
     object-fit: contain;
+
+    @media (max-width: $mobile) {
+      width: 16px;
+    }
   }
 
   &__button {
@@ -179,8 +209,13 @@
       min-width: 143px;
       font-size: clamp(9px, 12px, 1.3vw);
       max-width: 100%;
+      white-space: nowrap;
+
       @media (max-width: $tablet) {
         min-width: 90px;
+      }
+      @media (max-width: $tablet) {
+        padding: 10px;
       }
     }
   }
