@@ -116,7 +116,11 @@
   &__prev-button,
   &__next-button {
     transition: all ease 0.3s;
-    background: rgba(255, 255, 255, 0.282);
+    background: rgba(255, 255, 255, 0.482);
+
+    &.swiper-button-disabled {
+      opacity: 0.7;
+    }
 
     @media (pointer: fine) {
       &:hover {

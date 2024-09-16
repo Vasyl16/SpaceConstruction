@@ -3,8 +3,8 @@ import { swiperMainLabel } from './swiperMain';
 import { setupSwiperOurEndedWork } from './swiperOurEndedWork';
 import { swiperOurHistoryLabel } from './swiperOurHistory';
 import { swiperOurProjectLabel } from './swiperOurProject';
-import { swiperThumbnailOurEndedProjectLabel } from './swiperThumbnailOurEndedProject';
 import { setupSwiperOurTeam } from './swiperOurTeam';
+import { swiperOurEndedProjectLabel } from './swiperOurEndedProject';
 
 export const initAllSwipers = () => {
   swiperClientFeetbackLabel();
@@ -12,6 +12,6 @@ export const initAllSwipers = () => {
   setupSwiperOurEndedWork();
   swiperOurHistoryLabel();
   swiperOurProjectLabel();
-  swiperThumbnailOurEndedProjectLabel();
   setupSwiperOurTeam();
+  swiperOurEndedProjectLabel();
 };
