@@ -52,7 +52,7 @@ export const handleScrollOnRedirect = () => {
   const scrollToBlockElement = document.querySelector(scrollToBlock);
 
   if (!scrollToBlockElement) {
-    console.log('scrollToBlockElement not found');
+    console.error('scrollToBlockElement not found');
     return true;
   }
 
