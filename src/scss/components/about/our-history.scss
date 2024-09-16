@@ -182,12 +182,14 @@
       transition: all ease 0.3s;
     }
 
-    &:hover {
-      &::before {
-        background: $secondBgColor;
-      }
-      .custom-pagination-swiper-our-history__title {
-        color: $secondBgColor;
+    @media (pointer: fine) {
+      &:hover {
+        &::before {
+          background: $secondBgColor;
+        }
+        .custom-pagination-swiper-our-history__title {
+          color: $secondBgColor;
+        }
       }
     }
   }

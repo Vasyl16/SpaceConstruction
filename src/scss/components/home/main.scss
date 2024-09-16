@@ -227,9 +227,11 @@
       min-width: 278px;
       @include second-button;
 
-      &:hover {
-        background: none;
-        color: rgb(191, 191, 191);
+      @media (pointer: fine) {
+        &:hover {
+          background: none;
+          color: rgb(191, 191, 191);
+        }
       }
     }
   }

@@ -127,21 +127,24 @@
       transition: all ease 0.3s;
     }
 
-    &:hover {
-      color: $secondBgColor;
+    @media (pointer: fine) {
+      &:hover {
+        color: $secondBgColor;
 
-      &::after {
-        top: -12px;
-        left: -16px;
-        width: 84px;
-      }
+        &::after {
+          top: -12px;
+          left: -16px;
+          width: 84px;
+        }
 
-      &::before {
-        top: -28px;
-        left: -32px;
-        width: 116px;
+        &::before {
+          top: -28px;
+          left: -32px;
+          width: 116px;
+        }
       }
     }
+
     @media (max-width: $tablet) {
       &::after {
         left: 20px;
@@ -149,16 +152,19 @@
       &::before {
         left: 20px;
       }
-      &:hover {
-        &::after {
-          width: 64px;
-          top: -10px;
-          left: -13px;
-        }
-        &::before {
-          top: -18px;
-          left: -21px;
-          width: 80px;
+
+      @media (pointer: fine) {
+        &:hover {
+          &::after {
+            width: 64px;
+            top: -10px;
+            left: -13px;
+          }
+          &::before {
+            top: -18px;
+            left: -21px;
+            width: 80px;
+          }
         }
       }
     }
@@ -170,16 +176,19 @@
       &::before {
         left: 50%;
       }
-      &:hover {
-        &::after {
-          width: 64px;
-          top: -15px;
-          left: calc(50% - 33px);
-        }
-        &::before {
-          top: -23px;
-          left: calc(50% - 42px);
-          width: 80px;
+
+      @media (pointer: fine) {
+        &:hover {
+          &::after {
+            width: 64px;
+            top: -15px;
+            left: calc(50% - 33px);
+          }
+          &::before {
+            top: -23px;
+            left: calc(50% - 42px);
+            width: 80px;
+          }
         }
       }
     }

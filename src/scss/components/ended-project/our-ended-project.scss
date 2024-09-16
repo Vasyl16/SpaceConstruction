@@ -118,8 +118,10 @@
     transition: all ease 0.3s;
     background: rgba(255, 255, 255, 0.282);
 
-    &:hover {
-      background: $mainBgColor;
+    @media (pointer: fine) {
+      &:hover {
+        background: $mainBgColor;
+      }
     }
   }
 
@@ -158,8 +160,10 @@
     cursor: pointer;
     transition: all ease 0.5s;
 
-    &:hover {
-      opacity: 1;
+    @media (pointer: fine) {
+      &:hover {
+        opacity: 1;
+      }
     }
 
     @media (max-width: $mobile) {

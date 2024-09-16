@@ -130,11 +130,13 @@
       background: $secondBgColor;
     }
 
-    &:hover {
-      color: rgb(255, 141, 113);
+    @media (pointer: fine) {
+      &:hover {
+        color: rgb(255, 141, 113);
 
-      &::after {
-        background: rgb(255, 141, 113);
+        &::after {
+          background: rgb(255, 141, 113);
+        }
       }
     }
   }

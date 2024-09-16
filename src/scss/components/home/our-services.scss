@@ -103,39 +103,41 @@
       z-index: -1;
     }
 
-    &:hover {
-      box-shadow: 5px 20px 84px 1px rgba(30, 33, 44, 0.5);
-      border: 1px solid transparent;
+    @media (pointer: fine) {
+      &:hover {
+        box-shadow: 5px 20px 84px 1px rgba(30, 33, 44, 0.5);
+        border: 1px solid transparent;
 
-      &::after {
-        top: -1px;
-        left: -1px;
-        width: calc(100% + 2px);
-        height: calc(100% + 2px);
-      }
+        &::after {
+          top: -1px;
+          left: -1px;
+          width: calc(100% + 2px);
+          height: calc(100% + 2px);
+        }
 
-      & .items-our-services__title {
-        color: $mainColor;
-      }
+        & .items-our-services__title {
+          color: $mainColor;
+        }
 
-      & .items-our-services__img_1 {
-        background: url('/img/pages/home/our-services/our-services-img-1-active.svg')
-          0 0 no-repeat;
-      }
+        & .items-our-services__img_1 {
+          background: url('/img/pages/home/our-services/our-services-img-1-active.svg')
+            0 0 no-repeat;
+        }
 
-      & .items-our-services__img_2 {
-        background: url('/img/pages/home/our-services/our-services-img-2-active.svg')
-          0 0 no-repeat;
-      }
+        & .items-our-services__img_2 {
+          background: url('/img/pages/home/our-services/our-services-img-2-active.svg')
+            0 0 no-repeat;
+        }
 
-      & .items-our-services__img_3 {
-        background: url('/img/pages/home/our-services/our-services-img-3-active.svg')
-          0 0 no-repeat;
-      }
+        & .items-our-services__img_3 {
+          background: url('/img/pages/home/our-services/our-services-img-3-active.svg')
+            0 0 no-repeat;
+        }
 
-      & .items-our-services__img_4 {
-        background: url('/img/pages/home/our-services/our-services-img-4-active.svg')
-          0 0 no-repeat;
+        & .items-our-services__img_4 {
+          background: url('/img/pages/home/our-services/our-services-img-4-active.svg')
+            0 0 no-repeat;
+        }
       }
     }
   }

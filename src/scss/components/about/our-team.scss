@@ -119,11 +119,15 @@
     overflow: hidden;
     position: relative;
     overflow: hidden;
-    &:hover {
-      .labels-items-our-team {
-        bottom: 0;
+
+    @media (pointer: fine) {
+      &:hover {
+        .labels-items-our-team {
+          bottom: 0;
+        }
       }
     }
+
     @media (max-width: 700px) {
       max-width: 285px;
       max-height: 340px;
@@ -205,8 +209,10 @@
       left: 0;
     }
 
-    &:hover {
-      color: rgb(255, 134, 104);
+    @media (pointer: fine) {
+      &:hover {
+        color: rgb(255, 134, 104);
+      }
     }
   }
 }

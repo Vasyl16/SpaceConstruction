@@ -23,8 +23,10 @@
     background-size: contain;
   }
 
-  &:hover {
-    background: rgb(255, 110, 73);
+  @media (pointer: fine) {
+    &:hover {
+      background: rgb(255, 110, 73);
+    }
   }
 
   & {

@@ -234,8 +234,10 @@
       color: $mainColor;
     }
 
-    &:hover {
-      color: $secondBgColor;
+    @media (pointer: fine) {
+      &:hover {
+        color: $secondBgColor;
+      }
     }
   }
 }

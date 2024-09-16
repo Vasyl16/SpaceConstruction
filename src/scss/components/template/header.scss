@@ -230,8 +230,10 @@
     transition: all ease 0.3s;
     cursor: pointer;
 
-    &:hover {
-      color: $mainHoverColor;
+    @media (pointer: fine) {
+      &:hover {
+        color: $mainHoverColor;
+      }
     }
   }
 }

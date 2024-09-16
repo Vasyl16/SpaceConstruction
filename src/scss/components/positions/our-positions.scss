@@ -104,8 +104,10 @@
     box-shadow: 0px 4px 18px -8px rgba(30, 33, 44, 0.3);
     transition: all ease 0.3s;
 
-    &:hover {
-      box-shadow: 0px 4px 41px -4px rgba(30, 33, 44, 0.3);
+    @media (pointer: fine) {
+      &:hover {
+        box-shadow: 0px 4px 41px -4px rgba(30, 33, 44, 0.3);
+      }
     }
 
     @media (max-width: $tablet) {
