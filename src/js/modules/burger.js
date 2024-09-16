@@ -45,8 +45,6 @@ const toogleClasses = (items) => {
     items.forEach((itemObj) => {
       itemObj.item.classList.toggle(itemObj.itemClassActive);
     });
-
-    blockScroll(false);
   } catch (error) {
     console.error('some element is not valid', error.message);
   }
