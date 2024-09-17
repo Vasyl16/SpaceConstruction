@@ -238,6 +238,11 @@
       background: url('/img/templates/welcome-block/welcome-block-slash.svg') 0
         0 no-repeat;
       background-size: contain;
+
+      @media (max-width: $mobile) {
+        bottom: 2px;
+        top: auto;
+      }
     }
 
     &:last-child {
