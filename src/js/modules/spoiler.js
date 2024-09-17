@@ -3,11 +3,13 @@ const MOBILE_BREAKPOINT = 767.98;
 const spoilersFooter = document.querySelectorAll('.spoiler-footer');
 const titleFooterClass = 'spoiler-footer-title';
 const contentFooterClass = 'spoiler-footer-content';
+const spoilerFooterWorkWidth = 767.98;
 
 // We Offer spoiler constants
 const spoilersWeOffer = document.querySelectorAll('.spoiler-we-offer');
 const titleWeOfferClass = 'spoiler-we-offer-title';
 const contentWeOfferClass = 'spoiler-we-offer-content';
+const spoilerWeOfferWorkWidth = false;
 
 const spoilersAll = [
   {
@@ -15,12 +17,14 @@ const spoilersAll = [
     title: titleFooterClass,
     content: contentFooterClass,
     resolution: MOBILE_BREAKPOINT,
+    maxWorkWidth: spoilerFooterWorkWidth,
   },
   {
     spoiler: spoilersWeOffer,
     title: titleWeOfferClass,
     content: contentWeOfferClass,
     resolution: false,
+    maxWorkWidth: spoilerWeOfferWorkWidth,
   },
 ];
 
@@ -108,21 +112,33 @@ const spoilerFun = (spoilers, titleClass, contentClass, resolutionMax) => {
 };
 
 const setUpAllSpoilers = (spoilersAll) => {
-  for (const spoilerObj of spoilersAll) {
+  spoilersAll.forEach((spoilerObj) => {
     spoilerFun(
       spoilerObj.spoiler,
       spoilerObj.title,
       spoilerObj.content,
       spoilerObj.resolution
     );
-  }
+
+    if (
+      !spoilerObj.maxWorkWidth &&
+      spoilerObj.maxWorkWidth < window.innerWidth
+    ) {
+      return;
+    }
+
+    window.addEventListener('resize', () => {
+      spoilerFun(
+        spoilerObj.spoiler,
+        spoilerObj.title,
+        spoilerObj.content,
+        spoilerObj.resolution
+      );
+    });
+  });
 };
 
 // Initial setup and window resize event listener
 export const initAllSpoilers = () => {
-  window.addEventListener('resize', () => {
-    setUpAllSpoilers(spoilersAll);
-  });
-
   setUpAllSpoilers(spoilersAll);
 };
