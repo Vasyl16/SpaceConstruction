@@ -1,7 +1,10 @@
 .discuss-details {
   margin-top: 75px;
-  background: url('/img/templates/discuss-details/discuss-details-bg.jpg') 0 0
-    no-repeat;
+  background-image: image-set(
+    '/img/templates/discuss-details/discuss-details-bg.webp' type('image/webp'),
+    '/img/templates/discuss-details/discuss-details-bg.jpg' type('image/jpeg')
+  );
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 20px;
   margin-bottom: 0 !important;

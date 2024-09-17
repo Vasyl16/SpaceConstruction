@@ -71,6 +71,14 @@
   }
 }
 
+.items-our-projects {
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .view-our-projects {
   @include view-block;
 

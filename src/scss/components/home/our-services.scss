@@ -50,6 +50,7 @@
     transition: all ease 0.3s;
     padding: 88px 10px 50px;
     box-sizing: border-box;
+    border-radius: 3px;
 
     @media (max-width: $fullPc) {
       flex: 0 1 240px;
@@ -66,25 +67,45 @@
 
     &_1 {
       &::after {
-        background: url('/img/pages/home/our-services/our-services-bg-1.png');
+        background-image: image-set(
+          '/img/pages/home/our-services/our-services-bg-1.webp'
+            type('image/webp'),
+          '/img/pages/home/our-services/our-services-bg-1.jpg' type('image/jpg')
+        );
+        background-repeat: no-repeat;
       }
     }
 
     &_2 {
       &::after {
-        background: url('/img/pages/home/our-services/our-services-bg-1.png');
+        background-image: image-set(
+          '/img/pages/home/our-services/our-services-bg-1.webp'
+            type('image/webp'),
+          '/img/pages/home/our-services/our-services-bg-1.jpg' type('image/jpg')
+        );
+        background-repeat: no-repeat;
       }
     }
 
     &_3 {
       &::after {
-        background: url('/img/pages/home/our-services/our-services-bg-1.png');
+        background-image: image-set(
+          '/img/pages/home/our-services/our-services-bg-1.webp'
+            type('image/webp'),
+          '/img/pages/home/our-services/our-services-bg-1.jpg' type('image/jpg')
+        );
+        background-repeat: no-repeat;
       }
     }
 
     &_4 {
       &::after {
-        background: url('/img/pages/home/our-services/our-services-bg-1.png');
+        background-image: image-set(
+          '/img/pages/home/our-services/our-services-bg-1.webp'
+            type('image/webp'),
+          '/img/pages/home/our-services/our-services-bg-1.jpg' type('image/jpg')
+        );
+        background-repeat: no-repeat;
       }
     }
 
@@ -101,6 +122,7 @@
       width: 0;
       height: 0;
       z-index: -1;
+      border-radius: 3px;
     }
 
     @media (pointer: fine) {

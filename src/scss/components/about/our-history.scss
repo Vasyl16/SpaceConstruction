@@ -94,15 +94,26 @@
     }
   }
 
-  &__img {
-    // width: 100%;
-    height: clamp(300px, 450px, 60vh);
+  &__img-wrapper {
+    height: clamp(300px, 450px, 55vh);
     max-height: 45vw;
     user-select: none;
+
+    @media (max-width: $tablet) {
+      height: clamp(300px, 350px, 55vh);
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
   }
 
   &__text {
     @include third-text;
+    user-select: none;
     color: $forthColor;
     text-align: left;
     display: -webkit-box;

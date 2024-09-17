@@ -28,36 +28,48 @@ export const interiorDesignContext = {
       {
         imgSrc:
           '/img/templates/our-projects/our-projects-interior-design-img-1.jpg',
+        imgSrcWebp:
+          '/img/templates/our-projects/our-projects-interior-design-img-1.webp',
         title: 'Kids Bedroom With Decorations',
         category: 'Apartments & flats',
       },
       {
         imgSrc:
           '/img/templates/our-projects/our-projects-interior-design-img-2.jpg',
+        imgSrcWebp:
+          '/img/templates/our-projects/our-projects-interior-design-img-2.webp',
         title: 'Modern Double Bedroom',
         category: 'Business Centers',
       },
       {
         imgSrc:
           '/img/templates/our-projects/our-projects-interior-design-img-3.jpg',
+        imgSrcWebp:
+          '/img/templates/our-projects/our-projects-interior-design-img-3.webp',
         title: 'Scandinavian Style Interior',
         category: 'Private houses',
       },
       {
         imgSrc:
           '/img/templates/our-projects/our-projects-interior-design-img-1.jpg',
+        imgSrcWebp:
+          '/img/templates/our-projects/our-projects-interior-design-img-1.webp',
         title: 'Kids Bedroom With Decorations',
         category: 'Apartments & flats',
       },
       {
         imgSrc:
           '/img/templates/our-projects/our-projects-interior-design-img-2.jpg',
+        imgSrcWebp:
+          '/img/templates/our-projects/our-projects-interior-design-img-2.webp',
         title: 'Modern Double Bedroom',
         category: 'Business Centers',
       },
       {
         imgSrc:
           '/img/templates/our-projects/our-projects-interior-design-img-3.jpg',
+        imgSrcWebp:
+          '/img/templates/our-projects/our-projects-interior-design-img-3.webp',
         title: 'Scandinavian Style Interior',
         category: 'Private houses',
       },

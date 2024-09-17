@@ -42,31 +42,37 @@ export const homeContext = {
     items: [
       {
         imgSrc: '/img/templates/our-projects/our-projects-img-1.jpg',
+        imgSrcWebp: '/img/templates/our-projects/our-projects-img-1.webp',
         title: 'Red Finger Building',
         category: 'Business Centers',
       },
       {
         imgSrc: '/img/templates/our-projects/our-projects-img-2.jpg',
+        imgSrcWebp: '/img/templates/our-projects/our-projects-img-2.webp',
         title: 'Cubes Building',
         category: 'Business Centers',
       },
       {
         imgSrc: '/img/templates/our-projects/our-projects-img-3.jpg',
+        imgSrcWebp: '/img/templates/our-projects/our-projects-img-3.webp',
         title: 'The Pencil Building',
         category: 'Stores & Malls',
       },
       {
         imgSrc: '/img/templates/our-projects/our-projects-img-1.jpg',
+        imgSrcWebp: '/img/templates/our-projects/our-projects-img-1.webp',
         title: 'Red Finger Building',
         category: 'Business Centers',
       },
       {
         imgSrc: '/img/templates/our-projects/our-projects-img-2.jpg',
+        imgSrcWebp: '/img/templates/our-projects/our-projects-img-2.webp',
         title: 'Cubes Building',
         category: 'Business Centers',
       },
       {
         imgSrc: '/img/templates/our-projects/our-projects-img-3.jpg',
+        imgSrcWebp: '/img/templates/our-projects/our-projects-img-3.webp',
         title: 'The Pencil Building',
         category: 'Stores & Malls',
       },

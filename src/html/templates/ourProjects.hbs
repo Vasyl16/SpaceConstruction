@@ -11,11 +11,14 @@
           <article
             class='items-our-projects__item swiper-slide project-block-item'
           >
-            <img
-              alt='img'
-              class='items-our-projects__img project-block-img'
-              src='{{this.imgSrc}}'
-            />
+            <picture class='items-our-projects__img-wrapper project-block-img'>
+              <source type='image/webp' srcset='{{this.imgSrcWebp}}' />
+              <img
+                class='items-our-projects__img'
+                src='{{this.imgSrc}}'
+                alt='project image'
+              />
+            </picture>
 
             <div class='items-our-projects__body project-block-body'>
               <h1 class='items-our-projects__title project-block-title'>

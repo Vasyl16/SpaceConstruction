@@ -9,11 +9,18 @@
             <h1 class='client-fitback__title'>{{title}}</h1>
 
             <div class='client-fitback__content'>
-              <img
-                alt='Client logo'
-                class='client-fitback__client-logo'
-                src='{{clientLogo}}'
-              />
+              <picture class='client-fitback__client-logo-wrapper'>
+                <source
+                  type='image/webp'
+                  srcset='/img/templates/client-fitback/client-fitback-logo-1.webp'
+                />
+                <img
+                  class='client-fitback__client-logo'
+                  src='/img/templates/client-fitback/client-fitback-logo-1.png'
+                  alt='client logo'
+                />
+              </picture>
+
               <p class='client-fitback__message'>{{message}}</p>
               <p class='client-fitback__name'>{{name}}</p>
               <p class='client-fitback__position'>{{position}}</p>
@@ -31,11 +38,17 @@
     </div>
 
     <div class='client-fitback__item client-fitback__item_m'>
-      <img
-        alt='Client feedback image'
-        class='client-fitback__img'
-        src='{{clientFitbackData.imgSrc}}'
-      />
+      <picture class='client-fitback__img-wrapper'>
+        <source
+          type='image/webp'
+          srcset='/img/templates/client-fitback/client-fitback-img.webp'
+        />
+        <img
+          class='client-fitback__img'
+          src='/img/templates/client-fitback/client-fitback-img.jpg'
+          alt='client fitback image'
+        />
+      </picture>
     </div>
   </div>
 </div>

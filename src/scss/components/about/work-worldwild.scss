@@ -24,8 +24,15 @@
     width: 100%;
     max-width: 1195px;
     max-height: 72vh;
-    background: url('/img/pages/about/work-worldwide/work-worldwide-bg.png') 50%
-      0 no-repeat;
+    // background: url('/img/pages/about/work-worldwide/work-worldwide-bg.png') 50%
+    // 0 no-repeat;
+    background-image: image-set(
+      url('/img/pages/about/work-worldwide/work-worldwide-bg.webp')
+        type('image/webp'),
+      url('/img/pages/about/work-worldwide/work-worldwide-bg.png')
+        type('image/png')
+    );
+    background-repeat: no-repeat;
     background-size: contain;
     position: relative;
   }

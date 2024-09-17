@@ -81,26 +81,42 @@
     }
 
     &_1 {
-      background: url('/img/pages/home/fact-figures/fact-figures-img-1.jpg') 0 0
-        no-repeat;
+      background-image: image-set(
+        '/img/pages/home/fact-figures/fact-figures-img-1.webp'
+          type('image/webp'),
+        '/img/pages/home/fact-figures/fact-figures-img-1.png' type('image/png')
+      );
+      background-repeat: no-repeat;
       background-size: contain;
     }
 
     &_2 {
-      background: url('/img/pages/home/fact-figures/fact-figures-img-2.jpg') 0 0
-        no-repeat;
+      background-image: image-set(
+        '/img/pages/home/fact-figures/fact-figures-img-2.webp'
+          type('image/webp'),
+        '/img/pages/home/fact-figures/fact-figures-img-2.png' type('image/png')
+      );
+      background-repeat: no-repeat;
       background-size: contain;
     }
 
     &_3 {
-      background: url('/img/pages/home/fact-figures/fact-figures-img-3.jpg') 0 0
-        no-repeat;
+      background-image: image-set(
+        '/img/pages/home/fact-figures/fact-figures-img-3.webp'
+          type('image/webp'),
+        '/img/pages/home/fact-figures/fact-figures-img-3.png' type('image/png')
+      );
+      background-repeat: no-repeat;
       background-size: contain;
     }
 
     &_4 {
-      background: url('/img/pages/home/fact-figures/fact-figures-img-4.jpg') 0 0
-        no-repeat;
+      background-image: image-set(
+        '/img/pages/home/fact-figures/fact-figures-img-4.webp'
+          type('image/webp'),
+        '/img/pages/home/fact-figures/fact-figures-img-4.png' type('image/png')
+      );
+      background-repeat: no-repeat;
       background-size: contain;
     }
   }

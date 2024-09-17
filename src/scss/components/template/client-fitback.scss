@@ -34,20 +34,25 @@
 
     &_m {
       flex: 0 0 40.245%;
-      height: 550px;
+      aspect-ratio: 495/550;
       @media (max-width: $tablet) {
         flex: none;
-        max-width: clamp(250px, 800px, 90vw);
         margin: 0 auto;
-        height: clamp(250px, 800px, 40vw);
+        height: clamp(250px, 350px, 50vw);
       }
     }
   }
 
+  &__img-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
   &__img {
     object-fit: cover;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
+    border-radius: 3px;
   }
 
   &__next-button {
@@ -122,9 +127,14 @@
     position: relative;
   }
 
-  &__client-logo {
+  &__client-logo-wrapper {
     aspect-ratio: 1/1;
     width: 72px;
+  }
+
+  &__client-logo {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
   }
 

@@ -161,13 +161,19 @@
     }
   }
 
-  &__img {
+  &__img-wrapper {
     aspect-ratio: 600/306;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 3px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   &__title {
