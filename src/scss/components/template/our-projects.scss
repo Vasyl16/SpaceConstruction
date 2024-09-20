@@ -46,10 +46,13 @@
   }
 
   &__next-button {
-    width: 48px;
-    top: -13px;
     @include main-arrow;
-    transform: rotate(180deg);
+
+    & {
+      width: 48px;
+      top: -13px;
+      transform: rotate(180deg);
+    }
   }
 
   &__prev-button {
