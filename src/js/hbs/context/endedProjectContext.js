@@ -12,7 +12,7 @@ export const endedProjectContext = {
       {
         imgSrc: '/img/templates/our-projects/our-projects-ended-work-img-1.jpg',
         imgSrcWebp:
-          '/img/templates/our-projects/our-projects-ended-work-img-1.jpg',
+          '/img/templates/our-projects/our-projects-ended-work-img-1.webp',
         title: 'Luxury Beach House',
         category: 'Private Houses',
       },
@@ -20,7 +20,7 @@ export const endedProjectContext = {
       {
         imgSrc: '/img/templates/our-projects/our-projects-ended-work-img-2.jpg',
         imgSrcWebp:
-          '/img/templates/our-projects/our-projects-ended-work-img-2.jpg',
+          '/img/templates/our-projects/our-projects-ended-work-img-2.webp',
         title: 'Brown and Gray Painted House',
         category: 'Private Houses',
       },
@@ -28,7 +28,7 @@ export const endedProjectContext = {
       {
         imgSrc: '/img/templates/our-projects/our-projects-ended-work-img-3.jpg',
         imgSrcWebp:
-          '/img/templates/our-projects/our-projects-ended-work-img-3.jpg',
+          '/img/templates/our-projects/our-projects-ended-work-img-3.webp',
         title: 'Scandinavian Style Interior',
         category: 'Private houses',
       },
@@ -36,7 +36,7 @@ export const endedProjectContext = {
       {
         imgSrc: '/img/templates/our-projects/our-projects-ended-work-img-1.jpg',
         imgSrcWebp:
-          '/img/templates/our-projects/our-projects-ended-work-img-1.jpg',
+          '/img/templates/our-projects/our-projects-ended-work-img-1.webp',
         title: 'Luxury Beach House',
         category: 'Private Houses',
       },
