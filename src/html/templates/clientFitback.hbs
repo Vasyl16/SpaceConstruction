@@ -1,63 +1,63 @@
-<div class="client-fitback__container">
-  <div class="client-fitback__items">
+<div class='client-fitback__container'>
+  <div class='client-fitback__items'>
     <div
-      class="client-fitback__item client-fitback__item_s swiper swiper-client-fitback"
+      class='client-fitback__item client-fitback__item_s swiper swiper-client-fitback'
     >
-      <div class="client-fitback__wrapper swiper-wrapper">
+      <div class='client-fitback__wrapper swiper-wrapper'>
         {{#each clientFitbackData.items}}
-        <article class="client-fitback__body swiper-slide">
-          <h1 class="client-fitback__title">{{title}}</h1>
+          <article class='client-fitback__body swiper-slide'>
+            <h1 class='client-fitback__title'>{{title}}</h1>
 
-          <div class="client-fitback__content">
-            <picture class="client-fitback__client-logo-wrapper">
-              <source
-                type="image/webp"
-                srcset="
+            <div class='client-fitback__content'>
+              <picture class='client-fitback__client-logo-wrapper'>
+                <source
+                  type='image/webp'
+                  srcset='
                   /img/templates/client-fitback/client-fitback-logo-1.webp
-                "
-              />
-              <img
-                class="client-fitback__client-logo"
-                src="/img/templates/client-fitback/client-fitback-logo-1.png"
-                alt="client logo"
-              />
-            </picture>
+                '
+                />
+                <img
+                  class='client-fitback__client-logo'
+                  src='/img/templates/client-fitback/client-fitback-logo-1.png'
+                  alt='client logo'
+                />
+              </picture>
 
-            <p class="client-fitback__message">{{message}}</p>
-            <p class="client-fitback__name">{{name}}</p>
-            <p class="client-fitback__position">{{position}}</p>
-          </div>
-        </article>
+              <p class='client-fitback__message'>{{message}}</p>
+              <p class='client-fitback__name'>{{name}}</p>
+              <p class='client-fitback__position'>{{position}}</p>
+            </div>
+          </article>
         {{/each}}
       </div>
 
       <div
-        class="client-fitback__prev-button-wrapper swiper-button-prev swiper-client-fitback-button-prev"
+        class='client-fitback__prev-button-wrapper swiper-button-prev swiper-client-fitback-button-prev'
       >
-        <svg class="client-fitback__prev-button">
-          <use xlink:href="/icons/_sprite.svg#client-fitback-arrow"></use>
+        <svg class='client-fitback__prev-button'>
+          <use xlink:href='/icons/sprite.svg#client-fitback-arrow'></use>
         </svg>
       </div>
 
       <div
-        class="client-fitback__next-button-wrapper swiper-button-next swiper-client-fitback-button-next"
+        class='client-fitback__next-button-wrapper swiper-button-next swiper-client-fitback-button-next'
       >
-        <svg class="client-fitback__next-button">
-          <use xlink:href="/icons/_sprite.svg#client-fitback-arrow"></use>
+        <svg class='client-fitback__next-button'>
+          <use xlink:href='/icons/sprite.svg#client-fitback-arrow'></use>
         </svg>
       </div>
     </div>
 
-    <div class="client-fitback__item client-fitback__item_m">
-      <picture class="client-fitback__img-wrapper">
+    <div class='client-fitback__item client-fitback__item_m'>
+      <picture class='client-fitback__img-wrapper'>
         <source
-          type="image/webp"
-          srcset="/img/templates/client-fitback/client-fitback-img.webp"
+          type='image/webp'
+          srcset='/img/templates/client-fitback/client-fitback-img.webp'
         />
         <img
-          class="client-fitback__img"
-          src="/img/templates/client-fitback/client-fitback-img.jpg"
-          alt="client fitback image"
+          class='client-fitback__img'
+          src='/img/templates/client-fitback/client-fitback-img.jpg'
+          alt='client fitback image'
         />
       </picture>
     </div>

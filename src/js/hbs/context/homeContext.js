@@ -16,21 +16,21 @@ export const homeContext = {
 
     items: [
       {
-        imgSrc: '/icons/_sprite.svg#core-values-img-1',
+        imgSrc: '/icons/sprite.svg#core-values-img-1',
         valueTitle: 'Quality',
         valueText:
           'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.',
       },
 
       {
-        imgSrc: '/icons/_sprite.svg#core-values-img-2',
+        imgSrc: '/icons/sprite.svg#core-values-img-2',
         valueTitle: 'Safety',
         valueText:
           'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.',
       },
 
       {
-        imgSrc: '/icons/_sprite.svg#core-values-img-3',
+        imgSrc: '/icons/sprite.svg#core-values-img-3',
         valueTitle: 'Comfort',
         valueText:
           'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.',
