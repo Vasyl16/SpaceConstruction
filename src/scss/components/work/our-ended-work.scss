@@ -5,6 +5,11 @@
   position: relative;
   @include section-main-gap;
 
+  &__prev-button-icon,
+  &__next-button-icon {
+    @include main-arrow-icon;
+  }
+
   &__next-button,
   &__prev-button {
     @include main-arrow;
@@ -20,19 +25,24 @@
 
   &__next-button {
     right: 0;
+    transform: rotate(180deg);
   }
 
   &__prev-button {
     right: 61px;
     left: auto;
-
-    &::before {
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
   }
 
   & .swiper-button-disabled {
     @include main-arrow-disabled;
+  }
+
+  & .swiper-button-disabled &__prev-button-icon {
+    @include main-arrow-icon-disabled;
+  }
+
+  & .swiper-button-disabled &__next-button-icon {
+    @include main-arrow-icon-disabled;
   }
 }
 
@@ -83,6 +93,8 @@
     margin-top: 61px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 17px;
     @media (max-width: $fullPc) {
       margin-top: 40px;
     }
@@ -94,24 +106,16 @@
     }
   }
 
+  &__load-button-icon {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+  }
+
   &__load-button {
-    padding-left: 40px;
-    position: relative;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.6;
     color: $forthColor;
-
-    &::after {
-      position: absolute;
-      content: '';
-      top: 50%;
-      transform: translate(0%, -50%);
-      left: 0;
-      aspect-ratio: 1/1;
-      width: 24px;
-      background: url('/img/pages/work/our-ended-works/our-ended-works-button-icon.svg')
-        0 0 no-repeat;
-    }
   }
 }

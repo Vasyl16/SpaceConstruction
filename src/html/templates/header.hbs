@@ -1,80 +1,78 @@
-  <div class="header__container">
-    <div class="header__items">
-      <div class="header__item header__item_l">
-        <a class="header__logo-link" href="/SpaceConstruction/">
-          <img alt="img" class="header__logo" src="/img/templates/header/logo.svg" />
-        </a>
-      </div>
+<div class="header__container">
+  <div class="header__items">
+    <div class="header__item header__item_l">
+      <a class="header__logo-link" href="/SpaceConstruction/">
+        <svg class="header__logo">
+          <use xlink:href="/icons/_sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
 
-      <div class="header__item header__item_m">
-        <nav class="header__nav nav-header">
-          <ul class="nav-header__list">
-            {{#each headerData.navItems}}
-            
-            <li class="nav-header__item">
-              <a
-                class="nav-header__link {{#if (ifContains this.route ../headerData.currentPath)}}nav-header__link_a{{/if}}"
-                href="{{this.href}}"
-              >
-                {{this.name}}
-              </a>
-            </li>
+    <div class="header__item header__item_m">
+      <nav class="header__nav nav-header">
+        <ul class="nav-header__list">
+          {{#each headerData.navItems}}
 
-            {{/each}}
-          </ul>
-        </nav>
-      </div>
+          <li class="nav-header__item">
+            <a
+              class="nav-header__link {{#if (ifContains this.route ../headerData.currentPath)}}nav-header__link_a{{/if}}"
+              href="{{this.href}}"
+            >
+              {{this.name}}
+            </a>
+          </li>
 
-      <div class="header__item">
-        <div class="header__comm comm-header">
-          <div class="comm-header__items">
-            <div class="comm-header__item">
-              <div class="comm-header__column">
-                <div class="comm-header__image-wrapper">
-                  <img
-                    alt="img"
-                    class="comm-header__image"
-                    src="/img/templates/header/header-phone-icon.svg"
-                  />
-                </div>
-              </div>
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
 
-              <div class="comm-header__column">
-                <div class="comm-header__info">
-                  <p class="comm-header__text">Call us</p>
-
-                  <a class="comm-header__comm-way">(405) 555-0128</a>
-                </div>
+    <div class="header__item">
+      <div class="header__comm comm-header">
+        <div class="comm-header__items">
+          <div class="comm-header__item">
+            <div class="comm-header__column">
+              <div class="comm-header__image-wrapper">
+                <svg class="comm-header__image">
+                  <use xlink:href="/icons/_sprite.svg#header-phone-icon"></use>
+                </svg>
               </div>
             </div>
 
-            <div class="comm-header__item">
-              <div class="comm-header__column">
-                <div class="comm-header__image-wrapper">
-                  <img
-                    alt="img"
-                    class="comm-header__image"
-                    src="/img/templates/header/header-talk-icon.svg"
-                  />
-                </div>
+            <div class="comm-header__column">
+              <div class="comm-header__info">
+                <p class="comm-header__text">Call us</p>
+
+                <a class="comm-header__comm-way">(405) 555-0128</a>
               </div>
+            </div>
+          </div>
 
-              <div class="comm-header__column">
-                <div class="comm-header__info">
-                  <p class="comm-header__text">Talk to us</p>
+          <div class="comm-header__item">
+            <div class="comm-header__column">
+              <div class="comm-header__image-wrapper">
+                <svg class="comm-header__image">
+                  <use xlink:href="/icons/_sprite.svg#header-talk-icon"></use>
+                </svg>
+              </div>
+            </div>
 
-                  <a class="comm-header__comm-way">hello@createx.com</a>
-                </div>
+            <div class="comm-header__column">
+              <div class="comm-header__info">
+                <p class="comm-header__text">Talk to us</p>
+
+                <a class="comm-header__comm-way">hello@createx.com</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="header__item header__item_hid">
-        <div class="header__burger burger-header">
-          <div class="burger-header__icon"></div>
-        </div>
+    <div class="header__item header__item_hid">
+      <div class="header__burger burger-header">
+        <div class="burger-header__icon"></div>
       </div>
     </div>
   </div>
+</div>

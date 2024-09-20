@@ -51,8 +51,9 @@
   overflow: visible;
   position: relative;
 
-  & .swiper-button-disabled {
-    @include main-arrow-disabled;
+  &__prev-button-icon,
+  &__next-button-icon {
+    @include main-arrow-icon;
   }
 
   &__next-button,
@@ -68,7 +69,8 @@
   }
 
   &__next-button {
-    right: 0;
+    right: 0px;
+    transform: rotate(180deg);
   }
 
   &__prev-button {
@@ -76,8 +78,20 @@
     left: auto;
 
     &::before {
-      transform: translate(-50%, -50%) rotate(180deg);
+      transform: translate(-50%, -50%);
     }
+  }
+
+  & .swiper-button-disabled {
+    @include main-arrow-disabled;
+  }
+
+  & .swiper-button-disabled &__prev-button-icon {
+    @include main-arrow-icon-disabled;
+  }
+
+  & .swiper-button-disabled &__next-button-icon {
+    @include main-arrow-icon-disabled;
   }
 
   &__wrapper {

@@ -109,6 +109,10 @@
     height: 66px;
   }
 
+  &__checkbox-wrapper {
+    position: relative;
+  }
+
   &__checkbox {
     margin-top: 3px;
     appearance: none;
@@ -118,29 +122,27 @@
     border: 1px solid $secondBgColor;
     border-radius: 3px;
     cursor: pointer;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      aspect-ratio: 1/1;
-      background: url('/img/templates/discuss-details/discuss-details-check-icon.svg')
-        0 0 no-repeat;
-      width: 10px;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      display: none;
-    }
 
     &:checked {
       background: $secondBgColor;
-
-      &::after {
-        display: block;
-      }
     }
+  }
+
+  &__checkbox-icon {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+  }
+
+  &__checkbox:checked + &__checkbox-icon {
+    display: block;
   }
 
   &__button {

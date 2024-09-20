@@ -33,6 +33,7 @@
 
   &__title {
     @include second-title;
+    user-select: none;
   }
 }
 
@@ -53,11 +54,17 @@
     row-gap: $lgGap;
   }
 
-  &__item-img {
+  &__item-img-wrapper {
+    user-select: none;
     height: 64px;
-    object-fit: contain;
     @media (max-width: $fullPc) {
       height: 45px;
     }
+  }
+
+  &__item-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 }

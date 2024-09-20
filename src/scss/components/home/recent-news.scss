@@ -33,7 +33,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 28px;
+      gap: 29px;
       @media (max-width: $fullPc) {
         gap: $lgGap;
       }
@@ -121,15 +121,16 @@
     margin: 0 24px;
     display: flex;
     flex-direction: column;
-    gap: $smGap;
+    gap: 9px;
     max-width: 657px;
 
     @media (max-width: $fullPc) {
       max-width: 90%;
+      margin: 0 $midGap;
     }
     @media (max-width: $tablet) {
       margin-left: 0;
-      padding: 0 10px;
+      margin: 0 5px 0 $smGap;
     }
   }
 
@@ -154,7 +155,9 @@
 
 .info-items-recent-news {
   display: flex;
-  gap: 11px;
+  column-gap: 11px;
+  row-gap: $smGap;
+  flex-wrap: wrap;
 
   @include forth-text;
 
@@ -177,6 +180,10 @@
       top: 20%;
       right: 0;
     }
+
+    @media (max-width: $mobileSmall) {
+      padding-right: $smGap;
+    }
   }
 
   &__date {
@@ -198,30 +205,31 @@
       top: 20%;
       right: 0;
     }
+
+    @media (max-width: $mobileSmall) {
+      padding-right: $smGap;
+    }
   }
 
-  &__comment {
-    padding-left: 24px;
-    position: relative;
+  &__comment-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__comment-icon {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+  }
+
+  &__comment-text {
     display: -webkit-box;
     white-space: nowrap;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(0%, -50%);
-      aspect-ratio: 1/1;
-      width: 16px;
-      object-fit: contain;
-      background: url('/img/pages/home/recent-news/recent-news-comment-icon.svg')
-        0 0 no-repeat;
-    }
   }
 }
 

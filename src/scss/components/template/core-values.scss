@@ -55,15 +55,17 @@
   }
 
   &__img {
-    aspect-ratio: 1/1;
+    height: 48px;
     width: 48px;
     object-fit: contain;
     gap: $smGap;
     @media (max-width: $mobile) {
       width: 40px;
+      height: 40px;
     }
     @media (max-width: $mobileSmall) {
       width: 36px;
+      height: 36px;
     }
   }
 

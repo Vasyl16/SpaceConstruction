@@ -9,13 +9,16 @@
     &::after {
       content: '';
       position: absolute;
-      top: -470px;
-      left: -1000px;
-      background: url('/img/pages/home/fact-figures/fact-figures-bg.svg') 0 0
-        no-repeat;
+      top: -370px;
+      left: -300px;
+      background-image: image-set(
+        '/img/pages/home/fact-figures/fact-figures-bg.webp' type('image/webp'),
+        '/img/pages/home/fact-figures/fact-figures-bg.png' type('image/png')
+      );
+      background-repeat: no-repeat;
       background-size: cover;
-      width: 1200px;
-      height: 1000px;
+      width: 600px;
+      height: 800px;
       z-index: -1;
     }
     @media (max-width: $fullPc) {

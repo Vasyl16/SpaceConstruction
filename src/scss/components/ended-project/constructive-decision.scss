@@ -68,22 +68,24 @@
   }
 
   &__item {
+    padding-left: 36px;
+    position: relative;
+  }
+
+  &__item-text {
     @include third-text;
     color: $forthColor;
     text-align: left;
-    padding-left: 36px;
-    position: relative;
+  }
 
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0%;
-      left: 0;
-      aspect-ratio: 1/1;
-      width: 20px;
-      background: url('/img/pages/endedProject/constructive-decision/constructive-decision-icon-1.svg')
-        0 0 no-repeat;
-      background-size: contain;
-    }
+  &__item-icon {
+    position: absolute;
+    content: '';
+    top: 8%;
+    left: 0;
+    aspect-ratio: 1/1;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
   }
 }

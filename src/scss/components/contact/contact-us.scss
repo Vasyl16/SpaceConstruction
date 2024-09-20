@@ -190,13 +190,18 @@
     flex: 0 1 54%;
     display: flex;
     gap: 12px;
+    align-items: flex-start;
     @media (max-width: $tablet) {
       flex: 1 1 auto;
     }
   }
 
-  &__checkbox {
+  &__input-checkbox-wrapeper {
+    position: relative;
     margin-top: 3px;
+  }
+
+  &__input-checkbox {
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
@@ -205,29 +210,25 @@
     border: 1px solid $secondBgColor;
     border-radius: 3px;
     cursor: pointer;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      aspect-ratio: 1/1;
-      background: url('/img/pages/contact/contact-us/form-contact-us-check-icon.svg')
-        0 0 no-repeat;
-      width: 10px;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-      display: none;
-    }
 
     &:checked {
       background: $secondBgColor;
-
-      &::after {
-        display: block;
-      }
     }
+  }
+
+  &__input-checkbox-icon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+  }
+
+  &__input-checkbox:checked + &__input-checkbox-icon {
+    display: block;
   }
 
   &__button {

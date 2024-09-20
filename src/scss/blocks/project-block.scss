@@ -77,6 +77,7 @@
 .project-block-name {
   @include forth-text;
 
+  user-select: none;
   margin: 0 10px;
   margin-top: 5px;
   text-align: center;
@@ -85,6 +86,7 @@
 .project-block-button {
   @include third-button;
   & {
+    user-select: none;
     min-width: 172px;
     height: 44px;
     position: absolute;

@@ -19,6 +19,11 @@
     @include second-text;
   }
 
+  &__prev-button-icon,
+  &__next-button-icon {
+    @include main-arrow-icon;
+  }
+
   &__next-button,
   &__prev-button {
     @include main-arrow;
@@ -34,19 +39,24 @@
 
   &__next-button {
     right: 0;
+    transform: rotate(180deg);
   }
 
   &__prev-button {
     right: 61px;
     left: auto;
-
-    &::before {
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
   }
 
   & .swiper-button-disabled {
     @include main-arrow-disabled;
+  }
+
+  & .swiper-button-disabled &__prev-button-icon {
+    @include main-arrow-icon-disabled;
+  }
+
+  & .swiper-button-disabled &__next-button-icon {
+    @include main-arrow-icon-disabled;
   }
 
   &__footer {
@@ -113,6 +123,7 @@
   }
 
   &__img-container {
+    user-select: none;
     aspect-ratio: 285/340;
     width: 100%;
     border-radius: 3px;
@@ -146,6 +157,7 @@
   &__name {
     @include forth-title;
     margin-top: 15px;
+    user-select: none;
 
     @media (max-width: $tablet) {
       margin-top: 5px;
@@ -153,6 +165,7 @@
   }
 
   &__position {
+    user-select: none;
     @include third-text;
     margin-top: 5px;
 
@@ -188,11 +201,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    fill: $mainColor;
+    transition: all ease 0.3s;
+
+    @media (pointer: fine) {
+      &:hover {
+        fill: rgb(195, 195, 195);
+      }
+    }
   }
 }
 
 .footer-our-team {
   &__text {
+    user-select: none;
     @include second-text;
   }
 

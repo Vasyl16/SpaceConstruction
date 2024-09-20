@@ -61,16 +61,6 @@
     &::after {
       content: none;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      aspect-ratio: 1/1;
-      width: 24px;
-      background: url('/img/pages/home/main/main-left-arrow.svg') 0 0 no-repeat;
-      background-size: contain;
-    }
 
     @media (max-width: $mobile) {
       left: 20px;
@@ -91,17 +81,6 @@
     right: 33px;
     &::after {
       content: none;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      aspect-ratio: 1/1;
-      width: 24px;
-      background: url('/img/pages/home/main/main-left-arrow.svg') 0 0 no-repeat;
-      background-size: contain;
-      transform: rotate(180deg);
     }
 
     @media (max-width: $mobile) {
@@ -130,6 +109,22 @@
         background: $mainBgColor;
       }
     }
+  }
+
+  &__prev-button-icon,
+  &__next-button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    fill: $forthColor;
+  }
+
+  &__next-button-icon {
+    transform: translate(-50%, -50%) rotate(180deg);
   }
 
   &__slide {
@@ -171,6 +166,7 @@
     opacity: 0.35;
     cursor: pointer;
     transition: all ease 0.5s;
+    user-select: none;
 
     @media (pointer: fine) {
       &:hover {

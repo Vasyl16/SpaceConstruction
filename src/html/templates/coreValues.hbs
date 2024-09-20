@@ -1,20 +1,22 @@
-<div class='core-values__container'>
-  <div class='core-values__body'>
-    <div class='core-values__info'>
-      <h1 class='core-values__title'>{{coreValuesData.title}}</h1>
+<div class="core-values__container">
+  <div class="core-values__body">
+    <div class="core-values__info">
+      <h1 class="core-values__title">{{coreValuesData.title}}</h1>
 
-      <p class='core-values__text'>{{coreValuesData.missionText}}</p>
+      <p class="core-values__text">{{coreValuesData.missionText}}</p>
     </div>
 
-    <div class='core-values__items items-core-values'>
+    <div class="core-values__items items-core-values">
       {{#each coreValuesData.items}}
-        <article class='items-core-values__item'>
-          <img alt='img' class='items-core-values__img' src='{{imgSrc}}' />
+      <article class="items-core-values__item">
+        <svg class="items-core-values__img">
+          <use xlink:href="{{imgSrc}}"></use>
+        </svg>
 
-          <h1 class='items-core-values__title'>{{valueTitle}}</h1>
+        <h1 class="items-core-values__title">{{valueTitle}}</h1>
 
-          <p class='items-core-values__text'>{{valueText}}</p>
-        </article>
+        <p class="items-core-values__text">{{valueText}}</p>
+      </article>
       {{/each}}
     </div>
   </div>

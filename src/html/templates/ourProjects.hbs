@@ -1,62 +1,69 @@
-<div class='our-projects__container'>
-  <div class='our-projects__body'>
-    <h1 class='our-projects__title'>{{ourProjectsData.title}}</h1>
+<div class="our-projects__container">
+  <div class="our-projects__body">
+    <h1 class="our-projects__title">{{ourProjectsData.title}}</h1>
 
     <div
-      class='our-projects__items items-our-projects swiper swiper-our-project'
+      class="our-projects__items items-our-projects swiper swiper-our-project"
     >
-      <div class='items-our-projects__content swiper-wrapper'>
+      <div class="items-our-projects__content swiper-wrapper">
         {{#each ourProjectsData.items}}
 
-          <article
-            class='items-our-projects__item swiper-slide project-block-item'
-          >
-            <picture class='items-our-projects__img-wrapper project-block-img'>
-              <source type='image/webp' srcset='{{this.imgSrcWebp}}' />
-              <img
-                class='items-our-projects__img'
-                src='{{this.imgSrc}}'
-                alt='project image'
-              />
-            </picture>
+        <article
+          class="items-our-projects__item swiper-slide project-block-item"
+        >
+          <picture class="items-our-projects__img-wrapper project-block-img">
+            <source type="image/webp" srcset="{{this.imgSrcWebp}}" />
+            <img
+              class="items-our-projects__img"
+              src="{{this.imgSrc}}"
+              alt="project image"
+            />
+          </picture>
 
-            <div class='items-our-projects__body project-block-body'>
-              <h1 class='items-our-projects__title project-block-title'>
-                {{this.title}}
-              </h1>
+          <div class="items-our-projects__body project-block-body">
+            <h1 class="items-our-projects__title project-block-title">
+              {{this.title}}
+            </h1>
 
-              <p class='items-our-projects__name project-block-name'>
-                {{this.category}}
-              </p>
+            <p class="items-our-projects__name project-block-name">
+              {{this.category}}
+            </p>
 
-              <a
-                href='/SpaceConstruction/pages/work/ended-project.html'
-                class='items-our-projects__button project-block-button'
-              >
-
-                View Project
-              </a>
-            </div>
-          </article>
+            <a
+              href="/SpaceConstruction/pages/work/ended-project.html"
+              class="items-our-projects__button project-block-button"
+            >
+              View Project
+            </a>
+          </div>
+        </article>
 
         {{/each}}
       </div>
 
       <div
-        class='our-projects__prev-button swiper-button-prev swiper-our-projects-button-prev'
-      ></div>
+        class="our-projects__prev-button swiper-button-prev swiper-our-projects-button-prev"
+      >
+        <svg class="our-projects__prev-button-icon">
+          <use xlink:href="/icons/_sprite.svg#main-left-arrow"></use>
+        </svg>
+      </div>
 
       <div
-        class='our-projects__next-button swiper-button-next swiper-our-projects-button-next'
-      ></div>
+        class="our-projects__next-button swiper-button-next swiper-our-projects-button-next"
+      >
+        <svg class="our-projects__next-button-icon">
+          <use xlink:href="/icons/_sprite.svg#main-left-arrow"></use>
+        </svg>
+      </div>
     </div>
 
-    <div class='our-projects__view view-our-projects'>
-      <p class='view-our-projects__text'>Explore all our works</p>
+    <div class="our-projects__view view-our-projects">
+      <p class="view-our-projects__text">Explore all our works</p>
 
       <a
-        class='view-our-projects__button'
-        href='/SpaceConstruction/pages/work/work.html'
+        class="view-our-projects__button"
+        href="/SpaceConstruction/pages/work/work.html"
       >
         View portfolio
       </a>

@@ -141,24 +141,12 @@
     }
   }
 
-  &__place {
-    @include forth-text;
-    padding-left: 24px;
+  &__place-wrapper {
     position: relative;
     padding-right: 13px;
-
-    &::after {
-      position: absolute;
-      content: '';
-      top: 48%;
-      left: 0;
-      aspect-ratio: 1/1;
-      width: 16px;
-      transform: translate(0, -50%);
-      background: url('/img/pages/positions/our-positions/our-positions-icon-1.svg')
-        48% 10% no-repeat;
-      background-size: contain;
-    }
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     &::before {
       position: absolute;
@@ -171,13 +159,6 @@
     }
 
     @media (max-width: $mobile) {
-      padding-left: 15px;
-
-      &::after {
-        width: 12px;
-        top: 50%;
-      }
-
       &::before {
         height: 80%;
         top: 10%;
@@ -185,30 +166,48 @@
     }
   }
 
-  &__time {
+  &__place-text {
     @include forth-text;
-    padding-left: 24px;
-    position: relative;
+  }
 
+  &__place-icon {
+    margin-bottom: 2px;
     &::after {
-      position: absolute;
-      content: '';
-      top: 46%;
-      left: 0;
-      aspect-ratio: 1/1;
+      height: 16px;
       width: 16px;
-      transform: translate(0, -50%);
-      background: url('/img/pages/positions/our-positions/our-positions-icon-2.svg')
-        48% 0 no-repeat;
-      background-size: contain;
+      object-fit: contain;
     }
 
     @media (max-width: $mobile) {
-      padding-left: 15px;
-
       &::after {
         width: 12px;
-        top: 50%;
+        height: 12px;
+      }
+    }
+  }
+
+  &__time-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__time-text {
+    @include forth-text;
+  }
+
+  &__time-icon {
+    margin-bottom: 2px;
+    &::after {
+      height: 16px;
+      width: 16px;
+      object-fit: contain;
+    }
+
+    @media (max-width: $mobile) {
+      &::after {
+        width: 12px;
+        height: 12px;
       }
     }
   }

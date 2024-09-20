@@ -4,13 +4,13 @@ const popupItems = [
   {
     buttonClass: 'our-positions__button-link_subscribe',
     popupClass: 'subscribe-popup-our-positions',
-    closeIconClass: 'subscribe-popup-our-positions__cros-icon',
+    closeIconClass: 'subscribe-popup-our-positions__cross-icon',
   },
 
   {
     buttonClass: 'our-positions__button-link_send',
     popupClass: 'send-popup-our-positions',
-    closeIconClass: 'send-popup-our-positions__cros-icon',
+    closeIconClass: 'send-popup-our-positions__cross-icon',
   },
 ];
 

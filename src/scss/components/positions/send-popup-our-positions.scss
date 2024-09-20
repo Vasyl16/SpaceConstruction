@@ -59,7 +59,7 @@
   &__cross-button {
     position: absolute;
     content: '';
-    top: 23px;
+    top: 24px;
     right: 24px;
     aspect-ratio: 1/1;
     width: 24px;
@@ -107,6 +107,7 @@
     &_m {
       align-items: flex-start;
       margin-top: 6px;
+      position: relative;
     }
   }
 
@@ -115,29 +116,36 @@
 
     &_m {
       padding-left: 36px;
-      position: relative;
       cursor: pointer;
       display: inline-block;
+      transition: all ease 0.3s;
 
-      &::after {
-        position: absolute;
-        content: '';
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-        aspect-ratio: 1/1;
-        width: 24px;
-        background: url('/img/pages/positions/our-positions/popup-our-positions-attach-icon.svg')
-          0 0 no-repeat;
-        background-size: contain;
+      @media (pointer: fine) {
+        &:hover {
+          color: rgb(255, 134, 104);
+        }
       }
 
       @media (max-width: $tablet) {
-        padding-left: 25px;
+        padding-left: $lgGap;
         &::after {
           width: 17px;
         }
       }
+    }
+  }
+
+  &__label-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 24px;
+    height: 24px;
+
+    @media (max-width: $mobile) {
+      width: 20px;
+      height: 20px;
     }
   }
 

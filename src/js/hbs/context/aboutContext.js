@@ -26,21 +26,21 @@ export const aboutContext = {
 
     items: [
       {
-        imgSrc: '/img/templates/core-values/core-values-img-1.svg',
+        imgSrc: '/icons/_sprite.svg#core-values-img-1',
         valueTitle: 'Quality',
         valueText:
           'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.',
       },
 
       {
-        imgSrc: '/img/templates/core-values/core-values-img-2.svg',
+        imgSrc: '/icons/_sprite.svg#core-values-img-2',
         valueTitle: 'Safety',
         valueText:
           'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.',
       },
 
       {
-        imgSrc: '/img/templates/core-values/core-values-img-3.svg',
+        imgSrc: '/icons/_sprite.svg#core-values-img-3',
         valueTitle: 'Comfort',
         valueText:
           'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.',
@@ -52,18 +52,54 @@ export const aboutContext = {
     title: 'Our partners',
 
     images: [
-      '/img/templates/partners/partners-img-1.svg',
-      '/img/templates/partners/partners-img-2.svg',
-      '/img/templates/partners/partners-img-3.svg',
-      '/img/templates/partners/partners-img-4.svg',
-      '/img/templates/partners/partners-img-5.svg',
-      '/img/templates/partners/partners-img-6.svg',
-      '/img/templates/partners/partners-img-7.svg',
-      '/img/templates/partners/partners-img-8.svg',
-      '/img/templates/partners/partners-img-9.svg',
-      '/img/templates/partners/partners-img-10.svg',
-      '/img/templates/partners/partners-img-11.svg',
-      '/img/templates/partners/partners-img-12.svg',
+      {
+        img: '/img/templates/partners/partners-img-1.png',
+        imgWebp: '/img/templates/partners/partners-img-1.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-2.png',
+        imgWebp: '/img/templates/partners/partners-img-2.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-3.png',
+        imgWebp: '/img/templates/partners/partners-img-3.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-4.png',
+        imgWebp: '/img/templates/partners/partners-img-4.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-5.png',
+        imgWebp: '/img/templates/partners/partners-img-5.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-6.png',
+        imgWebp: '/img/templates/partners/partners-img-6.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-7.png',
+        imgWebp: '/img/templates/partners/partners-img-7.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-8.png',
+        imgWebp: '/img/templates/partners/partners-img-8.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-9.png',
+        imgWebp: '/img/templates/partners/partners-img-9.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-10.png',
+        imgWebp: '/img/templates/partners/partners-img-10.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-11.png',
+        imgWebp: '/img/templates/partners/partners-img-11.webp',
+      },
+      {
+        img: '/img/templates/partners/partners-img-12.png',
+        imgWebp: '/img/templates/partners/partners-img-12.webp',
+      },
     ],
 
     text: 'We are supported by 12+ industry bodies and media partners',

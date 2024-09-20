@@ -19,6 +19,7 @@
   &__item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 17px;
     flex: 1 0 210px;
     align-items: center;
@@ -80,136 +81,24 @@
         .items-work-filter__text {
           color: $mainColor;
         }
-      }
-    }
 
-    &_1 {
-      .items-work-filter__img {
-        &::after {
-          background: url('/img/pages/work/work-filter/work-filter-icon-1.svg')
-            no-repeat;
-          background-size: contain;
-        }
-      }
-
-      @media (pointer: fine) {
-        &:hover {
-          .items-work-filter__img {
-            &::after {
-              background: url('/img/pages/work/work-filter/work-filter-icon-1-active.svg');
-              background-size: contain;
-            }
-          }
-        }
-      }
-    }
-
-    &_2 {
-      .items-work-filter__img {
-        &::after {
-          background: url('/img/pages/work/work-filter/work-filter-icon-2.svg')
-            no-repeat;
-          background-size: contain;
-        }
-      }
-
-      @media (pointer: fine) {
-        &:hover {
-          .items-work-filter__img {
-            &::after {
-              background: url('/img/pages/work/work-filter/work-filter-icon-2-active.svg')
-                no-repeat;
-              background-size: contain;
-            }
-          }
-        }
-      }
-    }
-
-    &_3 {
-      .items-work-filter__img {
-        &::after {
-          background: url('/img/pages/work/work-filter/work-filter-icon-3.svg')
-            no-repeat;
-          background-size: contain;
-        }
-      }
-
-      @media (pointer: fine) {
-        &:hover {
-          .items-work-filter__img {
-            &::after {
-              background: url('/img/pages/work/work-filter/work-filter-icon-3-active.svg')
-                no-repeat;
-              background-size: contain;
-            }
-          }
-        }
-      }
-    }
-
-    &_4 {
-      .items-work-filter__img {
-        &::after {
-          background: url('/img/pages/work/work-filter/work-filter-icon-4.svg')
-            no-repeat;
-          background-size: contain;
-        }
-      }
-
-      @media (pointer: fine) {
-        &:hover {
-          .items-work-filter__img {
-            &::after {
-              background: url('/img/pages/work/work-filter/work-filter-icon-4-active.svg')
-                no-repeat;
-              background-size: contain;
-            }
-          }
-        }
-      }
-    }
-
-    &_5 {
-      .items-work-filter__img {
-        &::after {
-          background: url('/img/pages/work/work-filter/work-filter-icon-5.svg')
-            no-repeat;
-          background-size: contain;
-        }
-      }
-
-      @media (pointer: fine) {
-        &:hover {
-          .items-work-filter__img {
-            &::after {
-              background: url('/img/pages/work/work-filter/work-filter-icon-5-active.svg')
-                no-repeat;
-              background-size: contain;
-            }
-          }
+        .items-work-filter__img {
+          fill: $mainBgColor;
         }
       }
     }
   }
 
   &__img {
-    aspect-ratio: 1/1;
     width: 48px;
+    height: 48px;
     position: relative;
-
-    &::after {
-      top: 0;
-      left: 0;
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      transition: all ease 0.3s;
-    }
+    transition: all ease 0.3s;
+    fill: $secondBgColor;
 
     @media (max-width: $mobile) {
       width: 35px;
+      height: 48px;
     }
   }
 

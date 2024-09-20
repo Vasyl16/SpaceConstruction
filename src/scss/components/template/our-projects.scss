@@ -40,22 +40,25 @@
     }
   }
 
+  &__prev-button-icon,
+  &__next-button-icon {
+    @include main-arrow-icon;
+  }
+
   &__next-button {
     width: 48px;
     top: -13px;
     @include main-arrow;
+    transform: rotate(180deg);
   }
 
   &__prev-button {
     top: -13px;
-    right: 61px;
+    right: 71px;
     left: auto;
     @include main-arrow;
-
-    &::before {
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
   }
+
   &__next-button,
   &__prev-button {
     @media (max-width: $tablet) {
@@ -68,6 +71,14 @@
 
   & .swiper-button-disabled {
     @include main-arrow-disabled;
+  }
+
+  & .swiper-button-disabled &__prev-button-icon {
+    @include main-arrow-icon-disabled;
+  }
+
+  & .swiper-button-disabled &__next-button-icon {
+    @include main-arrow-icon-disabled;
   }
 }
 

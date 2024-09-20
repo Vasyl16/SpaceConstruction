@@ -10,11 +10,14 @@
 
     <div class='supported-partners__items items-supported-partners'>
       {{#each supportedPartnersData.images}}
-        <img
-          alt='img'
-          class='items-supported-partners__item-img'
-          src='{{this}}'
-        />
+        <picture class='items-supported-partners__item-img-wrapper'>
+          <source type='image/webp' srcset='{{this.imgWebp}}' />
+          <img
+            class='items-supported-partners__item-img'
+            src='{{this.img}}'
+            alt='partners img'
+          />
+        </picture>
       {{/each}}
     </div>
   </div>

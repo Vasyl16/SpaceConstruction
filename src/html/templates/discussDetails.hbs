@@ -1,61 +1,69 @@
-<div class='discuss-details__container'>
-  <form class='discuss-details__form form-discuss-details'>
-    <div class='form-discuss-details__body'>
-      <h1 class='form-discuss-details__title'>
+<div class="discuss-details__container">
+  <form class="discuss-details__form form-discuss-details">
+    <div class="form-discuss-details__body">
+      <h1 class="form-discuss-details__title">
         A quick way to discuss details
       </h1>
 
-      <div class='form-discuss-details__items'>
-        <div class='form-discuss-details__item'>
-          <label class='form-discuss-details__label'>Name*</label>
+      <div class="form-discuss-details__items">
+        <div class="form-discuss-details__item">
+          <label class="form-discuss-details__label">Name*</label>
 
-          <input placeholder='Your name' class='form-discuss-details__input' />
+          <input placeholder="Your name" class="form-discuss-details__input" />
         </div>
 
-        <div class='form-discuss-details__item'>
-          <label class='form-discuss-details__label'>Phone*</label>
+        <div class="form-discuss-details__item">
+          <label class="form-discuss-details__label">Phone*</label>
 
           <input
-            placeholder='Your phone number'
-            class='form-discuss-details__input'
+            placeholder="Your phone number"
+            class="form-discuss-details__input"
           />
         </div>
 
-        <div class='form-discuss-details__item'>
-          <label class='form-discuss-details__label'>Email</label>
+        <div class="form-discuss-details__item">
+          <label class="form-discuss-details__label">Email</label>
 
           <input
-            placeholder='Your working email'
-            class='form-discuss-details__input'
+            placeholder="Your working email"
+            class="form-discuss-details__input"
           />
         </div>
 
-        <div class='form-discuss-details__item'>
-          <label class='form-discuss-details__label'>Message*</label>
+        <div class="form-discuss-details__item">
+          <label class="form-discuss-details__label">Message*</label>
 
           <textarea
-            placeholder='Your message'
-            class='form-discuss-details__textarea'
+            placeholder="Your message"
+            class="form-discuss-details__textarea"
           ></textarea>
         </div>
 
-        <div class='form-discuss-details__item form-discuss-details__item_m'>
-          <input
-            type='checkbox'
-            class='form-discuss-details__checkbox'
-            id='form-discuss-details-check'
-            checked
-          />
+        <div class="form-discuss-details__item form-discuss-details__item_m">
+          <div class="form-discuss-details__checkbox-wrapper">
+            <input
+              type="checkbox"
+              class="form-discuss-details__checkbox"
+              id="form-discuss-details-check"
+              checked
+            />
+
+            <svg class="form-discuss-details__checkbox-icon">
+              <use
+                xlink:href="/icons/_sprite.svg#discuss-details-check-icon"
+              ></use>
+            </svg>
+          </div>
 
           <label
-            for='form-discuss-details-check'
-            class='form-discuss-details__label form-discuss-details__label_m'
+            for="form-discuss-details-check"
+            class="form-discuss-details__label form-discuss-details__label_m"
           >
             I agree to receive communications from Createx Construction Bureau.
           </label>
         </div>
 
-        <button type='submit' class='form-discuss-details__button'>
+        <button type="submit" class="form-discuss-details__button">
           send request
         </button>
       </div>

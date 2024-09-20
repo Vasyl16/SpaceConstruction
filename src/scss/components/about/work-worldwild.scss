@@ -38,20 +38,23 @@
   }
 
   &__icon {
-    aspect-ratio: 1/1;
+    height: 40px;
     width: 40px;
     position: absolute;
     z-index: 1;
 
     @media (max-width: $tablet) {
+      height: 30px;
       width: 30px;
     }
     @media (max-width: $mobile) {
       width: 20px;
+      height: 20px;
     }
 
     @media (max-width: $mobileSmall) {
       width: 15px;
+      height: 15px;
     }
 
     &_1 {

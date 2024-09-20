@@ -1,6 +1,6 @@
 @mixin main-arrow {
   position: absolute;
-  aspect-ratio: 1/1;
+  height: 48px;
   width: 48px;
   border-radius: 50%;
   background: $secondBgColor;
@@ -10,43 +10,47 @@
     content: none;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 18px;
-    height: 12px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url('/img/blocks/arrow/our-projects-swiper-arrow.svg') 0 0
-      no-repeat;
-    background-size: contain;
+  @media (max-width: $tablet) {
+    width: 40px;
+    height: 40px;
   }
+}
 
+@mixin main-arrow-icon {
+  position: absolute;
+  fill: $mainColor;
+  width: 25px !important;
+  height: 25px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
   @media (pointer: fine) {
     &:hover {
       background: rgb(255, 110, 73);
     }
   }
 
-  & {
-    @media (max-width: $tablet) {
-      width: 40px;
-      &::before {
-        width: 16px;
-        height: 11px;
-      }
-    }
+  @media (max-width: $tablet) {
+    width: 22px !important;
+    height: 22px !important;
   }
 }
 
 @mixin main-arrow-disabled {
   background: none;
+  opacity: 1;
+}
 
-  &::before {
-    background: url('/img/blocks/arrow/our-projects-swiper-arrow-disable.svg') 0
-      0 no-repeat;
-    width: 24px;
-    height: 24px;
+@mixin main-arrow-icon-disabled {
+  width: 24px;
+  height: 24px;
+  fill: rgba(66, 69, 81, 1);
+
+  @media (max-width: $tablet) {
+    &::before {
+      width: 16px;
+      height: 11px;
+    }
   }
 }

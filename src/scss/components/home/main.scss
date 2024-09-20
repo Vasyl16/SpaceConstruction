@@ -21,23 +21,12 @@
   &__prev-button {
     aspect-ratio: 1/1;
     width: 48px;
-    left: 33px;
+    left: 32px;
     background: $mainBgColor;
     border-radius: 50%;
     &::after {
       content: none;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      aspect-ratio: 1/1;
-      width: 24px;
-      background: url('/img/pages/home/main/main-left-arrow.svg') 0 0 no-repeat;
-      background-size: contain;
-    }
-
     @media (max-width: $mobile) {
       aspect-ratio: 1/1;
       width: 40px;
@@ -54,20 +43,9 @@
     width: 48px;
     background: $mainBgColor;
     border-radius: 50%;
-    right: 33px;
+    right: 32px;
     &::after {
       content: none;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      aspect-ratio: 1/1;
-      width: 24px;
-      background: url('/img/pages/home/main/main-left-arrow.svg') 0 0 no-repeat;
-      background-size: contain;
-      transform: rotate(180deg);
     }
 
     @media (max-width: $mobile) {
@@ -86,6 +64,21 @@
     @media (max-width: $tablet) {
       display: none;
     }
+  }
+
+  &__prev-button-icon,
+  &__next-button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+  }
+
+  &__next-button-icon {
+    transform: translate(-50%, -50%) rotate(180deg);
   }
 
   &__pagination {
