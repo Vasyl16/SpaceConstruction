@@ -70,7 +70,7 @@
     height: 100%;
     align-items: flex-start;
     gap: 26px;
-    padding: $lgGap 0;
+    padding: 29px 0 31px;
     justify-content: center;
     min-height: 420px;
     box-sizing: border-box;
@@ -97,7 +97,7 @@
   &__text {
     @include third-text;
     text-align: left;
-    max-width: 97%;
+    max-width: 99%;
 
     @media (max-width: $mobile) {
       text-align: center;
