@@ -11,6 +11,7 @@ import {
   positionsContext,
   newsContext,
   contactContext,
+  singleNewsContext,
 } from './src/js/hbs/context';
 
 import { getContext, ifContains } from './src/js/hbs/utils';
@@ -24,6 +25,7 @@ const contexts = {
   about: aboutContext,
   positions: positionsContext,
   news: newsContext,
+  'single-news': singleNewsContext,
   contact: contactContext,
 };
 
@@ -40,6 +42,7 @@ export default defineConfig({
         positions: './pages/about/positions.html',
         news: './pages/news/news.html',
         contact: './pages/contact/contact.html',
+        singleNews: './pages/news/single-news.html',
       },
     },
   },

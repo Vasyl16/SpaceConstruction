@@ -7,6 +7,7 @@ import { aboutContext } from './aboutContext';
 import { positionsContext } from './positionsContext';
 import { newsContext } from './newsContext';
 import { contactContext } from './contactContext';
+import { singleNewsContext } from './singleNewsContext';
 
 export {
   homeContext,
@@ -18,4 +19,5 @@ export {
   positionsContext,
   newsContext,
   contactContext,
+  singleNewsContext,
 };
