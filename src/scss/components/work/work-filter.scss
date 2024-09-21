@@ -26,7 +26,7 @@
     padding: 32px $smGap;
     position: relative;
     border-radius: 3px;
-    box-shadow: 0px 4px 34px -11px rgba(30, 33, 44, 0.3);
+    box-shadow: 0px 4px 34px -11px $mainBoxShadowColor;
     cursor: pointer;
     transition: all ease 0.3s;
 
@@ -107,7 +107,7 @@
     font-weight: 700;
     line-height: 1.5;
     text-align: center;
-    color: rgba(154, 156, 165, 1);
+    color: $thirdBgColor;
     transition: all ease 0.3s;
   }
 }

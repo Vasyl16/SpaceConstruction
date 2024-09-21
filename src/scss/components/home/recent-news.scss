@@ -63,13 +63,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: 0px 4px 18px -8px rgba(30, 33, 44, 0.3);
+    box-shadow: 0px 4px 18px -8px $mainBoxShadowColor;
     padding-bottom: 24px;
     transition: all ease 0.3s;
 
     @media (pointer: fine) {
       &:hover {
-        box-shadow: 0px 4px 18px -2px rgba(30, 33, 44, 0.3);
+        box-shadow: 0px 4px 18px -2px $mainBoxShadowColor;
 
         & .items-recent-news__title {
           color: $secondBgColor;
@@ -143,7 +143,7 @@
   &__text {
     @include third-text;
 
-    color: rgba(66, 69, 81, 1);
+    color: $forthColor;
     text-align: left;
     margin-top: 9px;
 
@@ -174,7 +174,7 @@
     &::after {
       position: absolute;
       content: '';
-      background: rgba(120, 122, 128, 1);
+      background: $thirdColor;
       width: 1px;
       height: 50%;
       top: 20%;
@@ -199,7 +199,7 @@
     &::after {
       position: absolute;
       content: '';
-      background: rgba(120, 122, 128, 1);
+      background: $thirdColor;
       width: 1px;
       height: 50%;
       top: 20%;

@@ -8,9 +8,37 @@ $forthColor: rgba(66, 69, 81, 1);
 // hover color
 
 $mainHoverColor: rgba(255, 90, 48, 1);
-$secondHoverColor: white;
+$secondHoverColor: rgb(255, 115, 80);
 
 // main bg color
 
 $mainBgColor: white;
 $secondBgColor: rgba(255, 90, 48, 1);
+$thirdBgColor: rgba(154, 156, 165, 1);
+$forthBgColor: rgba(30, 33, 44, 0.7);
+$mainArrowBgColor: rgba(255, 255, 255, 0.482);
+
+// other colorscssscss
+
+$youtubeColor: #ff0000;
+$twiterColor: #1877f2;
+$facebookColor: #006aff;
+$whatsappColor: #25d366;
+$blackColor: black;
+
+$mainGradiant: linear-gradient(
+  270.01deg,
+  rgba(218, 219, 221, 0) 0%,
+  rgba(218, 219, 221, 0.5) 12.33%,
+  #dadbdd 51.91%,
+  rgba(218, 219, 221, 0.5) 87.85%,
+  rgba(218, 219, 221, 0) 100%
+);
+
+$mainBoxShadowColor: rgba(30, 33, 44, 0.3);
+
+$mainBorderColor: rgba(229, 232, 237, 1);
+
+$headerBgColor: rgba(255, 255, 255, 0.893);
+
+$formBgColor: rgba(244, 245, 246, 1);

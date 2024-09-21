@@ -206,7 +206,7 @@
 
     @media (pointer: fine) {
       &:hover {
-        fill: rgb(195, 195, 195);
+        fill: $thirdBgColor;
       }
     }
   }
@@ -236,7 +236,7 @@
 
     @media (pointer: fine) {
       &:hover {
-        color: rgb(255, 134, 104);
+        color: $secondHoverColor;
       }
     }
   }

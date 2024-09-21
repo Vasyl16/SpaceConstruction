@@ -50,7 +50,7 @@
     flex: 0 1 495px;
     padding: 48px 40px;
     box-sizing: border-box;
-    box-shadow: 0px 4px 41px -18px rgba(30, 33, 44, 0.5);
+    box-shadow: 0px 4px 41px -18px $mainBoxShadowColor;
 
     @media (max-width: $tablet) {
       padding: $lgGap;

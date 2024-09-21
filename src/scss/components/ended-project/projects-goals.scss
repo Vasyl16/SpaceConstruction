@@ -64,7 +64,7 @@
   padding: 40px 60px;
   box-sizing: border-box;
   max-width: 495px;
-  box-shadow: 0px 4px 49px -16px rgba(30, 33, 44, 0.3);
+  box-shadow: 0px 4px 49px -16px $mainBoxShadowColor;
   background: $mainBgColor;
   border-radius: 3px;
 
@@ -93,7 +93,7 @@
     font-weight: 700;
     line-height: 1.6;
     color: $thirdColor;
-    color: rgba(30, 33, 44, 1);
+    color: $secondColor;
     box-sizing: border-box;
     text-transform: uppercase;
   }

@@ -27,7 +27,7 @@
   object-fit: contain;
   @media (pointer: fine) {
     &:hover {
-      background: rgb(255, 110, 73);
+      background: $secondBgColor;
     }
   }
 
@@ -45,7 +45,7 @@
 @mixin main-arrow-icon-disabled {
   width: 24px;
   height: 24px;
-  fill: rgba(66, 69, 81, 1);
+  fill: $forthColor;
 
   @media (max-width: $tablet) {
     &::before {

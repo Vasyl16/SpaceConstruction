@@ -12,7 +12,7 @@
 
   @media (pointer: fine) {
     &:hover {
-      background: rgb(255, 117, 83);
+      background: $secondHoverColor;
     }
   }
 }
@@ -28,6 +28,13 @@
   text-transform: uppercase;
   transition: all ease 0.3s;
   border: solid 1px $mainColor;
+
+  @media (pointer: fine) {
+    &:hover {
+      background: none;
+      color: $thirdBgColor;
+    }
+  }
 }
 
 @mixin third-button {

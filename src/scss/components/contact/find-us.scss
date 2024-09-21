@@ -37,7 +37,7 @@
     &_whatsapp {
       @media (pointer: fine) {
         &:hover {
-          fill: #25d366;
+          fill: $whatsappColor;
         }
       }
     }
@@ -45,15 +45,15 @@
     &_facebook {
       @media (pointer: fine) {
         &:hover {
-          fill: #006aff;
+          fill: $facebookColor;
         }
       }
     }
 
-    &_twitter {
+    &_twiter {
       @media (pointer: fine) {
         &:hover {
-          fill: #1877f2;
+          fill: $twiterColor;
         }
       }
     }
@@ -61,15 +61,7 @@
     &_youtube {
       @media (pointer: fine) {
         &:hover {
-          fill: #ff0000;
-        }
-      }
-    }
-
-    &_5 {
-      @media (pointer: fine) {
-        &:hover {
-          fill: #ff0000;
+          fill: $youtubeColor;
         }
       }
     }
