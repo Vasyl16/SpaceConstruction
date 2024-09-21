@@ -32,7 +32,7 @@
   &__column {
     flex: 0 1 600px;
 
-    &_i {
+    &_image-wrapper {
       flex: 0 0 40.244%;
 
       @media (max-width: $tablet) {
@@ -91,7 +91,7 @@
     flex: 0 1 50%;
     gap: 8px;
 
-    &_t {
+    &_textarea-wrapper {
       flex: 1 1 100%;
     }
 

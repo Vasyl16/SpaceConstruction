@@ -73,13 +73,13 @@
       height: 100%;
     }
 
-    &_a {
+    &_active {
       left: 0;
     }
   }
 
   &__item {
-    &_m {
+    &_modified {
       flex: 1 1 auto;
       transition: all ease 0.3s;
       @media (max-width: 1200px) {
@@ -103,13 +103,13 @@
       }
     }
 
-    &_a {
+    &_active {
       @media (max-width: 1200px) {
         left: 0;
       }
     }
 
-    &_l {
+    &_logo-wrapper {
       @media (max-width: 1200px) {
         flex: 1 1 auto;
       }
@@ -180,7 +180,7 @@
 
   &__link {
     @include nav-title;
-    &_a {
+    &_active {
       color: $mainHoverColor;
     }
   }
@@ -295,7 +295,7 @@
       background-color: $secondColor;
     }
 
-    &_a {
+    &_active {
       transform: rotate(45deg);
       &::after {
         top: 50%;

@@ -73,7 +73,7 @@
       }
     }
 
-    &_m {
+    &_active {
       @include third-button;
 
       & {
@@ -227,7 +227,7 @@
       background: $thirdColor;
     }
 
-    &_m {
+    &_icon {
       padding-left: 22px;
     }
 
@@ -268,7 +268,7 @@
     cursor: pointer;
     padding: 2px;
 
-    &_m {
+    &_active {
       color: $secondBgColor;
     }
 

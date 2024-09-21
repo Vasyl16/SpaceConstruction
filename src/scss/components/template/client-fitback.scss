@@ -18,7 +18,7 @@
   }
 
   &__item {
-    &_s {
+    &_swiper {
       flex: 0 1 48.8%;
       margin: 0;
       height: 100%;
@@ -32,7 +32,7 @@
       }
     }
 
-    &_m {
+    &_image-container {
       flex: 0 0 40.245%;
       aspect-ratio: 495/550;
       @media (max-width: $tablet) {

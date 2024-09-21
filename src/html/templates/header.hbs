@@ -1,6 +1,6 @@
 <div class="header__container">
   <div class="header__items">
-    <div class="header__item header__item_l">
+    <div class="header__item header__item_logo-wrapper">
       <a class="header__logo-link" href="/SpaceConstruction/">
         <svg class="header__logo">
           <use xlink:href="/icons/sprite.svg#logo"></use>
@@ -8,14 +8,14 @@
       </a>
     </div>
 
-    <div class="header__item header__item_m">
+    <div class="header__item header__item_modified">
       <nav class="header__nav nav-header">
         <ul class="nav-header__list">
           {{#each headerData.navItems}}
 
           <li class="nav-header__item">
             <a
-              class="nav-header__link {{#if (ifContains this.route ../headerData.currentPath)}}nav-header__link_a{{/if}}"
+              class="nav-header__link {{#if (ifContains this.route ../headerData.currentPath)}}nav-header__link_active{{/if}}"
               href="{{this.href}}"
             >
               {{this.name}}

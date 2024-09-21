@@ -167,11 +167,11 @@
   &__title {
     @include main-title;
 
-    &_m span {
+    &_white span {
       color: $secondBgColor;
     }
 
-    &_m {
+    &_white {
       color: $mainColor;
     }
   }
@@ -188,7 +188,7 @@
       margin-top: 0;
     }
 
-    &_m {
+    &_white {
       color: $mainColor;
     }
   }
@@ -220,7 +220,7 @@
       box-sizing: border-box;
     }
 
-    &_m {
+    &_second-button {
       min-width: 278px;
       @include second-button;
 

@@ -23,7 +23,7 @@
   &__row {
     display: flex;
 
-    &_m {
+    &_rights {
       justify-content: space-between;
       @media (max-width: $tablet) {
         gap: 40px;
@@ -34,7 +34,7 @@
       }
     }
 
-    &_i {
+    &_info {
       margin-top: 12px;
     }
   }
@@ -57,7 +57,7 @@
   }
 
   &__row {
-    &_m {
+    &_rights {
       display: flex;
       gap: 60px;
       @media (max-width: $mobile) {
@@ -168,11 +168,11 @@
       flex: none;
       width: 100%;
     }
-    &_a {
+    &_medium {
       flex: 0 0 28.374%;
     }
 
-    &_b {
+    &_large {
       flex: 1 1 auto;
     }
   }
@@ -269,7 +269,7 @@
   &__item {
     order: 2;
 
-    &_m {
+    &_button-wrapper {
       display: flex;
       gap: 17px;
       align-items: flex-end;
@@ -331,12 +331,12 @@
 .spoiler-footer-content {
   padding-bottom: 0;
 
-  &_a {
+  &_act {
     padding-bottom: $smGap;
   }
 }
 .spoiler-footer-title {
-  &_a + .info-footer__title-img {
+  &_act + .info-footer__title-img {
     transform: translate(0, -50%) rotate(0deg);
   }
 }

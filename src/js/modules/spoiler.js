@@ -34,8 +34,8 @@ const toggleSpoiler = (content, title, contentClass, titleClass) => {
 
   content.style.maxHeight = isExpanded ? '0' : content.scrollHeight + 'px';
   content.style.opacity = isExpanded ? '0' : '1';
-  content.classList.toggle(contentClass + '_a', !isExpanded);
-  title.classList.toggle(titleClass + '_a', !isExpanded);
+  content.classList.toggle(contentClass + '_act', !isExpanded);
+  title.classList.toggle(titleClass + '_act', !isExpanded);
 };
 
 const collapseOtherSpoilers = (
@@ -49,8 +49,8 @@ const collapseOtherSpoilers = (
       const otherContent = otherSpoiler.querySelector('.' + contentClass);
       const otherTitle = otherSpoiler.querySelector('.' + titleClass);
 
-      otherContent.classList.remove(contentClass + '_a');
-      otherTitle.classList.remove(titleClass + '_a');
+      otherContent.classList.remove(contentClass + '_act');
+      otherTitle.classList.remove(titleClass + '_act');
 
       otherContent.style.maxHeight = '';
       otherContent.style.opacity = '';
@@ -72,8 +72,8 @@ const collapseAllSpoilers = (currentSpoiler, contentClass, titleClass) => {
     return;
   }
 
-  currentContent.classList.remove(contentClass + '_a');
-  currentTitle.classList.remove(titleClass + '_a');
+  currentContent.classList.remove(contentClass + '_act');
+  currentTitle.classList.remove(titleClass + '_act');
 };
 
 const spoilerFun = (spoilers, titleClass, contentClass, resolutionMax) => {
@@ -106,7 +106,7 @@ const spoilerFun = (spoilers, titleClass, contentClass, resolutionMax) => {
       otherContent.style.opacity = '';
       otherSpoiler
         .querySelector('.' + titleClass)
-        .classList.remove(titleClass + '_a');
+        .classList.remove(titleClass + '_act');
     });
   });
 };

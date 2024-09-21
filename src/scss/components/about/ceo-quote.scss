@@ -15,7 +15,7 @@
 
   &__column {
     flex: 1 1 auto;
-    &_i {
+    &_image-wrapper {
       margin-top: 120px;
       flex: 0 0 42.684%;
       border-radius: 3px;
@@ -28,7 +28,7 @@
       }
     }
 
-    &_m {
+    &_content {
       position: relative;
     }
   }

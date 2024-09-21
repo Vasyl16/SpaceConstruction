@@ -1,7 +1,7 @@
 export const footerData = [
   {
     title: 'HEAD OFFICE',
-    modifier: '_a',
+    modifier: '_medium',
     links: [
       {
         name: 'Address: 8502 Preston Rd. Inglewood, New York',
@@ -29,7 +29,7 @@ export const footerData = [
     ],
   },
   {
-    modifier: '_b',
+    modifier: '_large',
     title: 'OUR EXPERIENCE',
     links: [
       {

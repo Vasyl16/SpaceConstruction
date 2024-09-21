@@ -64,7 +64,7 @@
     padding-left: 23px;
     padding-right: 9px;
 
-    &_m {
+    &_large {
       min-height: auto;
       margin-bottom: 26px;
       align-items: flex-end;
@@ -74,7 +74,7 @@
       background: rgba(244, 245, 246, 1);
     }
 
-    &_b {
+    &_buttons {
       padding-top: $midGap;
     }
 

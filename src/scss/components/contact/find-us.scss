@@ -34,7 +34,7 @@
     fill: #787a80;
     transition: all ease 0.3s;
 
-    &_1 {
+    &_whatsapp {
       @media (pointer: fine) {
         &:hover {
           fill: #25d366;
@@ -42,7 +42,7 @@
       }
     }
 
-    &_2 {
+    &_facebook {
       @media (pointer: fine) {
         &:hover {
           fill: #006aff;
@@ -50,7 +50,7 @@
       }
     }
 
-    &_3 {
+    &_twitter {
       @media (pointer: fine) {
         &:hover {
           fill: #1877f2;
@@ -58,10 +58,10 @@
       }
     }
 
-    &_4 {
+    &_youtube {
       @media (pointer: fine) {
         &:hover {
-          fill: #1da1f2;
+          fill: #ff0000;
         }
       }
     }

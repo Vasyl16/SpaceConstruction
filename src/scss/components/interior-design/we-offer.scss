@@ -27,7 +27,7 @@
     @media (max-width: $tablet) {
       width: clamp(200px, 600px, 80vw);
     }
-    &_i {
+    &_image-wrapper {
       border-radius: 3px;
       flex: 0 1 57.318%;
       @media (max-width: $tablet) {
@@ -134,13 +134,13 @@
   }
 }
 
-.spoiler-we-offer-title_a {
+.spoiler-we-offer-title_act {
   margin-bottom: 11px;
   &::before {
     transform: rotate(90deg);
   }
 }
 
-.spoiler-we-offer-content_a {
+.spoiler-we-offer-content_act {
   margin-bottom: 10px;
 }

@@ -17,7 +17,7 @@
   &__column {
     flex: 0 1 380px;
 
-    &_m {
+    &_large {
       flex: 0 0 57.318%;
     }
 
@@ -83,7 +83,7 @@
       }
     }
 
-    &_m {
+    &_main-button {
       @include main-button;
     }
   }

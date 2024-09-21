@@ -28,14 +28,14 @@
   }
 
   &__column {
-    &_p {
+    &_pagination-wrapper {
       flex: 0 1 20.244%;
       @media (max-width: $mobile) {
         order: 2;
       }
     }
 
-    &_s {
+    &_swiper-container {
       width: 65.85%;
       @media (max-width: $tablet) {
         width: 60%;
@@ -258,7 +258,7 @@
       background: rgba(154, 156, 165, 1);
     }
 
-    &_l {
+    &_last-item {
       &::before {
         height: 13px;
         bottom: 0;

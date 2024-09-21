@@ -1,6 +1,6 @@
 .recent-news {
   margin-top: 77px;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 
   @include section-main-gap;
 
@@ -25,11 +25,11 @@
   &__column {
     flex: 0 1 50%;
 
-    &_m {
+    &_large {
       flex: 0 0 57.318%;
     }
 
-    &_b {
+    &_medium {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -77,7 +77,7 @@
       }
     }
 
-    &_m {
+    &_large {
       justify-content: space-between;
       gap: 23px;
     }
@@ -92,7 +92,7 @@
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 
-    &_m {
+    &_large {
       height: 360px;
     }
 

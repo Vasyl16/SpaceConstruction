@@ -84,7 +84,7 @@
     gap: 7px;
     width: 100%;
 
-    &_m {
+    &_checkbox {
       flex-direction: row;
       align-items: flex-start;
       gap: 12px;
@@ -94,7 +94,7 @@
   &__label {
     @include form-main-label;
 
-    &_m {
+    &_checkbox {
       cursor: pointer;
     }
   }
