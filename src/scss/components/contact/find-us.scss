@@ -50,6 +50,14 @@
       }
     }
 
+    &_messenger {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebookColor;
+        }
+      }
+    }
+
     &_twiter {
       @media (pointer: fine) {
         &:hover {
