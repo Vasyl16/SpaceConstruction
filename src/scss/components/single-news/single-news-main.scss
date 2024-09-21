@@ -206,6 +206,7 @@
     height: 100%;
     object-fit: contain;
     fill: $thirdColor;
+    transition: all ease 0.3s;
 
     @media (max-width: $tablet) {
       width: 20px;
@@ -215,6 +216,23 @@
     @media (max-width: $tablet) {
       width: 16px;
       height: 16px;
+    }
+
+    &_facebook,
+    &_linkedin {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebookColor;
+        }
+      }
+    }
+
+    &_twiter {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $twiterColor;
+        }
+      }
     }
   }
 }
