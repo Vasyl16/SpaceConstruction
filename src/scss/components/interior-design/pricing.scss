@@ -185,12 +185,13 @@
   }
 
   &__item-image {
-    aspect-ratio: 1/1;
     width: 20px;
+    height: 20px;
     object-fit: contain;
 
     @media (max-width: $mobile) {
       width: 16px;
+      height: 16px;
     }
   }
 
