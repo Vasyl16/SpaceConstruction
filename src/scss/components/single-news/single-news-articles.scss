@@ -1,6 +1,6 @@
 .single-news-articles {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   @include section-main-gap;
 
@@ -158,6 +158,11 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
+
+    @media (max-width: $mobile) {
+      width: 20px;
+      height: 20px;
+    }
 
     &_facebook,
     &_linkedin {
