@@ -1,0 +1,136 @@
+.single-news-comments {
+  margin-top: 31px;
+  margin-bottom: 50px;
+
+  @include section-main-gap;
+
+  &__body {
+    @include title-content-gap;
+
+    gap: 60px;
+  }
+
+  &__title {
+    @include second-title;
+  }
+
+  &__content {
+  }
+}
+
+.content-single-news-comments {
+  max-width: 810px;
+  margin: 0 auto;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media (max-width: $tablet) {
+      gap: $lgGap;
+    }
+
+    @media (max-width: $mobile) {
+      gap: $midGap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: $lgGap;
+
+    @media (max-width: $tablet) {
+      gap: $midGap;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 15px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &_first {
+      flex: 0 0 150px;
+      gap: $smGap;
+
+      @media (max-width: $mobile) {
+        flex: 0 0 110px;
+      }
+    }
+
+    &_second {
+      gap: 17px;
+      justify-content: space-between;
+
+      @media (max-width: $mobile) {
+        gap: $smGap;
+      }
+    }
+  }
+
+  &__comment-author {
+    font-size: clamp(15px, 18px, 1.6vw);
+    font-weight: 700;
+    line-height: 1.4;
+    color: $secondColor;
+    font-style: normal;
+    text-align: left;
+  }
+
+  &__comment-date {
+    @include forth-text;
+  }
+
+  &__comment-text {
+    @include third-text;
+
+    line-height: 1.62;
+    color: $forthColor;
+    text-align: left;
+
+    & span {
+      font-weight: 700;
+      color: $secondBgColor;
+    }
+  }
+
+  &__reply-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__reply-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $thirdColor;
+    transition: all ease 0.3s;
+    padding-left: 24px;
+    position: relative;
+
+    @media (pointer: fine) {
+      &:hover {
+        color: $secondBgColor;
+
+        & .content-single-news-comments__reply-icon {
+          fill: $secondBgColor;
+        }
+      }
+    }
+  }
+
+  &__reply-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    fill: $thirdColor;
+    transition: all ease 0.3s;
+    top: 42%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
