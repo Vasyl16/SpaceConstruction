@@ -123,7 +123,7 @@
   &__share {
     margin-top: 42px;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $fullPc) {
       margin-top: $lgGap;
     }
 

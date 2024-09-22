@@ -13,13 +13,10 @@
   &__title {
     @include second-title;
   }
-
-  &__content {
-  }
 }
 
 .content-single-news-comments {
-  max-width: 810px;
+  width: clamp(0px, 810px, 95%);
   margin: 0 auto;
 
   &__items {
