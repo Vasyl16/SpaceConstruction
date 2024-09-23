@@ -155,7 +155,10 @@
 
   &__textarea {
     @include from-main-textarea;
-    height: 86px;
+
+    & {
+      height: 86px;
+    }
   }
 
   &__attach-file {

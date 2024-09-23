@@ -7,7 +7,9 @@
   &__body {
     @include title-content-gap;
 
-    gap: 60px;
+    & {
+      gap: 60px;
+    }
   }
 
   &__title {
