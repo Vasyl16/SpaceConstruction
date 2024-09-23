@@ -2,11 +2,11 @@ import { blockScroll } from './blockScroll';
 
 const burger = document.querySelector('.burger-header');
 const burgerIcon = document.querySelector('.burger-header__icon');
-const burgerIconActiveClass = 'burger-header__icon_a';
+const burgerIconActiveClass = 'burger-header__icon_active';
 const headerItems = document.querySelector('.header__items');
-const headerItemsActiveClass = 'header__items_a';
-const headerItemModified = document.querySelector('.header__item_m');
-const headerItemActiveClass = 'header__item_a';
+const headerItemsActiveClass = 'header__items_active';
+const headerItemModified = document.querySelector('.header__item_modified');
+const headerItemActiveClass = 'header__item_active';
 const initBurgerWidth = 1200;
 
 const burgerItems = [

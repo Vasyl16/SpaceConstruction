@@ -1,0 +1,238 @@
+.single-news-main {
+  margin-top: 92px;
+  padding-bottom: $lgGap;
+  padding-top: 61px;
+
+  @media (max-width: 1500px) {
+    margin-top: 75px;
+  }
+  @media (max-width: $fullPc) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 60px;
+  }
+  @media (max-width: $mobile) {
+    margin-top: $lgGap;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @media (max-width: $tablet) {
+      gap: 50px;
+    }
+    @media (max-width: $mobile) {
+      gap: $lgGap;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+
+    @media (max-width: $tablet) {
+      gap: $lgGap;
+    }
+    @media (max-width: $mobile) {
+      gap: $midGap;
+    }
+  }
+
+  &__title {
+    font-size: clamp(35px, 64px, 5vw);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: $secondColor;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__img-wrapper {
+    aspect-ratio: 1230/500;
+    width: 100%;
+    min-height: 180px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    object-position: 50%;
+  }
+}
+
+.path-single-news-main {
+  &__items {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $thirdColor;
+    position: relative;
+    padding-right: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &_nowrap {
+      flex-shrink: 1;
+    }
+
+    &:last-child &-slash {
+      display: none;
+    }
+  }
+
+  &__item-slash {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    height: 15px;
+    width: 7px;
+    object-fit: contain;
+  }
+}
+
+.details-single-news-main {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: $midGap;
+}
+
+.info-details-single-news-main {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 10px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 14px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 18%;
+      right: 0;
+      height: 62%;
+      width: 1px;
+      background: $thirdColor;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      padding-right: 0;
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__item-text {
+    @include third-text;
+
+    &_strong {
+      font-weight: 700;
+      color: $secondBgColor;
+    }
+  }
+
+  &__item-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    @media (max-width: $mobile) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.label-details-single-news-main {
+  display: flex;
+  gap: 12px;
+
+  @media (max-width: $mobile) {
+    gap: $smGap;
+  }
+
+  &__item-link {
+    width: 24px;
+    height: 24px;
+
+    @media (max-width: $tablet) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__item-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    fill: $thirdColor;
+    transition: all ease 0.3s;
+
+    @media (max-width: $tablet) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 16px;
+      height: 16px;
+    }
+
+    &_facebook,
+    &_linkedin {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebookColor;
+        }
+      }
+    }
+
+    &_twiter {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $twiterColor;
+        }
+      }
+    }
+  }
+}

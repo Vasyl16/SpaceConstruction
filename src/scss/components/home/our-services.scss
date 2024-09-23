@@ -42,9 +42,9 @@
     flex-direction: column;
     align-items: center;
     gap: 23px;
-    border: 1px solid rgba(229, 232, 237, 1);
+    border: 1px solid $mainBorderColor;
     border-radius: 5px;
-    box-shadow: 0px 4px 13px -3px rgba(30, 33, 44, 0.3);
+    box-shadow: 0px 4px 13px -3px $mainBoxShadowColor;
     position: relative;
     cursor: pointer;
     transition: all ease 0.3s;
@@ -131,7 +131,7 @@
 
     @media (pointer: fine) {
       &:hover {
-        box-shadow: 5px 20px 84px 1px rgba(30, 33, 44, 0.5);
+        box-shadow: 5px 20px 84px 1px $mainBoxShadowColor;
         border: 1px solid transparent;
         &::after {
           top: -1px;

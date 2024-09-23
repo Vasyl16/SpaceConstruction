@@ -1,6 +1,6 @@
 .facts-figures {
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 102px;
 
   @include section-main-gap;
 
@@ -54,7 +54,7 @@
     flex-direction: column;
     align-items: center;
     flex: 0 0 148px;
-    gap: 21px;
+    gap: 19px;
     @media (max-width: $tablet) {
       flex: 0 0 110px;
     }
@@ -126,7 +126,7 @@
 
   &__stat-name {
     @include forth-text;
-    color: rgba(30, 33, 44, 1);
+    color: $secondColor;
     text-align: center;
   }
 }

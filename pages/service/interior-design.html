@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{> head}}
+  {{> head isSwiper=true }}
 </head>
 
 <body>
@@ -19,7 +19,7 @@
       <section class="we-offer">
         <div class="we-offer__container">
           <div class="we-offer__items">
-            <div class="we-offer__item we-offer__item_i">
+            <div class="we-offer__item we-offer__item_image-wrapper">
               <picture class="we-offer__img-wrapper">
                 <source type="image/webp" srcset="/img/pages/interior-design/we-offer/we-offer-img.webp" />
                 <img class="we-offer__img" src="/img/pages/interior-design/we-offer/we-offer-img.jpg" alt="news image">
@@ -31,12 +31,12 @@
                 <h1 class="we-offer__title">We offer</h1>
                 <div class="we-offer__items items-we-offer">
                   <section class="items-we-offer__item spoiler-we-offer spoiler-we-offer_a">
-                    <h1 class="items-we-offer__title spoiler-we-offer-title spoiler-we-offer-title_a">
+                    <h1 class="items-we-offer__title spoiler-we-offer-title spoiler-we-offer-title_act">
                       Interior design of apartments
                     </h1>
 
                     <p
-                      class="items-we-offer__text spoiler-we-offer-content_active spoiler-we-offer-content spoiler-we-offer-content_a">
+                      class="items-we-offer__text spoiler-we-offer-content_active spoiler-we-offer-content spoiler-we-offer-content_act">
                       Adipiscing nunc arcu enim elit mattis eu placerat proin.
                       Imperdiet elementum faucibus dignissim purus. Fusce
                       parturient diam magna ullamcorper morbi semper massa ac
@@ -69,17 +69,35 @@
             <h1 class="how-we-do__title">That’s how we do it</h1>
             <div class="how-we-do__items items-how-we-do">
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span> 01</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    01
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Work Estimate</h1>
 
                 <p class="items-how-we-do__text">
                   Culpa nostrud commodo ea consequat aliquip reprehenderit.
                 </p>
+
+
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span>02</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    02
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Contract</h1>
 
@@ -90,7 +108,15 @@
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span>03</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    03
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Mobilization</h1>
 
@@ -101,8 +127,15 @@
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step">04</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    04
+                  </p>
 
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
                 <h1 class="items-how-we-do__title">Construction Work</h1>
 
                 <p class="items-how-we-do__text">
@@ -129,8 +162,10 @@
 
             <div class="benefits__items items-benefits">
               <article class="items-benefits__item">
-                <img class="items-benefits__img" src="/img/pages/interior-design/benefits/benefits-img-1.svg"
-                  alt="img" />
+                <svg class="items-benefits__img">
+                  <use xlink:href="/icons/sprite.svg#benefits-icon-1"></use>
+                </svg>
+
 
                 <h1 class="items-benefits__title">Fixed Terms & Cost</h1>
 
@@ -141,8 +176,9 @@
               </article>
 
               <article class="items-benefits__item">
-                <img class="items-benefits__img" src="/img/pages/interior-design/benefits/benefits-img-2.svg"
-                  alt="img" />
+                <svg class="items-benefits__img">
+                  <use xlink:href="/icons/sprite.svg#benefits-icon-2"></use>
+                </svg>
 
                 <h1 class="items-benefits__title">Qualified Workers</h1>
 
@@ -153,8 +189,9 @@
               </article>
 
               <article class="items-benefits__item">
-                <img class="items-benefits__img" src="/img/pages/interior-design/benefits/benefits-img-3.svg"
-                  alt="img" />
+                <svg class="items-benefits__img">
+                  <use xlink:href="/icons/sprite.svg#benefits-icon-3"></use>
+                </svg>
 
                 <h1 class="items-benefits__title">Supervision & Control</h1>
 
@@ -190,7 +227,7 @@
             <div class="pricing__content  swiper-pricing">
               <div class="pricing__wrapper swiper-wrapper">
                 <div class="pricing__table table-pricing swiper-table-pricing swiper-slide">
-                  <div class="table-pricing__row table-pricing__row_m">
+                  <div class="table-pricing__row table-pricing__row_large">
                     <div class="table-pricing__item-start">
                       <p class="table-pricing__item-text">Items</p>
                     </div>
@@ -222,18 +259,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -245,18 +285,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -266,18 +309,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -287,18 +333,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -310,18 +359,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -333,18 +385,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -358,13 +413,15 @@
                     <p class="table-pricing__item">simplified</p>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -380,8 +437,9 @@
                     <div class="table-pricing__item"></div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interior-design/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -397,7 +455,7 @@
                     <p class="table-pricing__item">30 days</p>
                   </div>
 
-                  <div class="table-pricing__row table-pricing__row_b">
+                  <div class="table-pricing__row table-pricing__row_buttons">
                     <div class="table-pricing__item-name"></div>
 
                     <div class="table-pricing__item">
@@ -429,7 +487,7 @@
     <footer class="footer">{{> footer footerData=this.footerData }}</footer>
   </div>
 
-  <script type="module" src="../../src/js/main.js"></script>
+  <script type="module" src="./interior-design.js"></script>
 </body>
 
 </html>

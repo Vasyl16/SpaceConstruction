@@ -28,14 +28,14 @@
   }
 
   &__column {
-    &_p {
+    &_pagination-wrapper {
       flex: 0 1 20.244%;
       @media (max-width: $mobile) {
         order: 2;
       }
     }
 
-    &_s {
+    &_swiper-container {
       width: 65.85%;
       @media (max-width: $tablet) {
         width: 60%;
@@ -203,7 +203,7 @@
       aspect-ratio: 1/1;
       width: 8px;
       border-radius: 50%;
-      background: rgba(154, 156, 165, 1);
+      background: $thirdBgColor;
       transition: all ease 0.3s;
     }
 
@@ -223,7 +223,7 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 1.5;
-    color: rgba(154, 156, 165, 1);
+    color: $thirdBgColor;
     white-space: nowrap;
     transition: all ease 0.3s;
     overflow: hidden;
@@ -246,7 +246,7 @@
       left: 3px;
       height: 13px;
       width: 1px;
-      background: rgba(154, 156, 165, 1);
+      background: $thirdBgColor;
     }
     &::before {
       position: absolute;
@@ -255,10 +255,10 @@
       left: 3px;
       height: calc(13px + $midGap);
       width: 1px;
-      background: rgba(154, 156, 165, 1);
+      background: $thirdBgColor;
     }
 
-    &_l {
+    &_last-item {
       &::before {
         height: 13px;
         bottom: 0;

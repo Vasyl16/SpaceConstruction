@@ -57,7 +57,7 @@
     justify-content: center;
     flex: 0 1 205px;
     text-align: center;
-    color: rgba(154, 156, 165, 1);
+    color: $thirdBgColor;
     height: 46px;
     transition: all ease 0.3s;
     font-weight: 700;
@@ -73,7 +73,7 @@
       }
     }
 
-    &_m {
+    &_active {
       @include third-button;
 
       & {
@@ -128,7 +128,7 @@
     flex-direction: column;
     gap: 24px;
     cursor: pointer;
-    box-shadow: 0px 4px 18px -8px rgba(30, 33, 44, 0.3);
+    box-shadow: 0px 4px 18px -8px $mainBoxShadowColor;
     padding-bottom: 24px;
     transition: all ease 0.3s;
     height: 100%;
@@ -136,7 +136,7 @@
 
     @media (pointer: fine) {
       &:hover {
-        box-shadow: 0px 4px 18px -2px rgba(30, 33, 44, 0.3);
+        box-shadow: 0px 4px 18px -2px $mainBoxShadowColor;
 
         & .news-categories__title {
           color: $mainHoverColor;
@@ -227,7 +227,7 @@
       background: $thirdColor;
     }
 
-    &_m {
+    &_icon {
       padding-left: 22px;
     }
 
@@ -268,7 +268,7 @@
     cursor: pointer;
     padding: 2px;
 
-    &_m {
+    &_active {
       color: $secondBgColor;
     }
 

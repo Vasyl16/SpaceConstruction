@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{> head}}
+  {{> head isSwiper=false}}
 </head>
 
 <body>
@@ -10,19 +10,401 @@
     <header class="header">{{> header headerData=this.headerData }}</header>
 
     <main>
+      <section class="single-news-main">
+        <div class="single-news-main__container">
+          <div class="single-news-main__body">
+            <div class="single-news-main__column">
+              <div class="single-news-main__content">
+                <div class="single-news-main__path path-single-news-main">
+                  <div class="path-single-news-main__items">
+                    <a class="path-single-news-main__item" href="/">
+                      Homepage
+
+                      <svg class="path-single-news-main__item-slash">
+                        <use xlink:href="/icons/sprite.svg#welcome-block-slash"></use>
+                      </svg>
+                    </a>
+
+                    <a class="path-single-news-main__item" href="/SpaceConstruction/pages/news/news.html">
+                      News
+
+                      <svg class="path-single-news-main__item-slash">
+                        <use xlink:href="/icons/sprite.svg#welcome-block-slash"></use>
+                      </svg>
+                    </a>
+
+                    <a class="path-single-news-main__item path-single-news-main__item_nowrap"
+                      href="/SpaceConstruction/pages/news/single-news.html">
+                      How to Build Climate Change-Resilient Infrastructure
+
+                      <svg class="path-single-news-main__item-slash">
+                        <use xlink:href="/icons/sprite.svg#welcome-block-slash"></use>
+                      </svg></a>
+                  </div>
+                </div>
+
+                <h1 class="single-news-main__title">How to Build Climate Change-Resilient Infrastructure</h1>
+
+                <div class="single-news-main__info details-single-news-main">
+                  <div class="details-single-news-main__row">
+                    <div class="details-single-news-main__info info-details-single-news-main">
+                      <div class="info-details-single-news-main__item">
+                        <div
+                          class="info-details-single-news-main__item-text info-details-single-news-main__item-text_strong">
+                          Industry News
+                        </div>
+                      </div>
+
+                      <div class="info-details-single-news-main__item">
+                        <svg class="info-details-single-news-main__item-icon">
+                          <use xlink:href="/icons/sprite.svg#categories-news-icon-2"></use>
+                        </svg>
+
+                        <p class="info-details-single-news-main__item-text">
+                          June 24, 2020
+                        </p>
+                      </div>
+
+                      <div class="info-details-single-news-main__item">
+                        <svg class="info-details-single-news-main__item-icon">
+                          <use xlink:href="/icons/sprite.svg#categories-news-icon-1"></use>
+                        </svg>
+
+                        <p class="info-details-single-news-main__item-text">
+                          4 comments
+
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="details-single-news-main__row">
+                    <div class="details-single-news-main__label label-details-single-news-main">
+                      <a src="#" class="label-details-single-news-main__item-link">
+                        <svg
+                          class="label-details-single-news-main__item-icon label-details-single-news-main__item-icon_facebook">
+                          <use xlink:href="/icons/sprite.svg#find-us-icon-facebook"></use>
+                        </svg>
+                      </a>
+                      <a src="#" class="label-details-single-news-main__item-link">
+                        <svg
+                          class="label-details-single-news-main__item-icon label-details-single-news-main__item-icon_linkedin">
+                          <use xlink:href="/icons/sprite.svg#find-us-icon-linkedin"></use>
+                        </svg>
+                      </a>
+                      <a src="#" class="label-details-single-news-main__item-link ">
+                        <svg
+                          class="label-details-single-news-main__item-icon label-details-single-news-main__item-icon_twiter">
+                          <use xlink:href="/icons/sprite.svg#find-us-icon-twiter"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
 
 
+            </div>
 
-      <!-- <section class="discuss-details discuss-details-news">
+            <div class="single-news-main__column">
+              <picture class="single-news-main__img-wrapper">
+                <source type="image/webp" srcset="/img/pages/single-news/single-news-main-image.webp" />
+                <img class="single-news-main__img" src="/img/pages/single-news/single-news-main-image.jpg"
+                  alt="news image">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="single-news-articles">
+        <div class="single-news-articles__container">
+          <div class="single-news-articles__body">
+            <h1 class="single-news-articles__title">Vulputate vitae pellentesque scelerisque luctus consequat mattis
+              pellentesque dui odio. Interdum aenean sit malesuada
+              ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod.</h1>
+
+            <div class="single-news-articles__text-wrapper">
+              <p class="single-news-articles__text">
+                At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam
+                cras dignissim.
+                Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum.
+                Vel nec rhoncus,
+                non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.
+              </p>
+
+              <p class="single-news-articles__text">
+                Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis.
+                Nisl massa,
+                elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam
+                vehicula rhoncus.
+                In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc,
+                non.
+              </p>
+            </div>
+
+            <div class="single-news-articles__quote-wrapper">
+
+              <svg class="single-news-articles__quote-icon">
+                <use xlink:href="/icons/sprite.svg#ceo-quote-quot-icon"></use>
+              </svg>
+
+
+              <blockquote class="single-news-articles__quote-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+                fermentum amet,
+                eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot
+                euismod
+                vulputate etiam eros. Vel accumsan at elit neque, ipsum.
+              </blockquote>
+            </div>
+
+            <p class="single-news-articles__text single-news-articles__text_margin">
+              Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque
+              amet non
+              fringilla blandit:
+            </p>
+
+            <ul class="single-news-articles__list single-news-articles__list">
+              <li class="single-news-articles__list-line">
+                <svg class="single-news-articles__list-icon">
+                  <use xlink:href="/icons/sprite.svg#constructive-decision-icon-1"></use>
+                </svg>
+
+                <p class="single-news-articles__list-text">
+                  A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                </p>
+              </li>
+
+              <li class="single-news-articles__list-line">
+                <svg class="single-news-articles__list-icon">
+                  <use xlink:href="/icons/sprite.svg#constructive-decision-icon-1"></use>
+                </svg>
+
+                <p class="single-news-articles__list-text">
+                  Vulputate placerat amet pulvinar lorem nisl. </p>
+              </li>
+
+              <li class="single-news-articles__list-line">
+                <svg class="single-news-articles__list-icon">
+                  <use xlink:href="/icons/sprite.svg#constructive-decision-icon-1"></use>
+                </svg>
+
+                <p class="single-news-articles__list-text">
+                  Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed. </p>
+              </li>
+
+              <li class="single-news-articles__list-line">
+                <svg class="single-news-articles__list-icon">
+                  <use xlink:href="/icons/sprite.svg#constructive-decision-icon-1"></use>
+                </svg>
+
+                <p class="single-news-articles__list-text">
+                  Etiam duis lobortis in fames ultrices commodo nibh. </p>
+              </li>
+            </ul>
+
+            <p class="single-news-articles__text single-news-articles__text_margin">
+              Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus
+              eget. Urna,
+              risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam
+              eros, purus
+              enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi
+              at porttitor
+              volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus
+              vitae.
+            </p>
+
+            <div class="single-news-articles__share share-single-news-articles">
+              <p class="share-single-news-articles__text">
+                Share:
+              </p>
+
+              <div class="share-single-news-articles__items">
+                <svg class="share-single-news-articles__item-icon share-single-news-articles__item-icon_facebook">
+                  <use xlink:href="/icons/sprite.svg#find-us-icon-facebook"></use>
+                </svg>
+
+                <svg class="share-single-news-articles__item-icon share-single-news-articles__item-icon_linkedin ">
+                  <use xlink:href="/icons/sprite.svg#find-us-icon-linkedin"></use>
+                </svg>
+
+                <svg class="share-single-news-articles__item-icon share-single-news-articles__item-icon_twiter">
+                  <use xlink:href="/icons/sprite.svg#find-us-icon-twiter"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="single-news-comments">
+        <div class="single-news-comments__container">
+          <div class="single-news-comments__body">
+            <h1 class="single-news-comments__title">4 comments</h1>
+
+            <div class="single-news-comments__content content-single-news-comments">
+              <div class="content-single-news-comments__items">
+                <div class="content-single-news-comments__item">
+                  <div class="content-single-news-comments__column content-single-news-comments__column_first">
+                    <cite class="content-single-news-comments__comment-author">Devon Lane</cite>
+
+                    <time class="content-single-news-comments__comment-date">July 15, 2020</time>
+                  </div>
+
+                  <div class="content-single-news-comments__column content-single-news-comments__column_second">
+
+                    <p class="content-single-news-comments__comment-text">Phasellus varius faucibus ultrices odio in.
+                      Massa
+                      neque
+                      dictum natoque ornare rutrum malesuada et phasellus. Viverra
+                      natoque nulla cras vel nisl proin senectus. Tortor sed eleifend ante tristique felis sed urna
+                      aliquet. Suspendisse fames
+                      egestas sed duis purus diam et.</p>
+
+                    <div class="content-single-news-comments__reply-wrapper">
+                      <button class="content-single-news-comments__reply-button">
+                        <svg class="content-single-news-comments__reply-icon">
+                          <use xlink:href="/icons/sprite.svg#content-single-news-comments-reply-icon"></use>
+                        </svg>
+
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-single-news-comments__item">
+                  <div class="content-single-news-comments__column content-single-news-comments__column_first">
+                    <cite class="content-single-news-comments__comment-author">Annette Black</cite>
+
+                    <time class="content-single-news-comments__comment-date">1 day ago</time>
+                  </div>
+
+                  <div class="content-single-news-comments__column content-single-news-comments__column_second">
+
+                    <p class="content-single-news-comments__comment-text"><span>@Devon Lane</span> Egestas fermentum
+                      natoque
+                      sollicitudin
+                      mauris. Facilisis praesent urna sed rhoncus quis pharetra
+                      pellentesque erat sagittis.</p>
+
+                    <div class="content-single-news-comments__reply-wrapper">
+                      <button class="content-single-news-comments__reply-button">
+                        <svg class="content-single-news-comments__reply-icon">
+                          <use xlink:href="/icons/sprite.svg#content-single-news-comments-reply-icon"></use>
+                        </svg>
+
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-single-news-comments__item">
+                  <div class="content-single-news-comments__column content-single-news-comments__column_first">
+                    <cite class="content-single-news-comments__comment-author">Albert Flores</cite>
+
+                    <time class="content-single-news-comments__comment-date">July 7, 2020</time>
+                  </div>
+
+                  <div class="content-single-news-comments__column content-single-news-comments__column_second">
+
+                    <p class="content-single-news-comments__comment-text">Libero commodo sit dui ac proin. Penatibus
+                      ultricies at adipiscing mauris nunc. Fames faucibus nisl duis id diam.</p>
+
+                    <div class="content-single-news-comments__reply-wrapper">
+                      <button class="content-single-news-comments__reply-button">
+                        <svg class="content-single-news-comments__reply-icon">
+                          <use xlink:href="/icons/sprite.svg#content-single-news-comments-reply-icon"></use>
+                        </svg>
+
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-single-news-comments__item">
+                  <div class="content-single-news-comments__column content-single-news-comments__column_first">
+                    <cite class="content-single-news-comments__comment-author">Marvin McKinney</cite>
+
+                    <time class="content-single-news-comments__comment-date">July 7, 2020</time>
+                  </div>
+
+                  <div class="content-single-news-comments__column content-single-news-comments__column_second">
+
+                    <p class="content-single-news-comments__comment-text">Ullamcorper nibh sed ac ipsum nunc imperdiet
+                      rhoncus. Quam donec habitant nibh sit consequat erat libero, tincidunt.
+                      Eros ut aliquam proin et duis. Mauris, egestas congue nibh dui a nulla.</p>
+
+                    <div class="content-single-news-comments__reply-wrapper">
+                      <button class="content-single-news-comments__reply-button">
+                        <svg class="content-single-news-comments__reply-icon">
+                          <use xlink:href="/icons/sprite.svg#content-single-news-comments-reply-icon"></use>
+                        </svg>
+
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="single-news-form">
+        <div class="single-news-form__container">
+          <div class="single-news-form__body">
+            <h1 class="single-news-form__title">Leave your comment</h1>
+
+            <form class="single-news-form__content">
+              <div class="single-news-form__row">
+                <div class="single-news-form__input-wrapper">
+                  <label class="single-news-form__input-label">Name*</label>
+
+                  <input placeholder="Your name" class="single-news-form__input">
+                </div>
+
+                <div class="single-news-form__input-wrapper">
+                  <label class="single-news-form__input-label">Email*</label>
+
+                  <input placeholder="Your working email" class="single-news-form__input">
+                </div>
+              </div>
+
+              <div class="single-news-form__row">
+                <div class="single-news-form__input-wrapper single-news-form__input-wrapper_full">
+                  <label class="single-news-form__input-label">Your comment*</label>
+
+                  <textarea placeholder="Type comment here" class="single-news-form__textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="single-news-form__button-wrapper">
+                <div type="submit" class="single-news-form__button">
+                  Post comment
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="discuss-details discuss-details-news">
         {{> discussDetails }}
-      </section> -->
+      </section>
     </main>
 
 
-    <!-- <footer class="footer">{{> footer footerData=this.footerData }}</footer> -->
+    <footer class="footer">{{> footer footerData=this.footerData }}</footer>
   </div>
 
-  <script type="module" src="../../src/js/main.js"></script>
+  <script type="module" src="./single-news.js"></script>
 </body>
 
 </html>

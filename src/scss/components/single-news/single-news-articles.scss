@@ -1,0 +1,184 @@
+.single-news-articles {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @include section-main-gap;
+
+  &__body {
+    width: clamp(0px, 810px, 95%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $midGap;
+
+    @media (max-width: $tablet) {
+      gap: 15px;
+    }
+  }
+
+  &__title {
+    @include forth-title;
+    text-align: left;
+  }
+
+  &__text-wrapper {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 27.5px;
+
+    @media (max-width: $tablet) {
+      gap: $midGap;
+    }
+
+    @media (max-width: $mobile) {
+      gap: $smGap;
+    }
+  }
+
+  &__text {
+    @include third-text;
+
+    color: $forthColor;
+    text-align: left;
+  }
+
+  &__quote-wrapper {
+    position: relative;
+    padding-left: 58px;
+    margin-top: 28px;
+    margin-bottom: 29px;
+
+    @media (max-width: $tablet) {
+      padding-left: 45px;
+      margin: 25px 0;
+    }
+
+    @media (max-width: $mobile) {
+      margin: $midGap 0;
+    }
+
+    @media (max-width: $mobileSmall) {
+      margin: $smGap 0;
+    }
+  }
+
+  &__quote-icon {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+
+    @media (max-width: $tablet) {
+      width: 22px;
+      height: 16px;
+      top: 3px;
+    }
+  }
+
+  &__quote-text {
+    @include forth-title;
+
+    margin: 0;
+    text-align: left;
+  }
+
+  &__list {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+    margin-bottom: 4px;
+  }
+
+  &__list-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 32px;
+  }
+
+  &__list-text {
+    @include third-text;
+
+    text-align: left;
+    color: $forthColor;
+  }
+
+  &__list-icon {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+
+    @media (max-width: $tablet) {
+      top: 0px;
+    }
+  }
+
+  &__share {
+    margin-top: 42px;
+
+    @media (max-width: $fullPc) {
+      margin-top: $lgGap;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: $smGap;
+    }
+  }
+}
+
+.share-single-news-articles {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  &__text {
+    font-size: clamp(14px, 16px, 1.6vw);
+    font-weight: 700;
+    line-height: 1.6;
+    color: $secondColor;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__item-icon {
+    fill: #787a80;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+    @media (max-width: $mobile) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &_facebook,
+    &_linkedin {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebookColor;
+        }
+      }
+    }
+
+    &_twiter {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $twiterColor;
+        }
+      }
+    }
+  }
+}

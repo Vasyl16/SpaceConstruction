@@ -54,14 +54,7 @@
       top: 0;
       height: 100%;
       width: 1px;
-      background: linear-gradient(
-        270.01deg,
-        rgba(218, 219, 221, 0) 0%,
-        rgba(218, 219, 221, 0.5) 12.33%,
-        #dadbdd 51.91%,
-        rgba(218, 219, 221, 0.5) 87.85%,
-        rgba(218, 219, 221, 0) 100%
-      );
+      background: $mainGradiant;
     }
 
     &:last-child {
@@ -132,10 +125,10 @@
 
     @media (pointer: fine) {
       &:hover {
-        color: rgb(255, 141, 113);
+        color: $secondHoverColor;
 
         &::after {
-          background: rgb(255, 141, 113);
+          background: $secondHoverColor;
         }
       }
     }

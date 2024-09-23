@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{> head}}
+  {{> head isSwiper=true }}
 </head>
 
 <body>
@@ -50,7 +50,7 @@
               <p class="about-stat__name">Qualified specialists</p>
             </div>
 
-            <div class="about-stat__item about-stat__item_m">
+            <div class="about-stat__item about-stat__item_large">
               <svg class="about-stat__img">
                 <use xlink:href="/icons/sprite.svg#about-stat-img-4"></use>
               </svg>
@@ -66,7 +66,7 @@
       <section class="ceo-quote">
         <div class="ceo-quote__container">
           <div class="ceo-quote__wrapper">
-            <div class="ceo-quote__column ceo-quote__column_i">
+            <div class="ceo-quote__column ceo-quote__column_image-wrapper">
               <picture class="ceo-quote__img-wrapper">
                 <source type="image/webp" srcset="/img/pages/about/ceo-quote/ceo-quote-img-1.webp" />
 
@@ -75,7 +75,7 @@
               </picture>
             </div>
 
-            <div class="ceo-quote__column ceo-quote__column_m">
+            <div class="ceo-quote__column ceo-quote__column_content">
               <div class="ceo-quote__body">
 
                 <svg class="ceo-quote__quote-icon">
@@ -129,11 +129,11 @@
             <h1 class="our-history__title">Our history</h1>
 
             <div class="our-history__content">
-              <div class="our-history__column our-history__column_p">
+              <div class="our-history__column our-history__column_pagination-wrapper">
                 <div class="our-history__pagination custom-pagination-swiper-our-history"></div>
               </div>
 
-              <div class="our-history__column our-history__column_s">
+              <div class="our-history__column our-history__column_swiper-container">
                 <div class="our-history__swiper swiper-our-history swiper">
                   <div class="swiper-our-history__wrapper swiper-wrapper">
                     <div class="swiper-our-history__slide swiper-slide" data-title="Present">
@@ -623,28 +623,28 @@
             </div>
 
             <div class="work-worldwild__content">
-              <svg class="work-worldwild__icon work-worldwild__icon_1">
-                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-1"></use>
+              <svg class="work-worldwild__icon work-worldwild__icon_ca">
+                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-ca"></use>
               </svg>
 
-              <svg class="work-worldwild__icon work-worldwild__icon_2">
-                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-2"></use>
+              <svg class="work-worldwild__icon work-worldwild__icon_usa">
+                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-usa"></use>
               </svg>
 
-              <svg class="work-worldwild__icon work-worldwild__icon_3">
-                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-3"></use>
+              <svg class="work-worldwild__icon work-worldwild__icon_de">
+                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-de"></use>
               </svg>
 
-              <svg class="work-worldwild__icon work-worldwild__icon_4">
-                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-4"></use>
+              <svg class="work-worldwild__icon work-worldwild__icon_ua">
+                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-ua"></use>
               </svg>
 
-              <svg class="work-worldwild__icon work-worldwild__icon_5">
-                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-5"></use>
+              <svg class="work-worldwild__icon work-worldwild__icon_cn">
+                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-cn"></use>
               </svg>
 
-              <svg class="work-worldwild__icon work-worldwild__icon_6">
-                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-6"></use>
+              <svg class="work-worldwild__icon work-worldwild__icon_au">
+                <use xlink:href="/icons/sprite.svg#work-worldwide-icon-au"></use>
               </svg>
 
 
@@ -661,7 +661,7 @@
     <footer class="footer">{{> footer footerData=this.footerData }}</footer>
   </div>
 
-  <script type="module" src="../../src/js/main.js"></script>
+  <script type="module" src="./about.js"></script>
 </body>
 
 </html>

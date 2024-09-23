@@ -29,7 +29,7 @@ export const swiperOurHistoryLabel = () => {
 
         return `<div class=" ${className} ${swiperOurHistoryPaginationClass}__bullet">
       <p class="${swiperOurHistoryPaginationClass}__title">${slideTitle}</p>
-      <span class="${swiperOurHistoryPaginationClass}__line  ${isLast ? swiperOurHistoryPaginationClass + '__line_l' : ''}"></span>
+      <span class="${swiperOurHistoryPaginationClass}__line  ${isLast ? swiperOurHistoryPaginationClass + '__line_last-item' : ''}"></span>
       </div>`;
       },
     },

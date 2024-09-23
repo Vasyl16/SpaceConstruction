@@ -29,21 +29,21 @@ export const positionsContext = {
 
     items: [
       {
-        imgSrc: '/icons/sprite.svg#employee-benefits-img-1',
+        imgSrc: '/icons/sprite.svg#employee-benefits-icon-1',
         valueTitle: 'Training',
         valueText:
           'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.',
       },
 
       {
-        imgSrc: '/icons/sprite.svg#employee-benefits-img-2',
+        imgSrc: '/icons/sprite.svg#employee-benefits-icon-2',
         valueTitle: 'Professional Growth',
         valueText:
           'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.',
       },
 
       {
-        imgSrc: '/icons/sprite.svg#employee-benefits-img-3',
+        imgSrc: '/icons/sprite.svg#employee-benefits-icon-3',
         valueTitle: 'Growing Salary',
         valueText:
           'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.',

@@ -18,7 +18,7 @@
   }
 
   &__item {
-    &_s {
+    &_swiper {
       flex: 0 1 48.8%;
       margin: 0;
       height: 100%;
@@ -32,7 +32,7 @@
       }
     }
 
-    &_m {
+    &_image-container {
       flex: 0 0 40.245%;
       aspect-ratio: 495/550;
       @media (max-width: $tablet) {
@@ -57,9 +57,6 @@
   }
 
   &__next-button-wrapper {
-    position: absolute;
-    width: 25px;
-    height: 24px;
     right: 0px;
   }
 
@@ -75,9 +72,6 @@
   }
 
   &__prev-button-wrapper {
-    position: absolute;
-    width: 25px;
-    height: 25px;
     right: 48px;
     left: auto;
     border-radius: 50%;
@@ -99,6 +93,9 @@
     border-radius: 50%;
     top: auto;
     bottom: 20px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
 
     &::after {
       content: none;
@@ -112,7 +109,7 @@
 
     @media (pointer: fine) {
       &:hover {
-        fill: rgb(255, 134, 104);
+        fill: $secondBgColor;
       }
     }
   }
@@ -151,7 +148,7 @@
 
   &__message {
     @include third-text;
-    color: rgba(66, 69, 81, 1);
+    color: $forthColor;
     text-align: left;
     margin-top: 24px;
     @media (max-width: $tablet) {

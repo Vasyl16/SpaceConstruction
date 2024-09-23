@@ -36,10 +36,10 @@
 .table-pricing {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(229, 232, 237, 1);
+  border: 1px solid $mainBorderColor;
   border-radius: 4px;
   padding: 31px 0 19px 0;
-  box-shadow: 0px 4px 34px -2px rgba(30, 33, 44, 0.3);
+  box-shadow: 0px 4px 34px -2px $mainBoxShadowColor;
   box-sizing: border-box;
 
   @media (max-width: $tablet) {
@@ -64,17 +64,17 @@
     padding-left: 23px;
     padding-right: 9px;
 
-    &_m {
+    &_large {
       min-height: auto;
       margin-bottom: 26px;
       align-items: flex-end;
     }
 
     &_bg {
-      background: rgba(244, 245, 246, 1);
+      background: $formBgColor;
     }
 
-    &_b {
+    &_buttons {
       padding-top: $midGap;
     }
 
@@ -185,12 +185,13 @@
   }
 
   &__item-image {
-    aspect-ratio: 1/1;
     width: 20px;
+    height: 20px;
     object-fit: contain;
 
     @media (max-width: $mobile) {
       width: 16px;
+      height: 16px;
     }
   }
 

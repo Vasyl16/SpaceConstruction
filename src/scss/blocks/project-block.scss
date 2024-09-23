@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 4px 18px -8px rgba(30, 33, 44, 0.3);
+  box-shadow: 0px 4px 18px -8px $mainBoxShadowColor;
   padding-bottom: 14px;
   cursor: pointer;
   transition: all ease 0.3s;
@@ -19,7 +19,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 4px 18px -2px rgba(30, 33, 44, 0.3);
+    box-shadow: 0px 4px 18px -2px $mainBoxShadowColor;
 
     & .project-block-body {
       top: -68px;

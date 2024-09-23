@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ignore another icons
+
+/public/icons/*
+!/public/icons/sprite.svg

@@ -32,7 +32,7 @@
   &__column {
     flex: 0 1 600px;
 
-    &_i {
+    &_image-wrapper {
       flex: 0 0 40.244%;
 
       @media (max-width: $tablet) {
@@ -91,7 +91,7 @@
     flex: 0 1 50%;
     gap: 8px;
 
-    &_t {
+    &_textarea-wrapper {
       flex: 1 1 100%;
     }
 
@@ -153,16 +153,22 @@
 
   &__input {
     @include from-main-input;
-    font-size: clamp(13px, 16px, 1.5vw);
-    height: 52px;
-    padding: 10px 15px;
+
+    & {
+      font-size: clamp(13px, 16px, 1.5vw);
+      height: 52px;
+      padding: 10px 15px;
+    }
   }
 
   &__textarea {
     @include from-main-textarea;
-    font-size: clamp(13px, 16px, 1.5vw);
-    height: 128px;
-    padding-top: 13px;
+
+    & {
+      font-size: clamp(13px, 16px, 1.5vw);
+      height: 128px;
+      padding-top: 13px;
+    }
   }
 
   &__radio:checked + &__label-radio {

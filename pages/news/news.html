@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{> head}}
+  {{> head isSwiper=false}}
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
             <div class="categories__filter filter-categories">
               <div class="filter-categories__list">
-                <button class="filter-categories__item filter-categories__item_m">
+                <button class="filter-categories__item filter-categories__item_active">
                   All News
                 </button>
 
@@ -67,7 +67,7 @@
                               </p>
                             </div>
 
-                            <div class="info-news-categories__item info-news-categories__item_m">
+                            <div class="info-news-categories__item info-news-categories__item_icon">
                               <p class="info-news-categories__item-text">
                                 4 comments
                               </p>
@@ -113,7 +113,7 @@
                                 June 12, 2020 </p>
                             </div>
 
-                            <div class="info-news-categories__item info-news-categories__item_m">
+                            <div class="info-news-categories__item info-news-categories__item_icon">
                               <p class="info-news-categories__item-text">
                                 No comments </p>
 
@@ -160,7 +160,7 @@
                                 May 16, 2020 </p>
                             </div>
 
-                            <div class="info-news-categories__item info-news-categories__item_m">
+                            <div class="info-news-categories__item info-news-categories__item_icon">
                               <p class="info-news-categories__item-text">
                                 No comments </p>
 
@@ -205,7 +205,7 @@
                                 February 25, 2020 </p>
                             </div>
 
-                            <div class="info-news-categories__item info-news-categories__item_m">
+                            <div class="info-news-categories__item info-news-categories__item_icon">
                               <p class="info-news-categories__item-text">
                                 1 comment </p>
 
@@ -252,7 +252,7 @@
                                 January 14, 2020</p>
                             </div>
 
-                            <div class="info-news-categories__item info-news-categories__item_m">
+                            <div class="info-news-categories__item info-news-categories__item_icon">
                               <p class="info-news-categories__item-text">
                                 No comments </p>
 
@@ -297,7 +297,7 @@
                                 December 1, 2019 </p>
                             </div>
 
-                            <div class="info-news-categories__item info-news-categories__item_m">
+                            <div class="info-news-categories__item info-news-categories__item_icon">
                               <p class="info-news-categories__item-text">
                                 No comments </p>
 
@@ -323,7 +323,7 @@
             <div class="categories__bullets bullets-categories">
 
               <div class="bullets-categories__items">
-                <button class="bullets-categories__item-button bullets-categories__item-button_m">
+                <button class="bullets-categories__item-button bullets-categories__item-button_active">
                   1
                 </button>
 
@@ -354,7 +354,7 @@
     <footer class="footer">{{> footer footerData=this.footerData }}</footer>
   </div>
 
-  <script type="module" src="../../src/js/main.js"></script>
+  <script type="module" src="./news.js"></script>
 </body>
 
 </html>

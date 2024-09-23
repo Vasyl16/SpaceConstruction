@@ -1,0 +1,19 @@
+// import null style
+@import '../null/null';
+
+// import variable
+@import '../variables/index';
+
+// import mixins
+@import '../mixins';
+
+// import blocks
+@import '../blocks';
+
+// import base style
+@import '../base';
+
+// import components for ended-project page
+@import '../components/ended-project';
+
+@import '../components/template';

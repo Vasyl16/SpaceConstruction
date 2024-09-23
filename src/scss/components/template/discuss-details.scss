@@ -50,7 +50,7 @@
     flex: 0 1 495px;
     padding: 48px 40px;
     box-sizing: border-box;
-    box-shadow: 0px 4px 41px -18px rgba(30, 33, 44, 0.5);
+    box-shadow: 0px 4px 41px -18px $mainBoxShadowColor;
 
     @media (max-width: $tablet) {
       padding: $lgGap;
@@ -84,7 +84,7 @@
     gap: 7px;
     width: 100%;
 
-    &_m {
+    &_checkbox {
       flex-direction: row;
       align-items: flex-start;
       gap: 12px;
@@ -94,7 +94,7 @@
   &__label {
     @include form-main-label;
 
-    &_m {
+    &_checkbox {
       cursor: pointer;
     }
   }
@@ -106,7 +106,9 @@
   &__textarea {
     @include from-main-textarea;
 
-    height: 66px;
+    & {
+      height: 66px;
+    }
   }
 
   &__checkbox-wrapper {
