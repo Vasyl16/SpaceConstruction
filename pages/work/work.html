@@ -16,18 +16,27 @@
     rel='stylesheet'
   />
   
-  <!-- swiper css -->
-  <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css' />
+  <!-- swiper css if needed -->
   
-  <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/main-Ccbr0Fzn.js"></script>
-  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/main-CQFPnaDz.css">
+    <link
+      rel='stylesheet'
+      href='https://unpkg.com/swiper/swiper-bundle.min.css'
+      media='print'
+      onload="this.media='all'"
+    />
+  
+  <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/work.js"></script>
+  <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiperThumbnailOurEndedProject-S9-JN7ZJ.js">
+  <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiperClientFitback-CNoEMXog.js">
+  <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiperOurProject-B5xOltvh.js">
+  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/work-Dmyge9Nw.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header"><div class="header__container">
   <div class="header__items">
-    <div class="header__item header__item_l">
+    <div class="header__item header__item_logo-wrapper">
       <a class="header__logo-link" href="/SpaceConstruction/">
         <svg class="header__logo">
           <use xlink:href="/SpaceConstruction/icons/sprite.svg#logo"></use>
@@ -35,7 +44,7 @@
       </a>
     </div>
 
-    <div class="header__item header__item_m">
+    <div class="header__item header__item_modified">
       <nav class="header__nav nav-header">
         <ul class="nav-header__list">
 
@@ -61,7 +70,7 @@
 
           <li class="nav-header__item">
             <a
-              class="nav-header__link nav-header__link_a"
+              class="nav-header__link nav-header__link_active"
               href="/SpaceConstruction/pages/work/work.html"
             >
               Work
@@ -461,7 +470,7 @@
         <div class='client-fitback__container'>
           <div class='client-fitback__items'>
             <div
-              class='client-fitback__item client-fitback__item_s swiper swiper-client-fitback'
+              class='client-fitback__item client-fitback__item_swiper swiper swiper-client-fitback'
             >
               <div class='client-fitback__wrapper swiper-wrapper'>
                   <article class='client-fitback__body swiper-slide'>
@@ -525,7 +534,7 @@
               </div>
             </div>
         
-            <div class='client-fitback__item client-fitback__item_m'>
+            <div class='client-fitback__item client-fitback__item_image-container'>
               <picture class='client-fitback__img-wrapper'>
                 <source
                   type='image/webp'
@@ -643,7 +652,9 @@
           ></textarea>
         </div>
 
-        <div class='form-discuss-details__item form-discuss-details__item_m'>
+        <div
+          class='form-discuss-details__item form-discuss-details__item_checkbox'
+        >
           <div class='form-discuss-details__checkbox-wrapper'>
             <input
               type='checkbox'
@@ -661,7 +672,7 @@
 
           <label
             for='form-discuss-details-check'
-            class='form-discuss-details__label form-discuss-details__label_m'
+            class='form-discuss-details__label form-discuss-details__label_checkbox'
           >
             I agree to receive communications from Createx Construction Bureau.
           </label>
@@ -678,9 +689,9 @@
 
     <footer class="footer"><div class="footer__container">
   <div class="footer__items">
-    <div class="footer__row footer__row_m">
+    <div class="footer__row footer__row_rights">
       <div class="footer__main main-footer">
-        <div class="main-footer__row main-footer__row_m">
+        <div class="main-footer__row main-footer__row_rights">
           <a class="main-footer__logo-link" href="/SpaceConstruction/">
             <svg class="main-footer__logo">
               <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-logo"></use>
@@ -736,12 +747,12 @@
       </form>
     </div>
 
-    <div class="footer__row footer__row_i">
+    <div class="footer__row footer__row_info">
       <div class="footer__info info-footer">
         <div class="info-footer__items">
 
           <article
-            class="info-footer__item info-footer__item_a spoiler-footer"
+            class="info-footer__item info-footer__item_medium spoiler-footer"
           >
             <div class="info-footer__title-wrapper">
               <h1 class="info-footer__title spoiler-footer-title">
@@ -809,7 +820,7 @@
 
 
           <article
-            class="info-footer__item info-footer__item_b spoiler-footer"
+            class="info-footer__item info-footer__item_large spoiler-footer"
           >
             <div class="info-footer__title-wrapper">
               <h1 class="info-footer__title spoiler-footer-title">
@@ -860,7 +871,7 @@
             </p>
           </div>
 
-          <div class="rights-footer__item rights-footer__item_m">
+          <div class="rights-footer__item rights-footer__item_button-wrapper">
             <div class="rights-footer__top-text">GO TO TOP</div>
 
             <button class="rights-footer__top-button">

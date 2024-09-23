@@ -16,11 +16,19 @@
     rel='stylesheet'
   />
   
-  <!-- swiper css -->
-  <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css' />
+  <!-- swiper css if needed -->
   
-  <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/main-Ccbr0Fzn.js"></script>
-  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/main-CQFPnaDz.css">
+    <link
+      rel='stylesheet'
+      href='https://unpkg.com/swiper/swiper-bundle.min.css'
+      media='print'
+      onload="this.media='all'"
+    />
+  
+  <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/interiorDesign.js"></script>
+  <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiperThumbnailOurEndedProject-S9-JN7ZJ.js">
+  <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiperOurProject-B5xOltvh.js">
+  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/interiorDesign-BKhNSECC.css">
 </head>
 
 <body>
@@ -28,7 +36,7 @@
     <header class="header ">
       <div class="header__container">
         <div class="header__items">
-          <div class="header__item header__item_l">
+          <div class="header__item header__item_logo-wrapper">
             <a class="header__logo-link" href="/SpaceConstruction/">
               <svg class="header__logo">
                 <use xlink:href="/SpaceConstruction/icons/sprite.svg#logo"></use>
@@ -36,7 +44,7 @@
             </a>
           </div>
       
-          <div class="header__item header__item_m">
+          <div class="header__item header__item_modified">
             <nav class="header__nav nav-header">
               <ul class="nav-header__list">
       
@@ -52,7 +60,7 @@
       
                 <li class="nav-header__item">
                   <a
-                    class="nav-header__link nav-header__link_a"
+                    class="nav-header__link nav-header__link_active"
                     href="/SpaceConstruction/pages/service/service.html"
                   >
                     Services
@@ -190,10 +198,10 @@
       <section class="we-offer">
         <div class="we-offer__container">
           <div class="we-offer__items">
-            <div class="we-offer__item we-offer__item_i">
+            <div class="we-offer__item we-offer__item_image-wrapper">
               <picture class="we-offer__img-wrapper">
-                <source type="image/webp" srcset="/SpaceConstruction/img/pages/interiorDesign/we-offer/we-offer-img.webp" />
-                <img class="we-offer__img" src="/SpaceConstruction/img/pages/interiorDesign/we-offer/we-offer-img.jpg" alt="news image">
+                <source type="image/webp" srcset="/SpaceConstruction/img/pages/interior-design/we-offer/we-offer-img.webp" />
+                <img class="we-offer__img" src="/SpaceConstruction/img/pages/interior-design/we-offer/we-offer-img.jpg" alt="news image">
               </picture>
             </div>
 
@@ -202,12 +210,12 @@
                 <h1 class="we-offer__title">We offer</h1>
                 <div class="we-offer__items items-we-offer">
                   <section class="items-we-offer__item spoiler-we-offer spoiler-we-offer_a">
-                    <h1 class="items-we-offer__title spoiler-we-offer-title spoiler-we-offer-title_a">
+                    <h1 class="items-we-offer__title spoiler-we-offer-title spoiler-we-offer-title_act">
                       Interior design of apartments
                     </h1>
 
                     <p
-                      class="items-we-offer__text spoiler-we-offer-content_active spoiler-we-offer-content spoiler-we-offer-content_a">
+                      class="items-we-offer__text spoiler-we-offer-content_active spoiler-we-offer-content spoiler-we-offer-content_act">
                       Adipiscing nunc arcu enim elit mattis eu placerat proin.
                       Imperdiet elementum faucibus dignissim purus. Fusce
                       parturient diam magna ullamcorper morbi semper massa ac
@@ -240,17 +248,35 @@
             <h1 class="how-we-do__title">That’s how we do it</h1>
             <div class="how-we-do__items items-how-we-do">
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span> 01</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    01
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/SpaceConstruction/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Work Estimate</h1>
 
                 <p class="items-how-we-do__text">
                   Culpa nostrud commodo ea consequat aliquip reprehenderit.
                 </p>
+
+
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span>02</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    02
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/SpaceConstruction/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Contract</h1>
 
@@ -261,7 +287,15 @@
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span>03</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    03
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/SpaceConstruction/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Mobilization</h1>
 
@@ -272,8 +306,15 @@
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step">04</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    04
+                  </p>
 
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/SpaceConstruction/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
                 <h1 class="items-how-we-do__title">Construction Work</h1>
 
                 <p class="items-how-we-do__text">
@@ -300,8 +341,10 @@
 
             <div class="benefits__items items-benefits">
               <article class="items-benefits__item">
-                <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-1.svg"
-                  alt="img" />
+                <svg class="items-benefits__img">
+                  <use xlink:href="/SpaceConstruction/icons/sprite.svg#benefits-icon-1"></use>
+                </svg>
+
 
                 <h1 class="items-benefits__title">Fixed Terms & Cost</h1>
 
@@ -312,8 +355,9 @@
               </article>
 
               <article class="items-benefits__item">
-                <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-2.svg"
-                  alt="img" />
+                <svg class="items-benefits__img">
+                  <use xlink:href="/SpaceConstruction/icons/sprite.svg#benefits-icon-2"></use>
+                </svg>
 
                 <h1 class="items-benefits__title">Qualified Workers</h1>
 
@@ -324,8 +368,9 @@
               </article>
 
               <article class="items-benefits__item">
-                <img class="items-benefits__img" src="/img/pages/interiorDesign/benefits/benefits-img-3.svg"
-                  alt="img" />
+                <svg class="items-benefits__img">
+                  <use xlink:href="/SpaceConstruction/icons/sprite.svg#benefits-icon-3"></use>
+                </svg>
 
                 <h1 class="items-benefits__title">Supervision & Control</h1>
 
@@ -584,7 +629,7 @@
             <div class="pricing__content  swiper-pricing">
               <div class="pricing__wrapper swiper-wrapper">
                 <div class="pricing__table table-pricing swiper-table-pricing swiper-slide">
-                  <div class="table-pricing__row table-pricing__row_m">
+                  <div class="table-pricing__row table-pricing__row_large">
                     <div class="table-pricing__item-start">
                       <p class="table-pricing__item-text">Items</p>
                     </div>
@@ -616,18 +661,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -639,18 +687,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -660,18 +711,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -681,18 +735,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -704,18 +761,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -727,18 +787,21 @@
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -752,13 +815,15 @@
                     <p class="table-pricing__item">simplified</p>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -774,8 +839,9 @@
                     <div class="table-pricing__item"></div>
 
                     <div class="table-pricing__item">
-                      <img class="table-pricing__item-image" src="/img/pages/interiorDesign/pricing/pricing-arrow.svg"
-                        alt="check" />
+                      <svg class="table-pricing__item-image">
+                        <use xlink:href="/SpaceConstruction/icons/sprite.svg#pricing-arrow"></use>
+                      </svg>
                     </div>
                   </div>
 
@@ -791,7 +857,7 @@
                     <p class="table-pricing__item">30 days</p>
                   </div>
 
-                  <div class="table-pricing__row table-pricing__row_b">
+                  <div class="table-pricing__row table-pricing__row_buttons">
                     <div class="table-pricing__item-name"></div>
 
                     <div class="table-pricing__item">
@@ -914,7 +980,9 @@
           ></textarea>
         </div>
 
-        <div class='form-discuss-details__item form-discuss-details__item_m'>
+        <div
+          class='form-discuss-details__item form-discuss-details__item_checkbox'
+        >
           <div class='form-discuss-details__checkbox-wrapper'>
             <input
               type='checkbox'
@@ -932,7 +1000,7 @@
 
           <label
             for='form-discuss-details-check'
-            class='form-discuss-details__label form-discuss-details__label_m'
+            class='form-discuss-details__label form-discuss-details__label_checkbox'
           >
             I agree to receive communications from Createx Construction Bureau.
           </label>
@@ -949,9 +1017,9 @@
 
     <footer class="footer"><div class="footer__container">
   <div class="footer__items">
-    <div class="footer__row footer__row_m">
+    <div class="footer__row footer__row_rights">
       <div class="footer__main main-footer">
-        <div class="main-footer__row main-footer__row_m">
+        <div class="main-footer__row main-footer__row_rights">
           <a class="main-footer__logo-link" href="/SpaceConstruction/">
             <svg class="main-footer__logo">
               <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-logo"></use>
@@ -1007,12 +1075,12 @@
       </form>
     </div>
 
-    <div class="footer__row footer__row_i">
+    <div class="footer__row footer__row_info">
       <div class="footer__info info-footer">
         <div class="info-footer__items">
 
           <article
-            class="info-footer__item info-footer__item_a spoiler-footer"
+            class="info-footer__item info-footer__item_medium spoiler-footer"
           >
             <div class="info-footer__title-wrapper">
               <h1 class="info-footer__title spoiler-footer-title">
@@ -1080,7 +1148,7 @@
 
 
           <article
-            class="info-footer__item info-footer__item_b spoiler-footer"
+            class="info-footer__item info-footer__item_large spoiler-footer"
           >
             <div class="info-footer__title-wrapper">
               <h1 class="info-footer__title spoiler-footer-title">
@@ -1131,7 +1199,7 @@
             </p>
           </div>
 
-          <div class="rights-footer__item rights-footer__item_m">
+          <div class="rights-footer__item rights-footer__item_button-wrapper">
             <div class="rights-footer__top-text">GO TO TOP</div>
 
             <button class="rights-footer__top-button">
