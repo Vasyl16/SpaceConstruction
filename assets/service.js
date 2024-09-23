@@ -1,1 +1,1 @@
-import{i as e,h as o,s as n}from"./swiperThumbnailOurEndedProject-S9-JN7ZJ.js";document.addEventListener("DOMContentLoaded",()=>{e(),o(),n()});
+import{i as e,h as o,s as n}from"./swiperOurEndedProject-BQ3TP__e.js";document.addEventListener("DOMContentLoaded",()=>{e(),o(),n()});
