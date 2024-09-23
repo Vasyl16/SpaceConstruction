@@ -26,8 +26,10 @@
       right: -730px;
       top: -160px;
       background-image: image-set(
-        url('our-ended-project-bg-img-1.webp') type('image/webp'),
-        url('our-ended-project-bg-img-1.jpg') type('image/jpeg')
+        url('/public/img/pages/ended-project/our-ended-project-bg-img-1.webp')
+          type('image/webp'),
+        url('/public/img/pages/ended-project/our-ended-project-bg-img-1.jpg')
+          type('image/jpeg')
       );
       background-repeat: no-repeat;
     }
