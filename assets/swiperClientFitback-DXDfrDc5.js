@@ -1,0 +1,1 @@
+import{S as t}from"./swiper-bundle-BoUZ6wrI.js";const e=".swiper-client-fitback",i=".swiper-client-fitback-button-prev",n=".swiper-client-fitback-button-next",c=()=>{new t(e,{effect:"fade",fadeEffect:{crossFade:!0},speed:600,loop:!0,autoHeight:!0,navigation:{nextEl:n,prevEl:i}})};export{c as s};
