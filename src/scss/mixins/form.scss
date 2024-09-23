@@ -12,8 +12,12 @@
   color: $forthColor;
   border: 1px solid $mainBorderColor;
   border-radius: 5px;
-  padding: 10px 15px 9px;
+  padding: 10px 10px 9px 15px;
   background: $formBgColor;
+
+  @media (max-width: $mobile) {
+    padding: 8px;
+  }
 }
 
 @mixin from-main-textarea {
@@ -23,7 +27,10 @@
   color: $forthColor;
   border: 1px solid $mainBorderColor;
   border-radius: 5px;
-  padding: 10px 15px 9px;
+  padding: 10px 10px 9px 15px;
   background: $formBgColor;
   box-sizing: border-box;
+  @media (max-width: $mobile) {
+    padding: 8px;
+  }
 }
