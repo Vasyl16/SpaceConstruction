@@ -44,6 +44,9 @@ export default defineConfig({
         contact: './pages/contact/contact.html',
         singleNews: './pages/news/single-news.html',
       },
+      output: {
+        entryFileNames: 'assets/[name].js',
+      },
     },
   },
 

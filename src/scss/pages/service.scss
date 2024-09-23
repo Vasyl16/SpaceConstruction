@@ -1,0 +1,18 @@
+@import '../null/null';
+
+// import variable
+@import '../variables/index';
+
+// import mixins
+@import '../mixins';
+
+// import blocks
+@import '../blocks';
+
+// import base style
+@import '../base';
+
+// import components for service page
+@import '../components/service';
+
+@import '../components/template';

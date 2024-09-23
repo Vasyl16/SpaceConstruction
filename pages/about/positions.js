@@ -1,25 +1,17 @@
-import '../scss/style.scss';
+import '/src/scss/pages/positions.scss';
 
 import {
   initBurgerMenu,
   handleHeaderScroll,
   initAllSpoilers,
-  initAllSwipers,
-  videoHandler,
   handlePopupItems,
-  scrollToBlockFun,
-  handleScrollOnRedirect,
   scrollButtonToTop,
-} from './modules';
+} from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   initBurgerMenu();
   handleHeaderScroll();
   initAllSpoilers();
-  initAllSwipers();
-  videoHandler();
   handlePopupItems();
-  scrollToBlockFun();
-  handleScrollOnRedirect();
   scrollButtonToTop();
 });

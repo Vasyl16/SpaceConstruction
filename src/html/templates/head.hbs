@@ -12,7 +12,15 @@
   rel='stylesheet'
 />
 
-<!-- swiper css -->
-<link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css' />
+<!-- swiper css if needed -->
+
+{{#if isSwiper}}
+  <link
+    rel='stylesheet'
+    href='https://unpkg.com/swiper/swiper-bundle.min.css'
+    media='print'
+    onload="this.media='all'"
+  />
+{{/if}}
 
 <title>Space Construction</title>

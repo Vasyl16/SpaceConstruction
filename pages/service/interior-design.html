@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  {{> head}}
+  {{> head isSwiper=true }}
 </head>
 
 <body>
@@ -69,17 +69,35 @@
             <h1 class="how-we-do__title">That’s how we do it</h1>
             <div class="how-we-do__items items-how-we-do">
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span> 01</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    01
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Work Estimate</h1>
 
                 <p class="items-how-we-do__text">
                   Culpa nostrud commodo ea consequat aliquip reprehenderit.
                 </p>
+
+
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span>02</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    02
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Contract</h1>
 
@@ -90,7 +108,15 @@
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step"><span></span>03</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    03
+                  </p>
+
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
 
                 <h1 class="items-how-we-do__title">Mobilization</h1>
 
@@ -101,8 +127,15 @@
               </section>
 
               <section class="items-how-we-do__item">
-                <p class="items-how-we-do__step">04</p>
+                <div class="items-how-we-do__step-wrapper">
+                  <p class="items-how-we-do__step-text">
+                    04
+                  </p>
 
+                  <svg class="items-how-we-do__step-line">
+                    <use xlink:href="/icons/sprite.svg#how-we-do-line-icon"></use>
+                  </svg>
+                </div>
                 <h1 class="items-how-we-do__title">Construction Work</h1>
 
                 <p class="items-how-we-do__text">
@@ -454,7 +487,7 @@
     <footer class="footer">{{> footer footerData=this.footerData }}</footer>
   </div>
 
-  <script type="module" src="../../src/js/main.js"></script>
+  <script type="module" src="./interior-design.js"></script>
 </body>
 
 </html>
