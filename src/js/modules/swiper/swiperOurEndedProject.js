@@ -1,6 +1,17 @@
 import Swiper from 'swiper/bundle';
 
-import { swiperThumbnailOurEndedProjectLabel } from './swiperThumbnailOurEndedProject';
+// swiper thumbnail-our-ended-project
+const swiperThumbnailOurEndedProject = '.swiper-thumbnail-our-ended-project';
+
+// const config thumbnail-our-ended-project
+export const swiperThumbnailOurEndedProjectLabel = new Swiper(
+  swiperThumbnailOurEndedProject,
+  {
+    slidesPerView: 'auto', // Automatically size each thumbnail based on its content width
+    slideToClickedSlide: true,
+    spaceBetween: 20,
+  }
+);
 
 // swiper main vars
 const swiperOurEndedProject = '.swiper-our-ended-project';
