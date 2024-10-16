@@ -82,6 +82,48 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
+    fill: $footerSocialColor;
+    transition: all ease 0.3s;
+
+    &_viber {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $viberColor;
+        }
+      }
+    }
+
+    &_messenger {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebookColor;
+        }
+      }
+    }
+
+    &_facebook {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebookColor;
+        }
+      }
+    }
+
+    &_twiter {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $twiterColor;
+        }
+      }
+    }
+
+    &_youtube {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $youtubeColor;
+        }
+      }
+    }
   }
 }
 
