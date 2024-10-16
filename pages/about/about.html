@@ -10,13 +10,31 @@
   
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
   
-  <!-- fonts -->
   <link
     rel='stylesheet'
     href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap'
     media='print'
     onload="this.media='all'"
   />
+  
+  <link
+    rel='apple-touch-icon'
+    sizes='180x180'
+    href='/SpaceConstruction/img/favicons/main-favicon-icon/apple-touch-icon.png'
+  />
+  <link
+    rel='icon'
+    type='image/png'
+    sizes='32x32'
+    href='/SpaceConstruction/img/favicons/main-favicon-icon/favicon-32x32.png'
+  />
+  <link
+    rel='icon'
+    type='image/png'
+    sizes='16x16'
+    href='/SpaceConstruction/img/favicons/main-favicon-icon/favicon-16x16.png'
+  />
+  <link rel='manifest' href='/SpaceConstruction/img/favicons/main-favicon-icon/site.webmanifest' />
   
   <!-- swiper css if needed -->
   
@@ -30,7 +48,7 @@
   <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/about.js"></script>
   <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiper-bundle-BoUZ6wrI.js">
   <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/scrollToBlock-DEYtQKMP.js">
-  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/about-BPRUxyV4.css">
+  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/about-tMUWCunu.css">
 </head>
 
 <body>
@@ -118,7 +136,7 @@
               <div class="comm-header__info">
                 <p class="comm-header__text">Call us</p>
 
-                <a class="comm-header__comm-way">(405) 555-0128</a>
+                <a href="tel:+4055550128" class="comm-header__comm-way">(405) 555-0128</a>
               </div>
             </div>
           </div>
@@ -136,7 +154,7 @@
               <div class="comm-header__info">
                 <p class="comm-header__text">Talk to us</p>
 
-                <a class="comm-header__comm-way">hello@createx.com</a>
+                <a href="mailto:hello@createx.com"  target="_blank" class="comm-header__comm-way">hello@createx.com</a>
               </div>
             </div>
           </div>
@@ -614,7 +632,7 @@
         <div class="our-team__container">
           <div class="our-team__body">
             <div class="our-team__info">
-              <title class="our-team__title">Our Team</title>
+              <h1 class="our-team__title">Our Team</h1>
 
               <p class="our-team__text">
                 People are at the heart of Createx Construction Bureau
@@ -653,7 +671,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Courtney Alexander</title>
+                  <h1 class="items-our-team__name">Courtney Alexander</h1>
 
                   <p class="items-our-team__position">CEO, Co-Founder</p>
                 </section>
@@ -688,7 +706,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Calvin Fox</title>
+                  <h1 class="items-our-team__name">Calvin Fox</h1>
 
                   <p class="items-our-team__position">CTO, Co-Founder</p>
                 </section>
@@ -723,7 +741,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Johnny Lane</title>
+                  <h1 class="items-our-team__name">Johnny Lane</h1>
 
                   <p class="items-our-team__position">Commercial Manager</p>
                 </section>
@@ -758,7 +776,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Diane Mccoy</title>
+                  <h1 class="items-our-team__name">Diane Mccoy</h1>
 
                   <p class="items-our-team__position">
                     Director of Human Resources
@@ -795,7 +813,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Judith Warren</title>
+                  <h1 class="items-our-team__name">Judith Warren</h1>
 
                   <p class="items-our-team__position">Lead Accountant</p>
                 </section>
@@ -830,7 +848,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Floyd Simmmons</title>
+                  <h1 class="items-our-team__name">Floyd Simmmons</h1>
 
                   <p class="items-our-team__position">Finacial Director</p>
                 </section>
@@ -865,7 +883,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Serenity Edwards</title>
+                  <h1 class="items-our-team__name">Serenity Edwards</h1>
 
                   <p class="items-our-team__position">Director of Marketing</p>
                 </section>
@@ -900,7 +918,7 @@
                     </div>
                   </div>
 
-                  <title class="items-our-team__name">Shawn Edwardss</title>
+                  <h1 class="items-our-team__name">Shawn Edwardss</h1>
 
                   <p class="items-our-team__position">Tech Lead</p>
                 </section>
@@ -936,7 +954,7 @@
         <div class="work-worldwild__container">
           <div class="work-worldwild__body">
             <div class="work-worldwild__info">
-              <title class="work-worldwild__title">We work worldwide</title>
+              <h1 class="work-worldwild__title">We work worldwide</h1>
             </div>
 
             <div class="work-worldwild__content">
@@ -1059,25 +1077,45 @@
           </a>
 
           <div class="main-footer__social social-main-footer">
-            <svg class="social-main-footer__social-img">
-              <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-1"></use>
-            </svg>
+            <a href="#" class="social-main-footer__social-img-link">
+              <svg
+                class="social-main-footer__social-img social-main-footer__social-img_viber"
+              >
+                <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-1"></use>
+              </svg>
+            </a>
 
-            <svg class="social-main-footer__social-img">
-              <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-2"></use>
-            </svg>
+            <a href="#" class="social-main-footer__social-img-link">
+              <svg
+                class="social-main-footer__social-img social-main-footer__social-img_messenger"
+              >
+                <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-2"></use>
+              </svg>
+            </a>
 
-            <svg class="social-main-footer__social-img">
-              <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-3"></use>
-            </svg>
+            <a href="#" class="social-main-footer__social-img-link">
+              <svg
+                class="social-main-footer__social-img social-main-footer__social-img_facebook"
+              >
+                <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-3"></use>
+              </svg>
+            </a>
 
-            <svg class="social-main-footer__social-img">
-              <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-4"></use>
-            </svg>
+            <a href="#" class="social-main-footer__social-img-link">
+              <svg
+                class="social-main-footer__social-img social-main-footer__social-img_twiter"
+              >
+                <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-4"></use>
+              </svg>
+            </a>
 
-            <svg class="social-main-footer__social-img">
-              <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-5"></use>
-            </svg>
+            <a href="#" class="social-main-footer__social-img-link">
+              <svg
+                class="social-main-footer__social-img social-main-footer__social-img_youtube"
+              >
+                <use xlink:href="/SpaceConstruction/icons/sprite.svg#footer-social-img-5"></use>
+              </svg>
+            </a>
           </div>
         </div>
 
