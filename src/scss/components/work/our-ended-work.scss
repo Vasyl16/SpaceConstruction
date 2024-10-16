@@ -95,6 +95,7 @@
     justify-content: center;
     align-items: center;
     gap: 17px;
+    padding: 0 20px;
     @media (max-width: $fullPc) {
       margin-top: 40px;
     }
@@ -117,5 +118,8 @@
     font-weight: 700;
     line-height: 1.6;
     color: $forthColor;
+    display: flex;
+    align-items: center;
+    gap: 17px;
   }
 }
