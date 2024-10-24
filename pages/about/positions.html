@@ -41,7 +41,7 @@
   
   <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/positions.js"></script>
   <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiper-bundle-BoUZ6wrI.js">
-  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/positions-CHYaf3l4.css">
+  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/positions-zCvlsJXV.css">
 </head>
 
 <body>
@@ -426,15 +426,17 @@
           <form class="subscribe-popup-our-positions__form form-subscribe-popup-our-positions">
             <div class="form-subscribe-popup-our-positions__items">
               <div class="form-subscribe-popup-our-positions__item">
-                <label class="form-subscribe-popup-our-positions__label">Name*</label>
+                <label for="input-subscribe-name" class="form-subscribe-popup-our-positions__label">Name*</label>
 
-                <input placeholder="Your name" class="form-subscribe-popup-our-positions__input" />
+                <input id="input-subscribe-name" placeholder="Your name"
+                  class="form-subscribe-popup-our-positions__input" />
               </div>
 
               <div class="form-subscribe-popup-our-positions__item">
-                <label class="form-subscribe-popup-our-positions__label">Email*</label>
+                <label for="input-subscribe-email" class="form-subscribe-popup-our-positions__label">Email*</label>
 
-                <input placeholder="Your working email" class="form-subscribe-popup-our-positions__input" />
+                <input id="input-subscribe-email" placeholder="Your working email"
+                  class="form-subscribe-popup-our-positions__input" />
               </div>
 
               <button class="form-subscribe-popup-our-positions__button">
@@ -458,39 +460,44 @@
           <form class="send-popup-our-positions__form form-send-popup-our-positions">
             <div class="form-send-popup-our-positions__items">
               <div class="form-send-popup-our-positions__item">
-                <label class="form-send-popup-our-positions__label">Name*</label>
+                <label for="input-send-popup-name" class="form-send-popup-our-positions__label">Name*</label>
 
-                <input placeholder="Your name" class="form-send-popup-our-positions__input" />
+                <input id="input-send-popup-name" placeholder="Your name"
+                  class="form-send-popup-our-positions__input" />
               </div>
 
               <div class="form-send-popup-our-positions__item">
-                <label class="form-send-popup-our-positions__label">Location*</label>
+                <label for="input-send-popup-location" class="form-send-popup-our-positions__label">Location*</label>
 
-                <input placeholder="Choose your location" class="form-send-popup-our-positions__input" />
+                <input id="input-send-popup-location" placeholder="Choose your location"
+                  class="form-send-popup-our-positions__input" />
               </div>
 
               <div class="form-send-popup-our-positions__item">
-                <label class="form-send-popup-our-positions__label">Phone*
+                <label for="input-send-popup-phone" class="form-send-popup-our-positions__label">Phone*
                 </label>
 
-                <input placeholder="Your phone number" class="form-send-popup-our-positions__input" />
+                <input id="input-send-popup-phone" placeholder="Your phone number"
+                  class="form-send-popup-our-positions__input" />
               </div>
 
               <div class="form-send-popup-our-positions__item">
-                <label class="form-send-popup-our-positions__label">Email*</label>
+                <label for="input-send-popup-email" class="form-send-popup-our-positions__label">Email*</label>
 
-                <input placeholder="Your working email" class="form-send-popup-our-positions__input" />
+                <input id="input-send-popup-email" placeholder="Your working email"
+                  class="form-send-popup-our-positions__input" />
               </div>
 
               <div class="form-send-popup-our-positions__item">
-                <label class="form-send-popup-our-positions__label">Сovering letter</label>
+                <label for="input-send-popup-letter" class="form-send-popup-our-positions__label">Сovering
+                  letter</label>
 
-                <textarea placeholder="Your covering letters"
+                <textarea id="input-send-popup-letter" placeholder="Your covering letters"
                   class="form-send-popup-our-positions__textarea"></textarea>
               </div>
 
               <div class="form-send-popup-our-positions__item form-send-popup-our-positions__item_attach">
-                <label for="file"
+                <label for="input-send-popup-cv" for="file"
                   class="form-send-popup-our-positions__label form-send-popup-our-positions__label_attach">Attach your
                   CV*
                 </label>
@@ -499,7 +506,7 @@
                   <use xlink:href="/SpaceConstruction/icons/sprite.svg#popup-our-positions-attach-icon"></use>
                 </svg>
 
-                <input type="file" id="file" placeholder="Your covering letters"
+                <input id="input-send-popup-cv" type="file" id="file" placeholder="Your covering letters"
                   class="form-send-popup-our-positions__attach-file" />
               </div>
 
@@ -563,33 +570,52 @@
         
               <div class='form-discuss-details__items'>
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Name*</label>
+                  <label
+                    for='input-discuss-details-name'
+                    class='form-discuss-details__label'
+                  >Name*</label>
         
-                  <input placeholder='Your name' class='form-discuss-details__input' />
+                  <input
+                    id='input-discuss-details-name'
+                    placeholder='Your name'
+                    class='form-discuss-details__input'
+                  />
                 </div>
         
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Phone*</label>
+                  <label
+                    for='input-discuss-details-phone'
+                    class='form-discuss-details__label'
+                  >Phone*</label>
         
                   <input
+                    id='input-discuss-details-phone'
                     placeholder='Your phone number'
                     class='form-discuss-details__input'
                   />
                 </div>
         
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Email</label>
+                  <label
+                    for='input-discuss-details-email'
+                    class='form-discuss-details__label'
+                  >Email</label>
         
                   <input
+                    id='input-discuss-details-email'
                     placeholder='Your working email'
                     class='form-discuss-details__input'
                   />
                 </div>
         
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Message*</label>
+                  <label
+                    for='input-discuss-details-message'
+                    class='form-discuss-details__label'
+                  >Message*</label>
         
                   <textarea
+                    id='input-discuss-details-message'
                     placeholder='Your message'
                     class='form-discuss-details__textarea'
                   ></textarea>
@@ -699,12 +725,12 @@
         <p class="form-footer__title">Let’s stay in touch</p>
 
         <div class="form-footer__input-wrapper">
-          <input class="form-footer__input" placeholder="Your email address" />
+          <input id="input-form-email" class="form-footer__input" placeholder="Your email address" />
 
           <button class="form-footer__button" type="submit">subscribe</button>
         </div>
 
-        <label class="form-footer__label">
+        <label for="input-form-email" class="form-footer__label">
           *Subscribe to our newsletter to receive communications and early
           updates from Createx Construction Bureau.
         </label>

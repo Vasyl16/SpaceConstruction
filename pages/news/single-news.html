@@ -41,7 +41,7 @@
   
   <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/singleNews.js"></script>
   <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiper-bundle-BoUZ6wrI.js">
-  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/singleNews-CUqsFYSw.css">
+  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/singleNews-8mqdhFpo.css">
 </head>
 
 <body>
@@ -520,23 +520,24 @@
             <form class="single-news-form__content">
               <div class="single-news-form__row">
                 <div class="single-news-form__input-wrapper">
-                  <label class="single-news-form__input-label">Name*</label>
+                  <label for="input-single-news-name" class="single-news-form__input-label">Name*</label>
 
-                  <input placeholder="Your name" class="single-news-form__input">
+                  <input id="input-single-news-name" placeholder="Your name" class="single-news-form__input">
                 </div>
 
                 <div class="single-news-form__input-wrapper">
-                  <label class="single-news-form__input-label">Email*</label>
+                  <label for="input-single-news-email" class="single-news-form__input-label">Email*</label>
 
-                  <input placeholder="Your working email" class="single-news-form__input">
+                  <input id="input-single-news-email" placeholder="Your working email" class="single-news-form__input">
                 </div>
               </div>
 
               <div class="single-news-form__row">
                 <div class="single-news-form__input-wrapper single-news-form__input-wrapper_full">
-                  <label class="single-news-form__input-label">Your comment*</label>
+                  <label for="input-single-news-comment" class="single-news-form__input-label">Your comment*</label>
 
-                  <textarea placeholder="Type comment here" class="single-news-form__textarea"></textarea>
+                  <textarea id="input-single-news-comment" placeholder="Type comment here"
+                    class="single-news-form__textarea"></textarea>
                 </div>
               </div>
 
@@ -561,33 +562,52 @@
         
               <div class='form-discuss-details__items'>
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Name*</label>
+                  <label
+                    for='input-discuss-details-name'
+                    class='form-discuss-details__label'
+                  >Name*</label>
         
-                  <input placeholder='Your name' class='form-discuss-details__input' />
+                  <input
+                    id='input-discuss-details-name'
+                    placeholder='Your name'
+                    class='form-discuss-details__input'
+                  />
                 </div>
         
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Phone*</label>
+                  <label
+                    for='input-discuss-details-phone'
+                    class='form-discuss-details__label'
+                  >Phone*</label>
         
                   <input
+                    id='input-discuss-details-phone'
                     placeholder='Your phone number'
                     class='form-discuss-details__input'
                   />
                 </div>
         
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Email</label>
+                  <label
+                    for='input-discuss-details-email'
+                    class='form-discuss-details__label'
+                  >Email</label>
         
                   <input
+                    id='input-discuss-details-email'
                     placeholder='Your working email'
                     class='form-discuss-details__input'
                   />
                 </div>
         
                 <div class='form-discuss-details__item'>
-                  <label class='form-discuss-details__label'>Message*</label>
+                  <label
+                    for='input-discuss-details-message'
+                    class='form-discuss-details__label'
+                  >Message*</label>
         
                   <textarea
+                    id='input-discuss-details-message'
                     placeholder='Your message'
                     class='form-discuss-details__textarea'
                   ></textarea>
@@ -697,12 +717,12 @@
         <p class="form-footer__title">Let’s stay in touch</p>
 
         <div class="form-footer__input-wrapper">
-          <input class="form-footer__input" placeholder="Your email address" />
+          <input id="input-form-email" class="form-footer__input" placeholder="Your email address" />
 
           <button class="form-footer__button" type="submit">subscribe</button>
         </div>
 
-        <label class="form-footer__label">
+        <label for="input-form-email" class="form-footer__label">
           *Subscribe to our newsletter to receive communications and early
           updates from Createx Construction Bureau.
         </label>

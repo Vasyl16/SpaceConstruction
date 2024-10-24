@@ -42,7 +42,7 @@
   <title>Space Construction</title>  <script type="module" crossorigin src="/SpaceConstruction/assets/contact.js"></script>
   <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/swiper-bundle-BoUZ6wrI.js">
   <link rel="modulepreload" crossorigin href="/SpaceConstruction/assets/scrollToBlock-DEYtQKMP.js">
-  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/contact-B_WQrpnU.css">
+  <link rel="stylesheet" crossorigin href="/SpaceConstruction/assets/contact-YDvgXHbF.css">
 </head>
 
 <body>
@@ -227,37 +227,43 @@
                   <div class="form-content-contact-us__items">
                     <div class="form-content-contact-us__row">
                       <div class="form-content-contact-us__item">
-                        <label class="form-content-contact-us__label">Name*</label>
+                        <label for="input-contact-us-name" class="form-content-contact-us__label">Name*</label>
 
-                        <input placeholder="Your name" class="form-content-contact-us__input" />
+                        <input id="input-contact-us-name" placeholder="Your name"
+                          class="form-content-contact-us__input" />
                       </div>
 
                       <div class="form-content-contact-us__item">
-                        <label class="form-content-contact-us__label">I am interested in</label>
+                        <label for="input-contact-us-interested" class="form-content-contact-us__label">I am interested
+                          in</label>
 
-                        <input placeholder="Interior Design" class="form-content-contact-us__input" />
-                      </div>
-                    </div>
-
-                    <div class="form-content-contact-us__row">
-                      <div class="form-content-contact-us__item">
-                        <label class="form-content-contact-us__label">Phone*</label>
-
-                        <input placeholder="Your phone number" class="form-content-contact-us__input" />
-                      </div>
-
-                      <div class="form-content-contact-us__item">
-                        <label class="form-content-contact-us__label">Location*</label>
-
-                        <input placeholder="New York" class="form-content-contact-us__input" />
+                        <input id="input-contact-us-interested" placeholder="Interior Design"
+                          class="form-content-contact-us__input" />
                       </div>
                     </div>
 
                     <div class="form-content-contact-us__row">
                       <div class="form-content-contact-us__item">
-                        <label class="form-content-contact-us__label">Email</label>
+                        <label for="input-contact-us-phone" class="form-content-contact-us__label">Phone*</label>
 
-                        <input placeholder="Your working email" class="form-content-contact-us__input" />
+                        <input id="input-contact-us-phone" placeholder="Your phone number"
+                          class="form-content-contact-us__input" />
+                      </div>
+
+                      <div class="form-content-contact-us__item">
+                        <label for="input-contact-us-location" class="form-content-contact-us__label">Location*</label>
+
+                        <input id="input-contact-us-location" placeholder="New York"
+                          class="form-content-contact-us__input" />
+                      </div>
+                    </div>
+
+                    <div class="form-content-contact-us__row">
+                      <div class="form-content-contact-us__item">
+                        <label for="input-contact-us-email" class="form-content-contact-us__label">Email</label>
+
+                        <input id="input-contact-us-email" placeholder="Your working email"
+                          class="form-content-contact-us__input" />
                       </div>
 
                       <div class="form-content-contact-us__item">
@@ -299,21 +305,25 @@
 
                     <div class="form-content-contact-us__row">
                       <div class="form-content-contact-us__item form-content-contact-us__item_textarea-wrapper">
-                        <label class="form-content-contact-us__label">Message*</label>
+                        <label for="input-contact-us-message" class="form-content-contact-us__label">Message*</label>
 
-                        <textarea placeholder="Your message" class="form-content-contact-us__textarea"></textarea>
+                        <textarea id="input-contact-us-message" placeholder="Your message"
+                          class="form-content-contact-us__textarea"></textarea>
                       </div>
                     </div>
 
                     <div class="form-content-contact-us__bottom">
                       <div class="form-content-contact-us__checkbox-wrapeper">
                         <div class="form-content-contact-us__input-checkbox-wrapeper">
-                          <input checked id="contact-agree" type="checkbox"
+                          <input checked id="input-contact-us-agree" type="checkbox"
                             class="form-content-contact-us__input-checkbox" />
                           <svg class="form-content-contact-us__input-checkbox-icon">
                             <use xlink:href="/SpaceConstruction/icons/sprite.svg#form-contact-us-check-icon"></use>
                           </svg>
-                        </div> <label for="contact-agree" class="form-content-contact-us__label">I agree to receive
+                        </div>
+
+                        <label for="input-contact-us-agree" class="form-content-contact-us__label">I agree to
+                          receive
                           communications from Createx
                           Construction Bureau.</label>
                       </div>
@@ -545,12 +555,12 @@
         <p class="form-footer__title">Let’s stay in touch</p>
 
         <div class="form-footer__input-wrapper">
-          <input class="form-footer__input" placeholder="Your email address" />
+          <input id="input-form-email" class="form-footer__input" placeholder="Your email address" />
 
           <button class="form-footer__button" type="submit">subscribe</button>
         </div>
 
-        <label class="form-footer__label">
+        <label for="input-form-email" class="form-footer__label">
           *Subscribe to our newsletter to receive communications and early
           updates from Createx Construction Bureau.
         </label>
